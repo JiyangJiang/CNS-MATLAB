@@ -1,6 +1,6 @@
-%------------------
-% CNSP_segmentation
-%------------------
+%---------------------------
+% cns2_spmbatch_segmentation
+%---------------------------
 %
 % DESCRIPTION:
 %   To segment input image into GM, WM and CSF (probability maps).

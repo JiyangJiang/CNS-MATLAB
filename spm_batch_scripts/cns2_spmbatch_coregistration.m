@@ -1,6 +1,6 @@
-%------------------
-% CNSP_registration 
-%------------------
+% -----------------------------
+% cns2_spmbatch_coregistration
+% -----------------------------
 %
 % DESCRIPTION:
 %   To register source image to reference image.

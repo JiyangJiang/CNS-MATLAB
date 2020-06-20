@@ -1,7 +1,7 @@
 
-%----------------
-% CNSP_runDARTELe
-%----------------
+%-------------------------
+% cns2_spmbatch_runDARTELe
+%-------------------------
 % DESCRIPTION:
 %   run DARTEL with existing template (run one subject at a time)
 %
