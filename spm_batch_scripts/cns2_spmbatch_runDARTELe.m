@@ -22,8 +22,12 @@
 %
 
 
-function flowMap = CNSP_runDARTELe (rcGM, rcWM, rcCSF, template1, template2, template3, template4, template5, template6)
+function flowMap = cns2_spmbatch_runDARTELe (rcGM, rcWM, rcCSF, ...
+                                             template1, template2, template3, template4, template5, template6)
 
+    curr_cmd = mfilename;
+    fprintf ('%s : running DARTEL with existing templates.\n', curr_cmd);
+    
     spm_jobman('initcfg');
 
     matlabbatch{1}.spm.tools.dartel.warp1.images = {

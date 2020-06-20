@@ -6,6 +6,10 @@ global cns2param
 % study directory
 % cns2param.study_dir = 'C:\Users\jiang\Downloads\test';
 cns2param.study_dir = '/Users/z3402744/Work';
+% CNS2 directory
+cns2param.cns2_dir = '/Users/z3402744/GitHub/CNS2';
+% template
+cns2param.template = {'existing'; '70to80'};
 
 % num of cpus for parallel processing
 cns2param.n_cpus = 2;
