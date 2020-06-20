@@ -4,7 +4,8 @@ clear all
 global cns2param
 
 % study directory
-cns2param.study_dir = 'C:\Users\jiang\Downloads\test';
+% cns2param.study_dir = 'C:\Users\jiang\Downloads\test';
+cns2param.study_dir = '/Users/z3402744/Work';
 
 % num of cpus for parallel processing
 cns2param.n_cpus = 2;
