@@ -13,7 +13,7 @@
 %   varargin{3} = interpolation ('NN' or 'Tri')
 % 
 % USAGE:
-%   CNSP_registration (FLAIR,T1,'/home/ABC');
+%   rFLAIR = cns2_spmbatch_coregistration (FLAIR,T1,'/home/ABC');
 %
 
 function rSrcImg = cns2_spmbatch_coregistration (srcImg, refImg, outputFolder, varargin)

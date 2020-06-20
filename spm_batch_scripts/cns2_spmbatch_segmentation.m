@@ -18,8 +18,8 @@
 %   varargout{1} = *_seg8.mat
 %
 % USAGE:
-%   [cGM,cWM,cCSF,rcGM,rcWM,rcCSF] = CNSP_segmentation (inputImg)
-%   [cGM,cWM,cCSF,rcGM,rcWM,rcCSF,seg8mat] = CNSP_segmentation (inputImg)
+%   [cGM,cWM,cCSF,rcGM,rcWM,rcCSF] = cns2_spmbatch_segmentation (inputImg)
+%   [cGM,cWM,cCSF,rcGM,rcWM,rcCSF,seg8mat] = cns2_spmbatch_segmentation (inputImg)
 %
 
 function [cGM,cWM,cCSF,rcGM,rcWM,rcCSF,varargout] = cns2_spmbatch_segmentation (inputImg)

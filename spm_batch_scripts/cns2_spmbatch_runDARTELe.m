@@ -15,7 +15,7 @@
 %   flowMap = path to flow map
 %
 % USAGE:
-%   flowMap = CNSP_runDARTELe (rcGM, rcWM, rcCSF, ...
+%   flowMap = cns2_spmbatch_runDARTELe (rcGM, rcWM, rcCSF, ...
 %                              template1, template2, template3, template4, template5, template6)
 % NOTE:
 %   need to run CNSP_segmentation to generate rcGM, rcWM, and rcCSF
@@ -27,7 +27,7 @@ function flowMap = cns2_spmbatch_runDARTELe (rcGM, rcWM, rcCSF, ...
 
     curr_cmd = mfilename;
     fprintf ('%s : running DARTEL with existing templates.\n', curr_cmd);
-    
+
     spm_jobman('initcfg');
 
     matlabbatch{1}.spm.tools.dartel.warp1.images = {

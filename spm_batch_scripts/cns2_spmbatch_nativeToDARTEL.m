@@ -14,13 +14,13 @@
 %   srcImgOnDARTEL = srcImg mapped to DARTEL space
 %
 % USAGE:
-%   srcImgOnDARTEL = CNSP_nativeToDARTEL (srcImg, flowMap)
+%   srcImgOnDARTEL = cns2_spmbatch_nativeToDARTEL (srcImg, flowMap)
 %
 % NOTE:
 %   need to run CNSP_runDARTELe or CNSP_runDARTELc to generate flow map
 %
 
-function srcImgOnDARTEL = CNSP_nativeToDARTEL (srcImg, flowMap, varargin)
+function srcImgOnDARTEL = cns2_spmbatch_nativeToDARTEL (srcImg, flowMap, varargin)
 
     [flowMapFolder,flowMapFilename,flowMapExt] = fileparts (flowMap);
     [srcImgFolder,srcImgFilename,srcImgExt] = fileparts (srcImg);
