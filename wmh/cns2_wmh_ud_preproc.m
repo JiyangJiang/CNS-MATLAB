@@ -1,22 +1,9 @@
 
-% which template to use
-if strcmp (cns2param.template{1},'existing')
-	age_range = cns2param.template{2};
-	template1 = fullfile (cns2param.cns2_dir,'templates','DARTEL_0to6_templates',age_range,'Template_1.nii');
-	template2 = fullfile (cns2param.cns2_dir,'templates','DARTEL_0to6_templates',age_range,'Template_2.nii');
-	template3 = fullfile (cns2param.cns2_dir,'templates','DARTEL_0to6_templates',age_range,'Template_3.nii');
-	template4 = fullfile (cns2param.cns2_dir,'templates','DARTEL_0to6_templates',age_range,'Template_4.nii');
-	template5 = fullfile (cns2param.cns2_dir,'templates','DARTEL_0to6_templates',age_range,'Template_5.nii');
-	template6 = fullfile (cns2param.cns2_dir,'templates','DARTEL_0to6_templates',age_range,'Template_6.nii');
-elseif strcmp (cns2param.template{1},'creating')
-	% templates if creating template
-end
-
 % preprocessing
-parfor (i = 1 : cns2param.n_subjs, cns2param.n_cpus)
+parfor (i = 1 : cns2param.n_subjs, cns2param.exe.n_cpus)
 
-	t1 = fullfile(cns2param.subjs_dir, cns2param.subjs_list{i,1}, 't1.nii');
-	flair = fullfile(cns2param.subjs_dir, cns2param.subjs_list{i,1}, 'flair.nii');
+	t1 = fullfile(cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 't1.nii');
+	flair = fullfile(cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'flair.nii');
 
 	% coregistration
 	rflair = cns2_spmbatch_coregistration (flair, t1, 'same_dir');
