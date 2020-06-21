@@ -9,7 +9,7 @@ if strcmp (cns2param.template{1},'existing')
 	template5 = fullfile (cns2param.cns2_dir,'templates','DARTEL_0to6_templates',age_range,'Template_5.nii');
 	template6 = fullfile (cns2param.cns2_dir,'templates','DARTEL_0to6_templates',age_range,'Template_6.nii');
 elseif strcmp (cns2param.template{1},'creating')
-	% to do if creating template
+	% templates if creating template
 end
 
 % preprocessing
