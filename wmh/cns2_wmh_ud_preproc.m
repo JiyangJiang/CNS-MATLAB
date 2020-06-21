@@ -2,7 +2,7 @@
 % preprocessing
 parfor (i = 1 : cns2param.n_subjs, cns2param.exe.n_cpus)
 
-	t1 = fullfile(cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 't1.nii');
+	t1    = fullfile(cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 't1.nii');
 	flair = fullfile(cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'flair.nii');
 
 	% coregistration
