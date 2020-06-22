@@ -24,8 +24,4 @@ end
 out_dat = in_dat;
 out_dat (mask_dat <= 0) = 0;
 
-out_hdr = spm_vol (in);
-out_hdr.fname = out;
-out_hdr.private.dat.fname = out;
-
-spm_write_vol (out_hdr, out_dat);
+cns2_scripts_writeNii (spm_vol(in), out_dat, out);

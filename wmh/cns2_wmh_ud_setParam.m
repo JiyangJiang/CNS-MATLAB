@@ -1,5 +1,4 @@
 fprintf ('Note that nifti must be gunzipped.\n');
-fprintf ('You may need Global Optimization Toolbox to run on Windows.\n');
 
 clear all
 global cns2param
