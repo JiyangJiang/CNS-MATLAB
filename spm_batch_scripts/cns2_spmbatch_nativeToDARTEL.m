@@ -36,6 +36,8 @@ function srcImgOnDARTEL = cns2_spmbatch_nativeToDARTEL (srcImg, flowMap, varargi
         interpCode = 1;
     end
     
+    clear matlabbatch;
+
     spm('defaults', 'fmri');
     spm_jobman('initcfg');
 
@@ -50,9 +52,3 @@ function srcImgOnDARTEL = cns2_spmbatch_nativeToDARTEL (srcImg, flowMap, varargi
     output = spm_jobman ('run',matlabbatch);
     
     srcImgOnDARTEL = fullfile (flowMapFolder, ['w' srcImgFilename srcImgExt]);
-
-    % remove nan
-    % system (['gzip ' srcImgOnDARTEL]);
-    % system (['. ${FSLDIR}/etc/fslconf/fsl.sh;' ...
-    %          'fslmaths ' srcImgOnDARTEL '.gz -nan ' flowMapFolder '/w' srcImgFilename]);
-    % system (['gunzip ' flowMapFolder '/w' srcImgFilename '.nii.gz']);

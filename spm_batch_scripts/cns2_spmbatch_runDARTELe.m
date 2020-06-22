@@ -28,6 +28,8 @@ function flowMap = cns2_spmbatch_runDARTELe (rcGM, rcWM, rcCSF, ...
     curr_cmd = mfilename;
     fprintf ('%s : running DARTEL with existing templates.\n', curr_cmd);
 
+    clear matlabbatch;
+
     spm_jobman('initcfg');
 
     matlabbatch{1}.spm.tools.dartel.warp1.images = {
@@ -67,7 +69,7 @@ function flowMap = cns2_spmbatch_runDARTELe (rcGM, rcWM, rcCSF, ...
     output = spm_jobman ('run',matlabbatch);
     
     [rcGMfolder,rcGMfilename,rcGMext] = fileparts(rcGM);
-    flowMap = [rcGMfolder '/u_' rcGMfilename rcGMext];
+    flowMap = fullfile (rcGMfolder, ['u_' rcGMfilename rcGMext]);
     
     
 

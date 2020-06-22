@@ -1,4 +1,5 @@
-fprintf ('Note that nifti must be gunzipped.\n')
+fprintf ('Note that nifti must be gunzipped.\n');
+fprintf ('You may need Global Optimization Toolbox to run on Windows.\n');
 
 clear all
 global cns2param
@@ -6,17 +7,21 @@ global cns2param
 % Directories
 % +++++++++++++++++++++++++++++++++++++++++++++++++
 % study directory
-% cns2param.dirs.study = 'C:\Users\jiang\Downloads\test';
-cns2param.dirs.study = '/Users/z3402744/Work';
+cns2param.dirs.study = 'C:\Users\jiang\Downloads\test';
+% cns2param.dirs.study = '/Users/z3402744/Work';
 % subjects dir
 mkdir (cns2param.dirs.study, 'subjects');
 cns2param.dirs.subjs = fullfile (cns2param.dirs.study, 'subjects');
 % CNS2 directory
-cns2param.dirs.cns2 = '/Users/z3402744/GitHub/CNS2';
+cns2param.dirs.cns2 = 'C:\Users\jiang\OneDrive\Documents\GitHub\CNS2';
+% cns2param.dirs.cns2 = '/Users/z3402744/GitHub/CNS2';
 % SPM12 path
-cns2param.dirs.spm = spm ('Dir');
+cns2param.dirs.spm = 'C:\Users\jiang\Downloads\test\spm12';
+% cns2param.dirs.spm = spm ('Dir');
 addpath (cns2param.dirs.spm);
 
+global Defaults
+Defaults = spm_get_defaults;
 
 % Lists
 % ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -50,11 +55,11 @@ if strcmp (cns2param.templates.options{1},'existing')
 	age_range = cns2param.templates.options{2};
 
 	cns2param.templates.temp1_6{1,1} = fullfile (cns2param.dirs.cns2,'templates','DARTEL_0to6_templates',age_range,'Template_1.nii');
-	cns2param.templates.temp1_6{1,1} = fullfile (cns2param.dirs.cns2,'templates','DARTEL_0to6_templates',age_range,'Template_2.nii');
-	cns2param.templates.temp1_6{1,1} = fullfile (cns2param.dirs.cns2,'templates','DARTEL_0to6_templates',age_range,'Template_3.nii');
-	cns2param.templates.temp1_6{1,1} = fullfile (cns2param.dirs.cns2,'templates','DARTEL_0to6_templates',age_range,'Template_4.nii');
-	cns2param.templates.temp1_6{1,1} = fullfile (cns2param.dirs.cns2,'templates','DARTEL_0to6_templates',age_range,'Template_5.nii');
-	cns2param.templates.temp1_6{1,1} = fullfile (cns2param.dirs.cns2,'templates','DARTEL_0to6_templates',age_range,'Template_6.nii');
+	cns2param.templates.temp1_6{2,1} = fullfile (cns2param.dirs.cns2,'templates','DARTEL_0to6_templates',age_range,'Template_2.nii');
+	cns2param.templates.temp1_6{3,1} = fullfile (cns2param.dirs.cns2,'templates','DARTEL_0to6_templates',age_range,'Template_3.nii');
+	cns2param.templates.temp1_6{4,1} = fullfile (cns2param.dirs.cns2,'templates','DARTEL_0to6_templates',age_range,'Template_4.nii');
+	cns2param.templates.temp1_6{5,1} = fullfile (cns2param.dirs.cns2,'templates','DARTEL_0to6_templates',age_range,'Template_5.nii');
+	cns2param.templates.temp1_6{6,1} = fullfile (cns2param.dirs.cns2,'templates','DARTEL_0to6_templates',age_range,'Template_6.nii');
 
 	cns2param.templates.brnmsk = fullfile (cns2param.dirs.cns2,'templates','DARTEL_brain_mask',age_range,'DARTEL_brain_mask.nii');
 	

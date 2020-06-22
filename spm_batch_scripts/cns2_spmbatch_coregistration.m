@@ -41,6 +41,7 @@ function rSrcImg = cns2_spmbatch_coregistration (srcImg, refImg, outputFolder, v
         interp = 4;
     end
 
+    clear matlabbatch;   % preallocate to enable parfor
 
     spm('defaults', 'fmri');
     spm_jobman('initcfg');

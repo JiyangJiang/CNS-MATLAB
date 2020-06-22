@@ -30,17 +30,19 @@ function [cGM,cWM,cCSF,rcGM,rcWM,rcCSF,varargout] = cns2_spmbatch_segmentation (
 
     spm12path = spm ('Dir');
 
+    clear matlabbatch;
+
     spm('defaults', 'fmri');
     spm_jobman('initcfg');
 
-
     volume = [inputImg ',1'];
-    tpm1 = strcat (spm12path, '/tpm/TPM.nii,1');
-    tpm2 = strcat (spm12path, '/tpm/TPM.nii,2');
-    tpm3 = strcat (spm12path, '/tpm/TPM.nii,3');
-    tpm4 = strcat (spm12path, '/tpm/TPM.nii,4');
-    tpm5 = strcat (spm12path, '/tpm/TPM.nii,5');
-    tpm6 = strcat (spm12path, '/tpm/TPM.nii,6');
+   
+    tpm1 = fullfile (spm12path, 'tpm', 'TPM.nii,1');
+    tpm2 = fullfile (spm12path, 'tpm', 'TPM.nii,2');
+    tpm3 = fullfile (spm12path, 'tpm', 'TPM.nii,3');
+    tpm4 = fullfile (spm12path, 'tpm', 'TPM.nii,4');
+    tpm5 = fullfile (spm12path, 'tpm', 'TPM.nii,5');
+    tpm6 = fullfile (spm12path, 'tpm', 'TPM.nii,6');
 
     matlabbatch{1}.spm.spatial.preproc.channel.vols = {volume};
     matlabbatch{1}.spm.spatial.preproc.channel.biasreg = 0.001;
@@ -80,14 +82,14 @@ function [cGM,cWM,cCSF,rcGM,rcWM,rcCSF,varargout] = cns2_spmbatch_segmentation (
 
     output = spm_jobman ('run',matlabbatch);
     
-    cGM = [inputImgFolder '/c1' inputImgFilename inputImgExt];
-    cWM = [inputImgFolder '/c2' inputImgFilename inputImgExt];
-    cCSF = [inputImgFolder '/c3' inputImgFilename inputImgExt];
+    cGM  = fullfile (inputImgFolder, ['c1' inputImgFilename inputImgExt]);
+    cWM  = fullfile (inputImgFolder, ['c2' inputImgFilename inputImgExt]);
+    cCSF = fullfile (inputImgFolder, ['c3' inputImgFilename inputImgExt]);
     
-    rcGM = [inputImgFolder '/rc1' inputImgFilename inputImgExt];
-    rcWM = [inputImgFolder '/rc2' inputImgFilename inputImgExt];
-    rcCSF = [inputImgFolder '/rc3' inputImgFilename inputImgExt];
+    rcGM =  fullfile (inputImgFolder, ['rc1' inputImgFilename inputImgExt]);
+    rcWM =  fullfile (inputImgFolder, ['rc2' inputImgFilename inputImgExt]);
+    rcCSF = fullfile (inputImgFolder, ['rc3' inputImgFilename inputImgExt]);
     
-    varargout{1} = [inputImgFolder '/' inputImgFilename '_seg8.mat'];
+    varargout{1} = fullfile (inputImgFolder, [inputImgFilename '_seg8.mat']);
     
     
