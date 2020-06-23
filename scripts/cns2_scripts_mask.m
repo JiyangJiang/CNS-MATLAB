@@ -8,8 +8,10 @@
 
 function cns2_spmscripts_mask (in, mask, out)
 
-curr_cmd = mfilename;
-fprintf ('%s : masking %s with %s, and outputing as %s\n', curr_cmd, in, mask, out);
+if cns2param.exe.verbose
+	curr_cmd = mfilename;
+	fprintf ('%s : masking %s with %s, and outputing as %s\n', curr_cmd, in, mask, out);
+end
 
 in_dat   = spm_read_vols (spm_vol (in));
 mask_dat = spm_read_vols (spm_vol (mask));

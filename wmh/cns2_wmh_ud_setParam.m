@@ -44,6 +44,9 @@ cns2param.n_subjs = size(t1_dir,1);
 % ++++++++++++++++++++++++++++++++++++
 % num of cpus for parallel processing
 cns2param.exe.n_cpus = 2;
+cns2param.exe.save_dskspc = false;
+cns2param.exe.save_more_dskspc = false;
+cns2param.exe.verbose = true;
 
 
 % templates

@@ -1,4 +1,5 @@
 curr_cmd = mfilename;
+fprintf ('%s : start preprocessing.\n', curr_cmd);
 
 % preprocessing
 parfor (i = 1 : cns2param.n_subjs, cns2param.exe.n_cpus)

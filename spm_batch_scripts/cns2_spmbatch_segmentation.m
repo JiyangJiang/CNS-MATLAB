@@ -25,8 +25,11 @@
 function [cGM,cWM,cCSF,rcGM,rcWM,rcCSF,varargout] = cns2_spmbatch_segmentation (inputImg)
 
     [inputImgFolder,inputImgFilename,inputImgExt] = fileparts(inputImg);
-    curr_cmd = mfilename;
-    fprintf ('%s : segmenting %s%s.\n', curr_cmd, inputImgFilename, inputImgExt);
+
+    if cns2param.exe.verbose
+        curr_cmd = mfilename;
+        fprintf ('%s : segmenting %s%s.\n', curr_cmd, inputImgFilename, inputImgExt);
+    end
 
     spm12path = spm ('Dir');
 

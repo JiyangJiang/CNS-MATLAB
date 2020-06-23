@@ -1,7 +1,9 @@
 function cns2_spmbatch_corrBiasField (in)
 
-curr_cmd = mfilename;
-fprintf ('%s : correcting bias field for %s.\n', curr_cmd, in);
+if cns2param.exe.verbose
+	curr_cmd = mfilename;
+	fprintf ('%s : correcting bias field for %s.\n', curr_cmd, in);
+end
 
 clear matlabbatch;
 

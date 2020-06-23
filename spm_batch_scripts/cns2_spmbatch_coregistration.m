@@ -20,10 +20,13 @@ function rSrcImg = cns2_spmbatch_coregistration (srcImg, refImg, outputFolder, v
 
     [srcImgParentFolder, srcImgFilename, srcImgExt] = fileparts (srcImg);
     [refImgParentFolder, refImgFilename, refImgExt] = fileparts (refImg);
-    curr_cmd = mfilename;
-    fprintf ('%s : registering %s%s to %s%s.\n', curr_cmd, ...
-                                                srcImgFilename, srcImgExt, ...
-                                                refImgFilename, refImgExt);
+
+    if cns2param.exe.verbose
+        curr_cmd = mfilename;
+        fprintf ('%s : registering %s%s to %s%s.\n', curr_cmd, ...
+                                                    srcImgFilename, srcImgExt, ...
+                                                    refImgFilename, refImgExt);
+    end
 
     if nargin == 4
         otherImg = varargin{1};
