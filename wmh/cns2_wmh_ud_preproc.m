@@ -5,9 +5,12 @@ curr_cmd = mfilename;
 fprintf ('%s : start preprocessing.\n', curr_cmd);
 
 % preprocessing
-parfor (i = 1 : cns2param.n_subjs, cns2param.exe.n_cpus)
-% for i = 1 : cns2param.n_subjs
+% parfor (i = 1 : cns2param.n_subjs, cns2param.exe.n_cpus)
+for i = 1 : cns2param.n_subjs
+
 	diary (fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'log'));
+
+	fprintf ('%s : ... preprocessing %s.\n', curr_cmd, cns2param.lists.subjs{i,1});
 
 	t1    = fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 't1.nii');
 	flair = fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'flair.nii');
@@ -30,11 +33,11 @@ parfor (i = 1 : cns2param.n_subjs, cns2param.exe.n_cpus)
 											cns2param.templates.temp1_6{6,1});
 
 		% bring t1, flair, gm, wm, csf to DARTEL space (create warped)
-		wt1 = cns2_spmbatch_nativeToDARTEL (cns2param, t1, flowmap);
+		wt1     = cns2_spmbatch_nativeToDARTEL (cns2param, t1,     flowmap);
 		wrflair = cns2_spmbatch_nativeToDARTEL (cns2param, rflair, flowmap);
-		wcGM = cns2_spmbatch_nativeToDARTEL (cns2param, cGM, flowmap);
-		wcWM = cns2_spmbatch_nativeToDARTEL (cns2param, cWM, flowmap);
-		wcCSF = cns2_spmbatch_nativeToDARTEL (cns2param, cCSF, flowmap);
+		wcGM    = cns2_spmbatch_nativeToDARTEL (cns2param, cGM,    flowmap);
+		wcWM    = cns2_spmbatch_nativeToDARTEL (cns2param, cWM,    flowmap);
+		wcCSF   = cns2_spmbatch_nativeToDARTEL (cns2param, cCSF,   flowmap);
 
 		% mask wrflair and wt1
 		cns2_scripts_mask  (cns2param, ...
@@ -50,7 +53,11 @@ parfor (i = 1 : cns2param.n_subjs, cns2param.exe.n_cpus)
 
 	catch ME
 
-		fprintf ('ERROR : %s\n', ME.identifier);
+		fprintf (2,'\nUnknown exception thrown\n');
+		fprintf (2,'++++++++++++++++++++++\n');
+		fprintf (2,'identifier: %s\n', ME.identifier);
+		fprintf (2,'message: %s\n', ME.message);
+
 		fprintf ('%s : %s finished preprocessing with ERROR.\n', curr_cmd, cns2param.lists.subjs{i,1});
 
 	end

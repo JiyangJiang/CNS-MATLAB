@@ -1,8 +1,6 @@
 % varargin{1} = '4d'
 function cns2_scripts_writeNii (cns2param, hdr, dat, out, varargin)
 
-	cns2param = cns2_wmh_ud_setParam;
-
 	[outdir,fname,ext] = fileparts (out);
 
 	if cns2param.exe.verbose
