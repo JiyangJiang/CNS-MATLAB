@@ -98,15 +98,15 @@ function cns2param = cns2_wmh_ud_cns2param (study_dir, ...
 
 		end
 
-		cns2param.templates.dstmap = fullfile (cns2param.dirs.cns2,'templates','DARTEL_ventricle_distance_map','DARTEL_ventricle_distance_map.nii');
+		cns2param.templates.ventdst = fullfile (cns2param.dirs.cns2,'templates','DARTEL_ventricle_distance_map','DARTEL_ventricle_distance_map.nii');
 
 
 
 
 		% classification
 		% +++++++++++++++++++++++++++++++++++++++++++++
-		cns2param.classification.k4kmeans = k4kmeans;
-		cns2param.classification.k4knn    = k4knn;
+		cns2param.classification.ud.k4kmeans = k4kmeans;
+		cns2param.classification.ud.k4knn    = k4knn;
 
 		fprintf ('%s : setting cns2param finished without error.\n', curr_cmd);
 

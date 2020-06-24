@@ -21,9 +21,10 @@ addpath (spm_dir);
 global Defaults
 Defaults = spm_get_defaults;
 
-		
 
-
+% +++++++++++++
+% Run from here
+% +++++++++++++
 cns2param = cns2_wmh_ud_cns2param (study_dir, ...
 								   cns2_dir, ...
 								   spm_dir, ...

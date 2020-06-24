@@ -2,7 +2,6 @@
 function cns2_wmh_ud_classification (cns2param)
 
 curr_cmd = mfilename;
-fprintf ('%s : start classification.\n', curr_cmd);
 
 % parfor (i = 1 : cns2param.n_subjs, cns2param.exe.n_cpus)
 for i = 1 : cns2param.n_subjs
@@ -10,6 +9,8 @@ for i = 1 : cns2param.n_subjs
 	diary (fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'log'));
 
 	try
+		fprintf ('%s : start classification for %s.\n', curr_cmd, cns2param.lists.subjs{i,1});
+
 		wrflair_brn = fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'wrflair_brn.nii');
 
 		if ~ isfile (wrflair_brn)
@@ -35,14 +36,15 @@ for i = 1 : cns2param.n_subjs
 
 		% 2nd-level clusters
 		% ++++++++++++++++++
-		wrflair_lv2clstrs_dat = cns2_wmh_ud_classification_2ndlvclstrs (cns2param, ...
-																		wrflair_lv1clstrs_dat, ...
-																		wrflair_brn_hdr, ...
-																		i);
+		wrflair_lv2clstrs_struct = cns2_wmh_ud_classification_2ndlvclstrs (cns2param, ...
+																		   wrflair_lv1clstrs_dat, ...
+																		   wrflair_brn_hdr, ...
+																		   i);
 
 		% extract features
 		cns2_wmh_ud_classification_extFeatures (cns2param, ...
-												wrflair_lv2clstrs_dat, ...
+												wrflair_brn_dat, ...
+												wrflair_lv2clstrs_struct, ...
 												i);
 
 		fprintf ('%s : %s finished classification without error.\n', curr_cmd, cns2param.lists.subjs{i,1});
