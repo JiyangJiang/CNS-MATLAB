@@ -72,6 +72,9 @@ for i = 1 : cns2param.n_subjs
 								   '4d');
 		end
 
+		% kNN for WMH classification
+		cns2_wmh_ud_classification_knn (cns2param, wrflair_lv2clstrs_dat);
+
 		fprintf ('%s : %s finished classification without error.\n', curr_cmd, cns2param.lists.subjs{i,1})
 
 
