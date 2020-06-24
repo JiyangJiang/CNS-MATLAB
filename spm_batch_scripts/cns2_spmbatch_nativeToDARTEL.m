@@ -20,7 +20,7 @@
 %   need to run CNSP_runDARTELe or CNSP_runDARTELc to generate flow map
 %
 
-function srcImgOnDARTEL = cns2_spmbatch_nativeToDARTEL (srcImg, flowMap, varargin)
+function srcImgOnDARTEL = cns2_spmbatch_nativeToDARTEL (cns2param, srcImg, flowMap, varargin)
 
     [flowMapFolder,flowMapFilename,flowMapExt] = fileparts (flowMap);
     [srcImgFolder,srcImgFilename,srcImgExt] = fileparts (srcImg);
@@ -30,14 +30,14 @@ function srcImgOnDARTEL = cns2_spmbatch_nativeToDARTEL (srcImg, flowMap, varargi
         fprintf ('%s : warping %s to DARTEL with %s.\n', curr_cmd, srcImgFilename, flowMapFilename);
     end
 
-    if nargin == 3
+    if nargin == 4
         switch varargin{1}
             case 'Trilinear'
                 interpCode = 1;
             case 'NN'
                 interpCode = 0;
         end
-    elseif nargin == 2
+    elseif nargin == 3
         interpCode = 1;
     end
     

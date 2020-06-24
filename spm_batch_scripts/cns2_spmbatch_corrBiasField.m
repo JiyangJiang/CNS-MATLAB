@@ -1,4 +1,4 @@
-function cns2_spmbatch_corrBiasField (in)
+function cns2_spmbatch_corrBiasField (cns2param, in)
 
 if cns2param.exe.verbose
 	curr_cmd = mfilename;

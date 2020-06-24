@@ -16,7 +16,7 @@
 %   rFLAIR = cns2_spmbatch_coregistration (FLAIR,T1,'/home/ABC');
 %
 
-function rSrcImg = cns2_spmbatch_coregistration (srcImg, refImg, outputFolder, varargin)
+function rSrcImg = cns2_spmbatch_coregistration (cns2param, srcImg, refImg, outputFolder, varargin)
 
     [srcImgParentFolder, srcImgFilename, srcImgExt] = fileparts (srcImg);
     [refImgParentFolder, refImgFilename, refImgExt] = fileparts (refImg);
@@ -28,16 +28,16 @@ function rSrcImg = cns2_spmbatch_coregistration (srcImg, refImg, outputFolder, v
                                                     refImgFilename, refImgExt);
     end
 
-    if nargin == 4
+    if nargin == 5
         otherImg = varargin{1};
-    elseif nargin == 3
+    elseif nargin == 4
         otherImg = '';
     end
 
-    if (nargin == 5) && strcmp(varargin{2}, 'NN')
+    if (nargin == 6) && strcmp(varargin{2}, 'NN')
         interp = 0;
         otherImg = varargin{1};
-    elseif (nargin == 5) && strcmp(varargin{2}, 'Tri')
+    elseif (nargin == 6) && strcmp(varargin{2}, 'Tri')
         interp = 1;
         otherImg = varargin{1};
     else

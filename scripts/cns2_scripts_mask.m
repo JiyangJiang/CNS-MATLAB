@@ -6,7 +6,7 @@
 % 	mask = path to mask nii
 % 	out = path to out nii
 
-function cns2_spmscripts_mask (in, mask, out)
+function cns2_spmscripts_mask (cns2param, in, mask, out)
 
 if cns2param.exe.verbose
 	curr_cmd = mfilename;
@@ -26,4 +26,4 @@ end
 out_dat = in_dat;
 out_dat (mask_dat <= 0) = 0;
 
-cns2_scripts_writeNii (spm_vol(in), out_dat, out);
+cns2_scripts_writeNii (cns2param, spm_vol(in), out_dat, out);

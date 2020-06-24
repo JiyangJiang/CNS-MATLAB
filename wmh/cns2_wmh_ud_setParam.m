@@ -1,7 +1,7 @@
-fprintf ('Note that nifti must be gunzipped.\n');
 
-clear all
-global cns2param
+function cns2param = cns2_wmh_ud_setParam
+
+% fprintf ('Note that nifti must be gunzipped.\n');
 
 % Directories
 % +++++++++++++++++++++++++++++++++++++++++++++++++
@@ -9,7 +9,6 @@ global cns2param
 cns2param.dirs.study = 'C:\Users\jiang\Downloads\test';
 % cns2param.dirs.study = '/Users/z3402744/Work';
 % subjects dir
-mkdir (cns2param.dirs.study, 'subjects');
 cns2param.dirs.subjs = fullfile (cns2param.dirs.study, 'subjects');
 % CNS2 directory
 cns2param.dirs.cns2 = 'C:\Users\jiang\OneDrive\Documents\GitHub\CNS2';

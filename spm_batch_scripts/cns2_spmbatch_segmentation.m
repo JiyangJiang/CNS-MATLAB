@@ -22,7 +22,7 @@
 %   [cGM,cWM,cCSF,rcGM,rcWM,rcCSF,seg8mat] = cns2_spmbatch_segmentation (inputImg)
 %
 
-function [cGM,cWM,cCSF,rcGM,rcWM,rcCSF,varargout] = cns2_spmbatch_segmentation (inputImg)
+function [cGM,cWM,cCSF,rcGM,rcWM,rcCSF,varargout] = cns2_spmbatch_segmentation (cns2param, inputImg)
 
     [inputImgFolder,inputImgFilename,inputImgExt] = fileparts(inputImg);
 
