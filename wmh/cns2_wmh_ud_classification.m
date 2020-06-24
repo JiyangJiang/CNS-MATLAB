@@ -25,57 +25,27 @@ for i = 1 : cns2param.n_subjs
 		% zero nan
 		wrflair_brn_dat (isnan(wrflair_brn_dat)) = 0;
 
-		% volume segmentation using k-means (1st-level clusters)
-		if cns2param.exe.verbose
-			fprintf ('%s : generating %s''s 1st-level clusters.\n', curr_cmd, cns2param.lists.subjs{i,1});
-		end
 
-		wrflair_lv1clstrs_dat = imsegkmeans3 (single(wrflair_brn_dat), ...
-											  cns2param.classification.k4kmeans, ...
-											  'NormalizeInput', true);
+		% 1st-level clusters
+		% ++++++++++++++++++
+		wrflair_lv1clstrs_dat = cns2_wmh_ud_classification_1stlvclstrs (cns2param, ...
+																		wrflair_brn_dat, ...
+																		wrflair_brn_hdr, ...
+																		i);
 
-		% write out k-means clusters (1st-level clusters)
-		if  ~cns2param.exe.save_dskspc
-			if cns2param.exe.verbose
-				fprintf ('%s : writing %s''s 1st-level clusters.\n', curr_cmd, cns2param.lists.subjs{i,1});
-			end
-			cns2_scripts_writeNii (cns2param, ...
-								   wrflair_brn_hdr, ...
-								   wrflair_lv1clstrs_dat, ...
-								   fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'wrflair_lv1clstrs.nii'));
-		end
+		% 2nd-level clusters
+		% ++++++++++++++++++
+		wrflair_lv2clstrs_dat = cns2_wmh_ud_classification_2ndlvclstrs (cns2param, ...
+																		wrflair_lv1clstrs_dat, ...
+																		wrflair_brn_hdr, ...
+																		i);
 
-		% form 2nd-level clusters using 6-connectivity
-		if cns2param.exe.verbose
-			fprintf ('%s : generating %s''s 2nd-level clusters.\n', curr_cmd, cns2param.lists.subjs{i,1});
-		end
+		% extract features
+		cns2_wmh_ud_classification_extFeatures (cns2param, ...
+												wrflair_lv2clstrs_dat, ...
+												i);
 
-			% initialise to resolve the parfor classification issue
-		wrflair_lv2clstrs_dat = zeros ([size(wrflair_lv1clstrs_dat) cns2param.classification.k4kmeans]);
-		
-		for k = 1 : cns2param.classification.k4kmeans
-			tmp = wrflair_lv1clstrs_dat;
-			tmp (tmp ~= k) = 0;
-			tmp (tmp == k) = 1;
-			wrflair_lv2clstrs_dat (:,:,:,k) = labelmatrix (bwconncomp (tmp, 6)); % 6-connectivity
-		end
-
-		% write out 2nd-level clusters
-		if  ~cns2param.exe.save_dskspc && ~cns2param.exe.save_more_dskspc
-			if cns2param.exe.verbose
-				fprintf ('%s : writing %s''s 2nd-level clusters.\n', curr_cmd, cns2param.lists.subjs{i,1});
-			end
-			cns2_scripts_writeNii (cns2param, ...
-								   wrflair_brn_hdr, ...
-								   wrflair_lv2clstrs_dat, ...
-								   fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'wrflair_lv2clstrs.nii'), ...
-								   '4d');
-		end
-
-		% kNN for WMH classification
-		cns2_wmh_ud_classification_knn (cns2param, wrflair_lv2clstrs_dat);
-
-		fprintf ('%s : %s finished classification without error.\n', curr_cmd, cns2param.lists.subjs{i,1})
+		fprintf ('%s : %s finished classification without error.\n', curr_cmd, cns2param.lists.subjs{i,1});
 
 
 	catch ME
