@@ -1,8 +1,8 @@
 
 cns2param = setParam;
-cns2_wmh_ud_initDirFile (cns2param);
-cns2_wmh_ud_preproc (cns2param);
-
+% cns2_wmh_ud_initDirFile (cns2param);
+% cns2_wmh_ud_preproc (cns2param);
+cns2_wmh_ud_classification (cns2param);
 
 
 
@@ -88,6 +88,12 @@ function cns2param = setParam
 		elseif strcmp (cns2param.templates.options{1},'creating')
 			% templates if creating template
 		end
+
+
+		% classification
+		% +++++++++++++++++++++++++++++++++++++++++++++
+		cns2param.classification.k4kmeans = 6;
+		cns2param.classification.k4knn    = 5;
 
 		fprintf ('%s : setting cns2param finished without error.\n', curr_cmd);
 

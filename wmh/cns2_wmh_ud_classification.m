@@ -9,21 +9,30 @@ for i = 1 : cns2param.n_subjs
 
 	diary (fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'log'));
 
-	wrflair_brn = fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'wrflair_brn.nii');
+	try
+		wrflair_brn = fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'wrflair_brn.nii');
 
-	wrflair_brn_hdr = spm_vol (wrflair_brn);
-	wrflair_brn_dat = spm_read_vols (wrflair_brn_hdr);
+		if ~ isfile (wrflair_brn)
+			ME = MException ('CNS2:classification:wrflair_brnNotFound', ...
+							 '%s''s wrflair_brn.nii is not found. This may be because preprocessing finished with ERROR.', ...
+							 cns2param.lists.subjs{i,1});
+			throw (ME);
+		end
 
-	% zero nan
-	wrflair_brn_dat (isnan(wrflair_brn_dat)) = 0;
+		wrflair_brn_hdr = spm_vol (wrflair_brn);
+		wrflair_brn_dat = spm_read_vols (wrflair_brn_hdr);
 
-	% try
+		% zero nan
+		wrflair_brn_dat (isnan(wrflair_brn_dat)) = 0;
+
 		% volume segmentation using k-means (1st-level clusters)
 		if cns2param.exe.verbose
 			fprintf ('%s : generating %s''s 1st-level clusters.\n', curr_cmd, cns2param.lists.subjs{i,1});
 		end
 
-		wrflair_lv1clstrs_dat = imsegkmeans3 (single(wrflair_brn_dat), 6, 'NormalizeInput', true);
+		wrflair_lv1clstrs_dat = imsegkmeans3 (single(wrflair_brn_dat), ...
+											  cns2param.classification.k4kmeans, ...
+											  'NormalizeInput', true);
 
 		% write out k-means clusters (1st-level clusters)
 		if  ~cns2param.exe.save_dskspc
@@ -40,12 +49,15 @@ for i = 1 : cns2param.n_subjs
 		if cns2param.exe.verbose
 			fprintf ('%s : generating %s''s 2nd-level clusters.\n', curr_cmd, cns2param.lists.subjs{i,1});
 		end
-		wrflair_lv2clstrs_dat = zeros ([size(wrflair_lv1clstrs_dat) 6]); % initialise to resolve
-																		 % the parfor classification issue
-		for k = 1:6
-			wrflair_lv2clstrs_dat (:,:,:,k) = wrflair_lv1clstrs_dat;
-			wrflair_lv2clstrs_dat (wrflair_lv2clstrs_dat == k) = 1;
-			wrflair_lv2clstrs_dat (:,:,:,k) = bwconncomp (wrflair_lv2clstrs_dat (:,:,:,k), 6); % 6-connectivity
+
+			% initialise to resolve the parfor classification issue
+		wrflair_lv2clstrs_dat = zeros ([size(wrflair_lv1clstrs_dat) cns2param.classification.k4kmeans]);
+		
+		for k = 1 : cns2param.classification.k4kmeans
+			tmp = wrflair_lv1clstrs_dat;
+			tmp (tmp ~= k) = 0;
+			tmp (tmp == k) = 1;
+			wrflair_lv2clstrs_dat (:,:,:,k) = labelmatrix (bwconncomp (tmp, 6)); % 6-connectivity
 		end
 
 		% write out 2nd-level clusters
@@ -62,12 +74,25 @@ for i = 1 : cns2param.n_subjs
 
 		fprintf ('%s : %s finished classification without error.\n', curr_cmd, cns2param.lists.subjs{i,1})
 
-	% catch classification_err
 
-	% 	fprintf ('ERROR : %s\n', classification_err);
-	% 	fprintf ('%s : %s finished classification with ERROR.\n', curr_cmd, cns2param.lists.subjs{i,1});
+	catch ME
 
-	% end
+		switch ME.identifier
+			case 'CNS2:classification:wrflair_brnNotFound'
+				fprintf (2,'\nCNS2 exception thrown\n');
+				fprintf (2,'++++++++++++++++++++++\n');
+				fprintf (2,'\nidentifier:\n%s\n', ME.identifier);
+				fprintf (2,'\nmessage:\n%s\n\n', ME.message);
+			otherwise
+				fprintf (2,'\nUnknown exception thrown\n');
+				fprintf (2,'++++++++++++++++++++++\n');
+				fprintf (2,'identifier: %s\n', ME.identifier);
+				fprintf (2,'message: %s\n', ME.message);
+		end
+
+		fprintf ('%s : %s finished classification with ERROR.\n', curr_cmd, cns2param.lists.subjs{i,1});
+
+	end
 
 	diary off
 

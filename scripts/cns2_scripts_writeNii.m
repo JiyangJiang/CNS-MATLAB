@@ -10,12 +10,12 @@ function cns2_scripts_writeNii (cns2param, hdr, dat, out, varargin)
 
 	% write 4D nii
 	if nargin == 5 && strcmp (varargin{1},'4d')
+		if cns2param.exe.verbose
+			curr_cmd = mfilename;
+			fprintf ('%s : ... %s is 4D.\n', curr_cmd, [fname ext]);
+		end
 		for i = 1:size (dat,4)
-			if cns2param.exe.verbose
-				curr_cmd = mfilename;
-				fprintf ('%s : ... %s is 4D.\n', curr_cmd, [fname ext]);
-			end
-			split_vols{i,1} = fullfile (outdir, [fname '_' i ext]);
+			split_vols{i,1} = fullfile (outdir, [fname '_' num2str(i) ext]);
 			writeNii (hdr, dat(:,:,:,i), split_vols{i,1});
 		end
 		spm_file_merge (split_vols,out);
