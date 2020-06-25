@@ -1,6 +1,10 @@
 study_dir = '/Users/z3402744/Work';
+study_dir = 'C:\Users\jiang\Downloads\test';
 cns2_dir = '/Users/z3402744/GitHub/CNS2';
+cns2_dir = 'C:\Users\jiang\OneDrive\Documents\GitHub\CNS2';
 spm_dir = '/Applications/spm12';
+spm_dir = 'C:\Users\jiang\Downloads\test\spm12';
+
 
 n_cpus = 2;
 save_dskspc = false;

@@ -56,13 +56,13 @@ for i = 1 : cns2param.n_subjs
 			case 'CNS2:classification:wrflair_brnNotFound'
 				fprintf (2,'\nCNS2 exception thrown\n');
 				fprintf (2,'++++++++++++++++++++++\n');
-				fprintf (2,'\nidentifier:\n%s\n', ME.identifier);
-				fprintf (2,'\nmessage:\n%s\n\n', ME.message);
+				fprintf (2,'identifier:%s\n', ME.identifier);
+				fprintf (2,'message:%s\n\n', ME.message);
 			otherwise
 				fprintf (2,'\nUnknown exception thrown\n');
 				fprintf (2,'++++++++++++++++++++++\n');
 				fprintf (2,'identifier: %s\n', ME.identifier);
-				fprintf (2,'message: %s\n', ME.message);
+				fprintf (2,'message: %s\n\n', ME.message);
 		end
 
 		fprintf ('%s : %s finished classification with ERROR.\n', curr_cmd, cns2param.lists.subjs{i,1});

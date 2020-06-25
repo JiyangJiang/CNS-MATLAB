@@ -55,7 +55,7 @@ for i = 1 : cns2param.n_subjs
 		fprintf (2,'\nUnknown exception thrown\n');
 		fprintf (2,'++++++++++++++++++++++\n');
 		fprintf (2,'identifier: %s\n', ME.identifier);
-		fprintf (2,'message: %s\n', ME.message);
+		fprintf (2,'message: %s\n\n', ME.message);
 
 		fprintf ('%s : %s finished preprocessing with ERROR.\n', curr_cmd, cns2param.lists.subjs{i,1});
 

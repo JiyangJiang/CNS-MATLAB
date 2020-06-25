@@ -17,15 +17,12 @@ function cns2param = cns2_wmh_ud_cns2param (study_dir, ...
 		% Directories
 		% +++++++++++++++++++++++++++++++++++++++++++++++++
 		% study directory
-		% cns2param.dirs.study = 'C:\Users\jiang\Downloads\test';
 		cns2param.dirs.study = study_dir;
 		% subjects dir
 		cns2param.dirs.subjs = fullfile (cns2param.dirs.study, 'subjects');
 		% CNS2 directory
-		% cns2param.dirs.cns2 = 'C:\Users\jiang\OneDrive\Documents\GitHub\CNS2';
 		cns2param.dirs.cns2 = cns2_dir;
 		% SPM12 path
-		% cns2param.dirs.spm = 'C:\Users\jiang\Downloads\test\spm12';
 		cns2param.dirs.spm = spm_dir;
 
 
@@ -116,13 +113,13 @@ function cns2param = cns2_wmh_ud_cns2param (study_dir, ...
 			case 'CNS2:setParam:unmatchT1FLAIR'
 				fprintf (2,'\nCNS2 exception thrown\n');
 				fprintf (2,'++++++++++++++++++++++\n');
-				fprintf (2,'\nidentifier:\n%s\n', ME.identifier);
-				fprintf (2,'\nmessage:\n%s\n\n', ME.message);
+				fprintf (2,'identifier:%s\n', ME.identifier);
+				fprintf (2,'message:%s\n\n', ME.message);
 			otherwise
 				fprintf (2,'\nUnknown exception thrown\n');
 				fprintf (2,'++++++++++++++++++++++\n');
 				fprintf (2,'identifier: %s\n', ME.identifier);
-				fprintf (2,'message: %s\n', ME.message);
+				fprintf (2,'message: %s\n\n', ME.message);
 		end
 
 		fprintf ('%s : setting cns2param finished with ERROR.\n', curr_cmd);

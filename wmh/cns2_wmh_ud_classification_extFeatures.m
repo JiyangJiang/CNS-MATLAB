@@ -27,7 +27,13 @@ meanInt_GMonFLAIR = mean(nonzeros(wrflair_brn_dat .* gmavg_dat));
 meanInt_WMonFLAIR = mean(nonzeros(wrflair_brn_dat .* wmavg_dat));
 
 for i = 1 : cns2param.classification.ud.k4kmeans
+	lv2clstrs = labelmatrix (wrflair_lv2clstrs_struct(i));
 	for j = 1 : wrflair_lv2clstrs_struct(i).NumObjects
 		% linear_idx = wrflair_lv2clstrs_struct(i).PixelIdxList(j);
+		clstr = lv2clstrs;
+		clstr (clstr ~= j) = 0;
+		clstr (clstr == j) = 1;
+
+		f1 = mean(nonzeros(clstr .* wt1_brn_dat)) / meanInt_GMonT1;
 	end
 end

@@ -1,7 +1,7 @@
 function wrflair_lv2clstrs_struct = cns2_wmh_ud_classification_2ndlvclstrs (cns2param, ...
-																		 wrflair_lv1clstrs_dat, ...
-																		 wrflair_brn_hdr, ...
-																		 idx)
+																		 	wrflair_lv1clstrs_dat, ...
+																		 	wrflair_brn_hdr, ...
+																		 	idx)
 curr_cmd = mfilename;
 if cns2param.exe.verbose
 	fprintf ('%s : generating %s''s 2nd-level clusters.\n', curr_cmd, cns2param.lists.subjs{idx,1});
@@ -14,7 +14,7 @@ for k = 1 : cns2param.classification.ud.k4kmeans
 	tmp = wrflair_lv1clstrs_dat;
 	tmp (tmp ~= k) = 0;
 	tmp (tmp == k) = 1;
-	wrflair_lv2clstrs_struct (k) = bwconncomp (tmp, 6); % 6-connectivity
+	wrflair_lv2clstrs_struct(k) = bwconncomp (tmp, 6); % 6-connectivity
 	wrflair_lv2clstrs_dat (:,:,:,k) = labelmatrix (wrflair_lv2clstrs_struct (k));
 end
 
