@@ -136,5 +136,6 @@ if ~cns2param.exe.save_dskspc && nargin==5
 elseif ~cns2param.exe.save_dskspc && nargin==4
 	[flair_dir,~,~] = fileparts (flair);
 	fprintf ('%s : since no index is not passed as argument, feature table is saved to the dir containing flair: \n', curr_cmd);
+	fprintf ('%s : %s.\n', curr_cmd, flair_dir);
 	save (fullfile (flair_dir,'f_tbl.mat'), 'f_tbl');
 end
