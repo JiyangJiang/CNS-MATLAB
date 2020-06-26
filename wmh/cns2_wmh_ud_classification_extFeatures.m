@@ -131,8 +131,8 @@ end
 
 % save f_tbl
 if ~cns2param.exe.save_dskspc && nargin==5
-	fprintf ('%s : saving feature table for %s.', curr_cmd, cns2param.lists.subjs{i,1});
-	save (fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'f_tbl.mat'),'f_tbl');
+	fprintf ('%s : saving feature table for %s.', curr_cmd, cns2param.lists.subjs{idx,1});
+	save (fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{idx,1}, 'f_tbl.mat'),'f_tbl');
 elseif ~cns2param.exe.save_dskspc && nargin==4
 	warning ('%s : since no index is not passed as argument, feature table is not saved as a mat file.', curr_cmd);
 end
