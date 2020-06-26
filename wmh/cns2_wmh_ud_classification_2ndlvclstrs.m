@@ -22,7 +22,7 @@ for k = 1 : cns2param.classification.ud.k4kmeans
 end
 
 % write out 2nd-level clusters
-if  ~cns2param.exe.save_dskspc && ~cns2param.exe.save_more_dskspc
+if  ~cns2param.exe.save_more_dskspc
 	if cns2param.exe.verbose && nargin==5
 		fprintf ('%s : writing %s''s 2nd-level clusters.\n', curr_cmd, cns2param.lists.subjs{idx,1});
 	elseif cns2param.exe.verbose && nargin==4

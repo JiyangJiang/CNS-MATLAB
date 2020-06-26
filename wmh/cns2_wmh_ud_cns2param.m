@@ -61,6 +61,10 @@ function cns2param = cns2_wmh_ud_cns2param (study_dir, ...
 		cns2param.exe.save_more_dskspc = save_more_dskspc;
 		cns2param.exe.verbose = verbose;
 
+		if cns2param.exe.save_more_dskspc == true
+			cns2param.exe.save_dskspc = true;
+		end
+
 
 		% templates
 		% ++++++++++++++++++++++++++++++++++++++++++++
