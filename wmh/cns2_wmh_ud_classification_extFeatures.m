@@ -31,6 +31,8 @@ meanInt_GMonFLAIR = mean(nonzeros(flair_dat .* gmavg_dat));
 meanInt_WMonFLAIR = mean(nonzeros(flair_dat .* wmavg_dat));
 
 % initialise feature table
+Nclstrs = sum([lv2clstrs_struct(:).NumObjects]);
+
 f_names = {'clstrOverGmOnT1'; 'clstrOverGmOnFLAIR'; 'clstrOverWmOnT1'; 'clstrOverWmOnFLAIR'
 		   'logSize'
 		   'avgGmProb'; 'avgWmProb'; 'avgCsfProb'
@@ -40,7 +42,7 @@ f_names = {'clstrOverGmOnT1'; 'clstrOverGmOnFLAIR'; 'clstrOverWmOnT1'; 'clstrOve
 f_varType = cell(12,1);
 f_varType(:) = {'single'};
 
-f_tbl = table ('Size', [sum([lv2clstrs_struct(:).NumObjects]) 12], ...
+f_tbl = table ('Size', [Nclstrs 12], ...
 			   'VariableTypes', f_varType, ...
 			   'VariableNames', f_names);
 
@@ -63,7 +65,7 @@ f_tbl.Properties.VariableDescriptions = {'ratio of intensities between cluster a
 										 'centroid''s y coordinate'
 										 'centroid''s z coordinate'};
 
-f_tbl_rname = cell(sum([lv2clstrs_struct(:).NumObjects]), 1);
+f_tbl_rname = cell(Nclstrs, 1);
 
 % extract features
 for i = 1 : cns2param.classification.ud.k4kmeans
@@ -76,12 +78,13 @@ for i = 1 : cns2param.classification.ud.k4kmeans
 		lin_idx = j + sum([lv2clstrs_struct(1:(i-1)).NumObjects]);
 
 		if cns2param.exe.verbose
-			fprintf ('%s : %s/%s 1st-level clusters, %s/%s 2nd-level clusters, linear_idx=%s', curr_cmd, ...
-																							   num2str(i), ...
-																							   num2str(cns2param.classification.ud.k4kmeans), ...
-																							   num2str(j), ...
-																							   num2str(lv2clstrs_struct(i).NumObjects), ...
-																							   num2str(lin_idx));
+			fprintf ('%s : %s/%s 1st-level clusters, %s/%s 2nd-level clusters, linear_idx=%s/%s', curr_cmd, ...
+																								  num2str(i), ...
+																								  num2str(cns2param.classification.ud.k4kmeans), ...
+																								  num2str(j), ...
+																								  num2str(lv2clstrs_struct(i).NumObjects), ...
+																								  num2str(lin_idx), ...
+																								  num2str(Nclstrs));
 			if nargin==5
 				fprintf (' (ID=%s).\n', cns2param.lists.subjs{idx,1});
 			else
