@@ -7,7 +7,8 @@ function cns2param = cns2_wmh_ud_cns2param (study_dir, ...
 										    verbose, ...
 										    temp_opt, ...
 										    k4kmeans, ...
-										    k4knn);
+										    k4knn, ...
+										    extSpace);
 
 	curr_cmd = mfilename;
 
@@ -102,8 +103,9 @@ function cns2param = cns2_wmh_ud_cns2param (study_dir, ...
 
 		% classification
 		% +++++++++++++++++++++++++++++++++++++++++++++
-		cns2param.classification.ud.k4kmeans = k4kmeans;
-		cns2param.classification.ud.k4knn    = k4knn;
+		cns2param.classification.ud.k4kmeans     = k4kmeans;
+		cns2param.classification.ud.k4knn        = k4knn;
+		cns2param.classification.ud.ext_space    = extSpace;
 
 		fprintf ('%s : setting cns2param finished without error.\n', curr_cmd);
 
