@@ -20,6 +20,13 @@ switch cns2param.classification.ud.lv1clstr_method
 	case 'kmeans'
 		lv1clstrs_dat = imsegkmeans3 (single(dat), cns2param.classification.ud.k4kmeans, ...
 										'NormalizeInput', true);
+		% get rid of 1st-level clusters outside brain
+		brn = lv1clstrs_dat;
+		brn(brn>0)=1;
+		brn(brn<=0)=0;
+		lv1clstrs_dat = lv1clstrs_dat .* brn;
+		clearvars brn;
+
 	case 'superpixel'
 		[lv1clstrs_dat,Nlabels] = superpixels3 (dat, cns2param.classification.ud.n4superpixel);
 
@@ -42,6 +49,7 @@ switch cns2param.classification.ud.lv1clstr_method
 		lv1clstrs_dat = lv1clstrs_dat - 1; % smallest in uniq was 0, and was assigned with 1.
 										   % therefore minus 1.
 		cns2param.classification.ud.n4superpixel_actual = size(uniq,1) - 1;
+		clearvars msk idxList sp thr uniq;
 end
 
 % write out k-means clusters (1st-level clusters)

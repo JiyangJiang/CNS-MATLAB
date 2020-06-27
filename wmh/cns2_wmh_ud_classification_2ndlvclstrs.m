@@ -27,6 +27,7 @@ for k = 1 : Nlv1clstrs
 	lv2clstrs_struct(k) = bwconncomp (tmp, 6); % 6-connectivity
 	lv2clstrs_dat (:,:,:,k) = labelmatrix (lv2clstrs_struct (k));
 end
+clearvars tmp;
 
 % write out 2nd-level clusters
 % not saving for superpixel because too many
