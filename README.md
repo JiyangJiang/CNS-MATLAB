@@ -7,7 +7,7 @@
  3. more user-friendly (continue with the next scan if errors occur during processing)
  
 
- **Image segmentation algorithms**
+ **Image segmentation algorithms in UBO Detector**
 
  In order to use only MATLAB and SPM, two image segmentation algorithms have been implemented in UBO Detector in CNS2 to replace FSL FAST.
 
