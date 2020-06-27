@@ -10,10 +10,17 @@ if cns2param.exe.verbose && nargin==4
 	fprintf ('%s : generating %s''s 2nd-level clusters.\n', curr_cmd, cns2param.lists.subjs{idx,1});
 end
 
-% initialise to resolve the parfor classification issue
-lv2clstrs_dat = zeros ([size(lv1clstrs_dat) cns2param.classification.ud.k4kmeans]);
+switch cns2param.classification.ud.lv1clstr_method
+case 'kmeans'
+	Nlv1clstrs = cns2param.classification.ud.k4kmeans;
+case 'superpixel'
+	Nlv1clstrs = cns2param.classification.ud.n4superpixel_actual;
+end
 
-for k = 1 : cns2param.classification.ud.k4kmeans
+% initialise to resolve the parfor classification issue
+lv2clstrs_dat = zeros ([size(lv1clstrs_dat) Nlv1clstrs]);
+
+for k = 1 : Nlv1clstrs
 	tmp = lv1clstrs_dat;
 	tmp (tmp ~= k) = 0;
 	tmp (tmp == k) = 1;
@@ -22,7 +29,8 @@ for k = 1 : cns2param.classification.ud.k4kmeans
 end
 
 % write out 2nd-level clusters
-if  ~cns2param.exe.save_more_dskspc
+% not saving for superpixel because too many
+if  ~cns2param.exe.save_more_dskspc && ~strcmp(cns2param.classification.ud.lv1clstr_method,'superpixel')
 	if cns2param.exe.verbose && nargin==5
 		fprintf ('%s : writing %s''s 2nd-level clusters.\n', curr_cmd, cns2param.lists.subjs{idx,1});
 	elseif cns2param.exe.verbose && nargin==4

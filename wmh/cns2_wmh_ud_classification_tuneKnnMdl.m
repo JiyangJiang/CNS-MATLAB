@@ -16,4 +16,4 @@ partitionedMdl = crossval (knn_mdl, 'KFold', 10);
 validationAccuracy = 1 - kfoldLoss (partitionedMdl, 'LossFun', 'ClassifError');
 
 saveLearnerForCoder (knn_mdl, ...
-					 fullfile (cns2param.dirs.cns2, 'wmh', 'cns2_wmh_ud_classification_defKnnMdl.mat');
+					 fullfile (cns2param.dirs.cns2, 'wmh', 'cns2_wmh_ud_classification_knnMdl.mat');
