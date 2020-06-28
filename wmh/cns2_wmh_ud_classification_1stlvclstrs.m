@@ -21,10 +21,10 @@ switch cns2param.classification.ud.lv1clstr_method
 		lv1clstrs_dat = imsegkmeans3 (single(dat), cns2param.classification.ud.k4kmeans, ...
 										'NormalizeInput', true);
 		% get rid of 1st-level clusters outside brain
-		brn = lv1clstrs_dat;
+		brn = dat;
 		brn(brn>0)=1;
 		brn(brn<=0)=0;
-		lv1clstrs_dat = lv1clstrs_dat .* brn;
+		lv1clstrs_dat = lv1clstrs_dat .* uint8(brn);
 		clearvars brn;
 
 	case 'superpixel'
