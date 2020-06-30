@@ -1,10 +1,11 @@
 % varargin{1} = '4d'
 function cns2_scripts_writeNii (cns2param, hdr, dat, out, varargin)
-
+	
+	curr_cmd = mfilename;
+		
 	[outdir,fname,ext] = fileparts (out);
 
 	if cns2param.exe.verbose
-		curr_cmd = mfilename;
 		fprintf ('%s : writing nifti %s.\n', curr_cmd, [fname ext]);
 	end
 

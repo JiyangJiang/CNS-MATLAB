@@ -8,8 +8,9 @@
 
 function cns2_spmscripts_mask (cns2param, in, mask, out)
 
+curr_cmd = mfilename;
+
 if cns2param.exe.verbose
-	curr_cmd = mfilename;
 	fprintf ('%s : masking %s with %s, and outputing as %s\n', curr_cmd, in, mask, out);
 end
 

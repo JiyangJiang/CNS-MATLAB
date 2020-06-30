@@ -10,6 +10,7 @@ function cns2param = cns2_wmh_ud_cns2param (study_dir, ...
 										    k4kmeans, ...
 										    n4superpixel, ...
 										    k4knn, ...
+										    probthr, ...
 										    extSpace);
 
 	curr_cmd = mfilename;
@@ -104,7 +105,7 @@ function cns2param = cns2_wmh_ud_cns2param (study_dir, ...
 
 		cns2param.templates.ventdst = fullfile (cns2param.dirs.cns2,'templates','DARTEL_ventricle_distance_map','DARTEL_ventricle_distance_map.nii');
 
-
+		
 
 
 		% classification
@@ -113,6 +114,7 @@ function cns2param = cns2_wmh_ud_cns2param (study_dir, ...
 		cns2param.classification.ud.k4kmeans        = k4kmeans;
 		cns2param.classification.ud.n4superpixel    = n4superpixel;
 		cns2param.classification.ud.k4knn           = k4knn;
+		cns2param.classification.ud.probthr         = probthr;
 		cns2param.classification.ud.ext_space       = extSpace;
 
 		fprintf ('%s : setting cns2param finished without error.\n', curr_cmd);

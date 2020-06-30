@@ -4,8 +4,8 @@ function cns2_wmh_ud_preproc (cns2param)
 curr_cmd = mfilename;
 
 % preprocessing
-% parfor (i = 1 : cns2param.n_subjs, cns2param.exe.n_cpus)
-for i = 1 : cns2param.n_subjs
+parfor (i = 1 : cns2param.n_subjs, cns2param.exe.n_cpus)
+% for i = 1 : cns2param.n_subjs
 
 	diary (fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'log'));
 

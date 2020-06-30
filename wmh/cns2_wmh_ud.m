@@ -18,6 +18,7 @@ lv1clstMethod = 'kmeans';
 k4kmeans = 6;
 k4knn    = 5;
 n4superpixel = 5000;
+probthr = 0.7
 extSpace = 'dartel';
 
 
@@ -43,10 +44,11 @@ cns2param = cns2_wmh_ud_cns2param  (study_dir, ...
 								    k4kmeans, ...
 								    n4superpixel, ...
 								    k4knn, ...
+								    probthr, ...
 								    extSpace);
 % cns2_wmh_ud_initDirFile (cns2param);
 % cns2_wmh_ud_preproc (cns2param);
-cns2_wmh_ud_classification (cns2param);
+wmhmask_dat = cns2_wmh_ud_classification (cns2param);
 
 
 

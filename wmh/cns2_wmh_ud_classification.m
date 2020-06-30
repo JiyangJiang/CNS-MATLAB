@@ -1,5 +1,5 @@
 
-function cns2_wmh_ud_classification (cns2param)
+function wmhmask_dat = cns2_wmh_ud_classification (cns2param)
 
 curr_cmd = mfilename;
 
@@ -64,6 +64,17 @@ for i = 1 : cns2param.n_subjs
 														t1, ...
 														lv2clstrs_struct, ...
 														i);
+
+		% predict
+		% +++++++++++++++
+		mdl = loadLearnerForCoder(fullfile (cns2param.dirs.cns2, 'wmh', 'cns2_wmh_ud_classification_knnMdl.mat'));
+		[~, wmhmask_dat] = cns2_wmh_ud_classification_predict  (cns2param,...
+																lv2clstrs_struct,...
+																f_tbl,...
+																mdl,...
+																spm_vol(flair),...
+																i);
+
 
 		fprintf ('%s : %s finished classification without error.\n', curr_cmd, cns2param.lists.subjs{i,1});
 

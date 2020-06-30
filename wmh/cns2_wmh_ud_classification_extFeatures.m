@@ -4,11 +4,11 @@ etime_extFeatures = tic;
 curr_cmd = mfilename;
 
 if nargin == 5
-	idx = varargin{1};
+	subjid = cns2param.lists.subjs{varargin{1},1};
 end
 
 if cns2param.exe.verbose && nargin==5
-	fprintf ('%s : extracting features for %s.\n', curr_cmd, cns2param.lists.subjs{idx,1});
+	fprintf ('%s : extracting features for %s.\n', curr_cmd, subjid);
 end
 
 % load essential images
@@ -50,7 +50,7 @@ f_tbl = table ('Size', [Nclstrs 14], ...
 			   'VariableNames', f_names);
 
 if nargin==5
-	f_tbl.Properties.Description = ['Feature table for ' cns2param.lists.subjs{idx,1}];
+	f_tbl.Properties.Description = ['Feature table for ' subjid];
 else
 	f_tbl.Properties.Description = 'Feature table';
 end
@@ -105,7 +105,7 @@ for i = 1 : Nlv1clstrs
 																								  num2str(lin_idx), ...
 																								  num2str(Nclstrs));
 			if nargin==5
-				fprintf (' (ID=%s).\n', cns2param.lists.subjs{idx,1});
+				fprintf (' (ID=%s).\n', subjid);
 			else
 				fprintf ('.\n');
 			end
@@ -144,7 +144,7 @@ elapsedTimeExtFeatures = toc (etime_extFeatures);
 if cns2param.exe.verbose
 	fprintf ('%s : %s minutes elapsed to extract features', curr_cmd, num2str(elapsedTimeExtFeatures/60));
 	if nargin==5
-		fprintf (' (ID=%s).\n', cns2param.lists.subjs{idx,1});
+		fprintf (' (ID=%s).\n', subjid);
 	else
 		fprintf ('.\n');
 	end
@@ -152,8 +152,8 @@ end
 
 % save f_tbl
 if ~cns2param.exe.save_dskspc && nargin==5
-	fprintf ('%s : saving feature table for %s.\n', curr_cmd, cns2param.lists.subjs{idx,1});
-	save (fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{idx,1}, 'f_tbl.mat'), 'f_tbl');
+	fprintf ('%s : saving feature table for %s.\n', curr_cmd, subjid);
+	save (fullfile (cns2param.dirs.subjs, subjid, 'f_tbl.mat'), 'f_tbl');
 elseif ~cns2param.exe.save_dskspc && nargin==4
 	[flair_dir,~,~] = fileparts (flair);
 	fprintf ('%s : since no index is not passed as argument, feature table is saved to the dir containing flair: \n', curr_cmd);
