@@ -32,7 +32,7 @@ wmhprob_dat=zeros(size(labelmatrix(lv2clstrs_struct(1))));
 
 for i = 1 : Nlv1clstrs
 
-	lv2clstrs = labelmatrix (lv2clstrs_struct(i));
+	lv2clstrs = single(labelmatrix(lv2clstrs_struct(i)));
 	
 	switch cns2param.classification.ud.lv1clstr_method
 	case 'kmeans'
@@ -53,11 +53,11 @@ end
 cns2_scripts_writeNii (cns2param, ...
 					   hdr, ...
 					   wmhprob_dat, ...
-					   fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'wmhprob.nii'));
+					   fullfile (cns2param.dirs.subjs, subjid, 'wmhprob.nii'));
 
 % write wmhmask nifti
 wmhmask_dat = wmhprob_dat > cns2param.classification.ud.probthr;
 cns2_scripts_writeNii (cns2param, ...
 					   hdr, ...
 					   wmhmask_dat, ...
-					   fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'wmhmask.nii'));
+					   fullfile (cns2param.dirs.subjs, subjid, 'wmhmask.nii'));

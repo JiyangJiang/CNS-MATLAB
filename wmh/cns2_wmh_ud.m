@@ -18,7 +18,7 @@ lv1clstMethod = 'kmeans';
 k4kmeans = 6;
 k4knn    = 5;
 n4superpixel = 5000;
-probthr = 0.7
+probthr = 0.7;
 extSpace = 'dartel';
 
 
