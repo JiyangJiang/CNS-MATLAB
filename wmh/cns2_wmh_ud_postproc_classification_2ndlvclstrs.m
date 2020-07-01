@@ -1,4 +1,4 @@
-function lv2clstrs_struct = cns2_wmh_ud_classification_2ndlvclstrs (cns2param, lv1clstrs_dat, hdr, out_nii, varargin)
+function lv2clstrs_struct = cns2_wmh_ud_postproc_classification_2ndlvclstrs (cns2param, lv1clstrs_dat, hdr, out_nii, varargin)
 
 curr_cmd = mfilename;
 
