@@ -33,6 +33,11 @@ cns2param.dirs.spm = spm_dir;
 % t1, flair, subjs
 t1_dir = dir (fullfile (cns2param.dirs.study, 'T1', '*.nii'));
 flair_dir = dir (fullfile (cns2param.dirs.study, 'FLAIR', '*.nii'));
+if size(t1_dir,1) ~= size(flair_dir,1)
+	ME = MException ('CNS2:setParam:unmatchT1FLAIR', ...
+						 'Numbers of T1s and FLAIRs differ.');
+	throw (ME);
+end
 for i = 1 : size(t1_dir,1)
 	cns2param.lists.t1{i,1}    = t1_dir(i).name;
 	cns2param.lists.flair{i,1} = flair_dir(i).name;
@@ -43,7 +48,7 @@ for i = 1 : size(t1_dir,1)
 	if  ~ startsWith (cns2param.lists.flair{i,1}, [cns2param.lists.subjs{i,1} '_'])
 
 		ME = MException ('CNS2:setParam:unmatchT1FLAIR', ...
-						 '%s''s T1 does not have corresponding FLAIR.', cns2param.lists.subjs{i,1});
+						 'T1 and FLAIR do not pair.');
 		throw (ME);
 	end
 end

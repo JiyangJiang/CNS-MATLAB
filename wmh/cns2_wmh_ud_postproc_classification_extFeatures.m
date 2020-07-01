@@ -153,7 +153,7 @@ end
 % save f_tbl
 if ~cns2param.exe.save_dskspc && nargin==5
 	fprintf ('%s : saving feature table for %s.\n', curr_cmd, subjid);
-	save (fullfile (cns2param.dirs.subjs, subjid, 'postproc', 'f_tbl.mat'), 'f_tbl');
+	save (fullfile (cns2param.dirs.subjs, subjid, 'ud', 'postproc', 'f_tbl.mat'), 'f_tbl');
 elseif ~cns2param.exe.save_dskspc && nargin==4
 	[flair_dir,~,~] = fileparts (flair);
 	fprintf ('%s : since no index is not passed as argument, feature table is saved to the dir containing flair: \n', curr_cmd);

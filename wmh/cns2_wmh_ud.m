@@ -55,7 +55,7 @@ try
 
 	% parfor (i = 1 : cns2param.n_subjs, cns2param.exe.n_cpus)
 	for i = 1 : cns2param.n_subjs
-		diary (fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'scripts', 'cns2_ud.log'))
+		diary (fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'ud', 'scripts', 'cns2_ud.log'))
 
 		try
 			
@@ -102,6 +102,11 @@ catch ME
 		fprintf (2,'++++++++++++++++++++++\n');
 		fprintf (2,'identifier:%s\n', ME.identifier);
 		fprintf (2,'message:%s\n\n', ME.message);
+	otherwise
+		fprintf (2,'\nUnknown exception thrown\n');
+		fprintf (2,'++++++++++++++++++++++\n');
+		fprintf (2,'identifier: %s\n', ME.identifier);
+		fprintf (2,'message: %s\n\n', ME.message);
 	end
 	fprintf ('%s : UBO Detector aborted from initialisation.\n', curr_cmd);
 	fprintf ('%s : Error at either setting cns2param or organising dirs/files.\n', curr_cmd);

@@ -16,7 +16,7 @@ wmhprob = score (:,2);
 fd_tbl = [f_tbl table(wmhprob)];
 if ~cns2param.exe.save_more_dskspc
 	fprintf ('%s : saving feature+decision table for %s.\n', curr_cmd, subjid);
-	save (fullfile (cns2param.dirs.subjs, subjid, 'wmh', 'fd_tbl.mat'), 'fd_tbl');
+	save (fullfile (cns2param.dirs.subjs, subjid, 'ud', 'wmh', 'fd_tbl.mat'), 'fd_tbl');
 end
 
 % assign label to 2nd-level clusters
@@ -53,11 +53,11 @@ end
 cns2_scripts_writeNii (cns2param, ...
 					   hdr, ...
 					   wmhprob_dat, ...
-					   fullfile (cns2param.dirs.subjs, subjid, 'wmh', 'wmhprob.nii'));
+					   fullfile (cns2param.dirs.subjs, subjid, 'ud', 'wmh', 'wmhprob.nii'));
 
 % write wmhmask nifti
 wmhmask_dat = wmhprob_dat > cns2param.classification.ud.probthr;
 cns2_scripts_writeNii (cns2param, ...
 					   hdr, ...
 					   wmhmask_dat, ...
-					   fullfile (cns2param.dirs.subjs, subjid, 'wmh', 'wmhmask.nii'));
+					   fullfile (cns2param.dirs.subjs, subjid, 'ud', 'wmh', 'wmhmask.nii'));

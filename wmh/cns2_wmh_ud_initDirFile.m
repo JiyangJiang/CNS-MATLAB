@@ -38,7 +38,7 @@ for i = 1 : cns2param.n_subjs
 	diary (fullfile (subjsdir, subjid, 'ud', 'scripts', 'cns2_ud.log'));
 
 	if cns2param.exe.verbose
-		fprintf ('%s : ... initializing %s.\n', curr_cmd, subjid);
+		fprintf ('%s : initializing dir/files for %s.\n', curr_cmd, subjid);
 	end
 
 	orig_t1    = fullfile (cns2param.dirs.study, 'T1',    cns2param.lists.t1{i,1});
@@ -47,7 +47,7 @@ for i = 1 : cns2param.n_subjs
 	% copy original T1 to subject folder
 	if isfile (orig_t1)
 		copyfile (orig_t1, ...
-				  fullfile (subjsdir, subjid, 'preproc', 't1.nii'));
+				  fullfile (subjsdir, subjid, 'ud', 'preproc', 't1.nii'));
 	else
 		ME = MException ('CNS2:initDirFile:origT1notFound', ...
 						 '%s specified in cns2param but not found.', orig_t1);
@@ -57,10 +57,12 @@ for i = 1 : cns2param.n_subjs
 	% copy original FLAIR to subject folder
 	if isfile (orig_flair)
 		copyfile (orig_flair, ...
-				  fullfile (subjsdir, subjid, 'preproc', 'flair.nii'));
+				  fullfile (subjsdir, subjid, 'ud', 'preproc', 'flair.nii'));
 	else
 		ME = MException ('CNS2:initDirFile:origFLAIRnotFound', ...
 						 '%s specified in cns2param but not found.', orig_flair);
 		throw (ME);
 	end
+
+	diary off
 end

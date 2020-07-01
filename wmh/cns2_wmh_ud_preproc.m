@@ -5,8 +5,8 @@ curr_cmd = mfilename;
 
 fprintf ('%s : start preprocessing %s.\n', curr_cmd, cns2param.lists.subjs{i,1});
 
-t1    = fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'preproc', 't1.nii');
-flair = fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'preproc', 'flair.nii');
+t1    = fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'ud', 'preproc', 't1.nii');
+flair = fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'ud', 'preproc', 'flair.nii');
 
 if cns2param.classification.ud.ext_space == 'dartel'
 	% coregistration
@@ -39,11 +39,11 @@ case 'dartel'
 	cns2_scripts_mask  (cns2param, ...
 						wt1, ...
 						cns2param.templates.brnmsk, ...
-						fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'preproc', 'wt1_brn.nii'));
+						fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'ud', 'preproc', 'wt1_brn.nii'));
 	cns2_scripts_mask  (cns2param, ...
 						wrflair, ...
 						cns2param.templates.brnmsk, ...
-						fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'preproc', 'wrflair_brn.nii'));
+						fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'ud', 'preproc', 'wrflair_brn.nii'));
 case 'native'
 	% preprocessing if extracting in native space
 	% - reverse flowmap
