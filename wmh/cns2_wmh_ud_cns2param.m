@@ -11,7 +11,8 @@ function cns2param = cns2_wmh_ud_cns2param (study_dir, ...
 										    n4superpixel, ...
 										    k4knn, ...
 										    probthr, ...
-										    extSpace);
+										    extSpace, ...
+										    pvmag);
 
 curr_cmd = mfilename;
 
@@ -107,6 +108,8 @@ switch cns2param.templates.options{1}
 end
 
 cns2param.templates.ventdst = fullfile (cns2param.dirs.cns2,'templates','DARTEL_ventricle_distance_map','DARTEL_ventricle_distance_map.nii');
+cns2param.templates.lobar = fullfile (cns2param.dirs.cns2,'templates','DARTEL_lobar_and_arterial_templates','DARTEL_lobar_template.nii');
+cns2param.templates.arterial = fullfile (cns2param.dirs.cns2,'templates','DARTEL_lobar_and_arterial_templates','DARTEL_arterial_template.nii');
 
 
 
@@ -119,3 +122,8 @@ cns2param.classification.ud.n4superpixel    = n4superpixel;
 cns2param.classification.ud.k4knn           = k4knn;
 cns2param.classification.ud.probthr         = probthr;
 cns2param.classification.ud.ext_space       = extSpace;
+
+
+% quantification
+% ++++++++++++++++++++++++++++++++++++++++++
+cns2param.quantification.ud.pvmag = pvmag;

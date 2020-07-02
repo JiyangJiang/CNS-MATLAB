@@ -26,6 +26,8 @@ n4superpixel = 5000;
 probthr = 0.7;
 extSpace = 'dartel';
 
+pvmag = 12;
+
 
 addpath (genpath (cns2_dir));
 addpath (spm_dir);
@@ -53,7 +55,8 @@ try
 									    n4superpixel, ...
 									    k4knn, ...
 									    probthr, ...
-									    extSpace);
+									    extSpace, ...
+									    pvmag);
 
 	cns2_wmh_ud_initDirFile (cns2param);
 
