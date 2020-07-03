@@ -1,14 +1,14 @@
-% study_dir = '/Users/z3402744/Work';
+study_dir = '/Users/z3402744/Work';
 % study_dir = 'C:\Users\jiang\Downloads\test';
-study_dir = 'D:\GitHub\CNS2\example_data';
+% study_dir = 'D:\GitHub\CNS2\example_data';
 
-% cns2_dir = '/Users/z3402744/GitHub/CNS2';
+cns2_dir = '/Users/z3402744/GitHub/CNS2';
 % cns2_dir = 'C:\Users\jiang\OneDrive\Documents\GitHub\CNS2';
-cns2_dir = 'D:\GitHub\CNS2';
+% cns2_dir = 'D:\GitHub\CNS2';
 
-% spm_dir = '/Applications/spm12';
+spm_dir = '/Applications/spm12';
 % spm_dir = 'C:\Users\jiang\Downloads\test\spm12';
-spm_dir = 'C:\Program Files\spm12';
+% spm_dir = 'C:\Program Files\spm12';
 
 
 n_cpus = 2;
@@ -18,8 +18,8 @@ verbose = true;
 
 temp_opt = {'existing'; '70to80'};
 
-lv1clstMethod = 'kmeans';
-% lv1clstMethod = 'superpixel';
+% lv1clstMethod = 'kmeans';
+lv1clstMethod = 'superpixel';
 k4kmeans = 6;
 k4knn    = 5;
 n4superpixel = 5000;
@@ -73,24 +73,12 @@ try
 			fprintf ('%s : %s finished UBO Detector without error.\n', curr_cmd, cns2param.lists.subjs{i,1});
 
 		catch ME
-			switch ME.identifier
-				case 'CNS2:initDirFile:origFLAIRnotFound'
-					fprintf (2,'\nCNS2 exception thrown\n');
-					fprintf (2,'++++++++++++++++++++++\n');
-					fprintf (2,'identifier:%s\n', ME.identifier);
-					fprintf (2,'message:%s\n\n', ME.message);
-				case 'CNS2:classification:wrflair_brnNotFound'
-					fprintf (2,'\nCNS2 exception thrown\n');
-					fprintf (2,'++++++++++++++++++++++\n');
-					fprintf (2,'identifier:%s\n', ME.identifier);
-					fprintf (2,'message:%s\n\n', ME.message);
-				otherwise
-					fprintf (2,'\nUnknown exception thrown\n');
-					fprintf (2,'++++++++++++++++++++++\n');
-					fprintf (2,'identifier: %s\n', ME.identifier);
-					fprintf (2,'message: %s\n\n', ME.message);
-			end
-
+			
+			fprintf (2,'\nException thrown\n');
+			fprintf (2,'++++++++++++++++++++++\n');
+			fprintf (2,'identifier: %s\n', ME.identifier);
+			fprintf (2,'message: %s\n\n', ME.message);
+			
 			fprintf ('%s : %s finished UBO Detector with ERROR.\n', curr_cmd, cns2param.lists.subjs{i,1});
 
 		end
@@ -99,23 +87,11 @@ try
 	end
 
 catch ME
-	switch ME.identifier
-	case 'CNS2:initDirFile:origT1notFound'
-		fprintf (2,'\nCNS2 exception thrown\n');
-		fprintf (2,'++++++++++++++++++++++\n');
-		fprintf (2,'identifier:%s\n', ME.identifier);
-		fprintf (2,'message:%s\n\n', ME.message);
-	case 'CNS2:setParam:unmatchT1FLAIR'
-		fprintf (2,'\nCNS2 exception thrown\n');
-		fprintf (2,'++++++++++++++++++++++\n');
-		fprintf (2,'identifier:%s\n', ME.identifier);
-		fprintf (2,'message:%s\n\n', ME.message);
-	otherwise
-		fprintf (2,'\nUnknown exception thrown\n');
-		fprintf (2,'++++++++++++++++++++++\n');
-		fprintf (2,'identifier: %s\n', ME.identifier);
-		fprintf (2,'message: %s\n\n', ME.message);
-	end
+	fprintf (2,'\nException thrown\n');
+	fprintf (2,'++++++++++++++++++++++\n');
+	fprintf (2,'identifier: %s\n', ME.identifier);
+	fprintf (2,'message: %s\n\n', ME.message);
+
 	fprintf ('%s : UBO Detector aborted from initialisation.\n', curr_cmd);
 	fprintf ('%s : Error at either setting cns2param or organising dirs/files.\n', curr_cmd);
 end

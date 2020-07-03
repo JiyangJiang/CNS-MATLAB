@@ -83,7 +83,7 @@ end
 for i = 1 : Nlv1clstrs
 
 	lv2clstrs = labelmatrix (lv2clstrs_struct(i));
-	lv2clstrs_props = regionprops3(lv2clstrs_struct(i),'Centroid');
+	lv2clstrs_props = regionprops3(lv2clstrs_struct(i),flair_dat,'WeightedCentroid');
 
 	switch cns2param.classification.ud.lv1clstr_method
 	case 'kmeans'
@@ -129,9 +129,9 @@ for i = 1 : Nlv1clstrs
 		f_tbl.(f_names{9})(lin_idx)  = sum(nonzeros(clstr .* wmprob_dat))  / clstr_sz;
 		f_tbl.(f_names{10})(lin_idx) = sum(nonzeros(clstr .* csfprob_dat)) / clstr_sz;
 		f_tbl.(f_names{11})(lin_idx) = sum(nonzeros(clstr .* ventdst_dat)) / clstr_sz;
-		f_tbl.(f_names{12})(lin_idx) = lv2clstrs_props.Centroid(j,1);
-		f_tbl.(f_names{13})(lin_idx) = lv2clstrs_props.Centroid(j,2);
-		f_tbl.(f_names{14})(lin_idx) = lv2clstrs_props.Centroid(j,3);
+		f_tbl.(f_names{12})(lin_idx) = lv2clstrs_props.WeightedCentroid(j,1);
+		f_tbl.(f_names{13})(lin_idx) = lv2clstrs_props.WeightedCentroid(j,2);
+		f_tbl.(f_names{14})(lin_idx) = lv2clstrs_props.WeightedCentroid(j,3);
 
 		f_tbl_rname{lin_idx,1} = [num2str(i) '_' num2str(j)];
 	end

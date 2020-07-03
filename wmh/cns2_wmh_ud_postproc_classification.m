@@ -1,38 +1,11 @@
 
-function [wmhprob_dat,wmhmask_dat] = cns2_wmh_ud_postproc_classification (cns2param,i)
+function [wmhprob_dat,wmhmask_dat] = cns2_wmh_ud_postproc_classification (cns2param,flair,t1,i)
 
 curr_cmd = mfilename;
 
 fprintf ('%s : start classification for %s.\n', curr_cmd, cns2param.lists.subjs{i,1});
 
-switch cns2param.classification.ud.ext_space
 
-	case 'dartel'
-
-		flair  = fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'ud', 'preproc', 'wrflair_brn.nii');
-		t1     = fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'ud', 'preproc', 'wt1_brn.nii');
-		%
-		% apply WM mask if necessary in the future
-		%
-		if ~ isfile (flair)
-			ME = MException ('CNS2:classification:wrflair_brnNotFound', ...
-							 '%s''s wrflair_brn.nii is not found. This may be because preprocessing finished with ERROR.', ...
-							 cns2param.lists.subjs{i,1});
-			throw (ME);
-		end
-		if ~ isfile (t1)
-			ME = MException ('CNS2:classification:wt1_brnNotFound', ...
-							 '%s''s wt1_brn.nii is not found. This may be because preprocessing finished with ERROR.', ...
-							 cns2param.lists.subjs{i,1});
-			throw (ME);
-		end
-
-	case 'native'
-
-		% if extracting WMH in native space
-		% refer to example above 'dartel'
-
-end
 % 1st-level clusters
 % ++++++++++++++++++
 [lv1clstrs_dat,cns2param] = cns2_wmh_ud_postproc_classification_1stlvclstrs (cns2param, ...
