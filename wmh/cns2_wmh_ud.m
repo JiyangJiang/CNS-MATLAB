@@ -67,8 +67,8 @@ try
 
 		try
 			
-			cns2_wmh_ud_preproc (cns2param,i);
-			cns2_wmh_ud_postproc (cns2param,i);
+			cns2_wmh_ud_preproc (cns2param,i);  % preprocessing
+			cns2_wmh_ud_postproc (cns2param,i); % postprocessing, including classification and quantification
 
 			fprintf ('%s : %s finished UBO Detector without error.\n', curr_cmd, cns2param.lists.subjs{i,1});
 

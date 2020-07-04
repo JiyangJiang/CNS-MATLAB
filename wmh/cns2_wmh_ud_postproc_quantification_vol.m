@@ -1,4 +1,10 @@
-function vol_tbl = cns2_wmh_ud_postproc_quantification_vol (cns2param,wmhmask_dat,flair)
+function vol_tbl = cns2_wmh_ud_postproc_quantification_vol (cns2param,wmhmask_dat,flair,i)
+
+curr_cmd=mfilename;
+
+if cns2param.exe.verbose
+	fprintf ('%s : quantifying volume for %s.\n', curr_cmd, cns2param.lists.subjs{i,1});
+end
 
 % voxel size
 hdr=spm_vol(flair);
