@@ -1,9 +1,10 @@
-function vol_tbl = cns2_wmh_ud_postproc_quantification_vol (cns2param,wmhmask_dat,flair,i)
+% varargin{1} = subject's id
+function vol_tbl = cns2_wmh_ud_postproc_quantification_vol (cns2param,wmhmask_dat,flair,varargin)
 
 curr_cmd=mfilename;
 
-if cns2param.exe.verbose
-	fprintf ('%s : quantifying volume for %s.\n', curr_cmd, cns2param.lists.subjs{i,1});
+if cns2param.exe.verbose && nargin==4
+	fprintf ('%s : quantifying volume for %s.\n', curr_cmd, varargin{1});
 end
 
 % voxel size

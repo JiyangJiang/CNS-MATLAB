@@ -1,9 +1,10 @@
-function noc_tbl = cns2_wmh_ud_postproc_quantification_noc (cns2param,wmhmask_dat,flair,i)
+% varargin{1} = subject's id in cns2
+function noc_tbl = cns2_wmh_ud_postproc_quantification_noc (cns2param,wmhmask_dat,flair,varargin)
 
 curr_cmd = mfilename;
 
-if cns2param.exe.verbose
-	fprintf ('%s : quantifying noc for %s.\n', curr_cmd, cns2param.lists.subjs{i,1});
+if cns2param.exe.verbose && nargin==4
+	fprintf ('%s : quantifying noc for %s.\n', curr_cmd, varargin{1});
 end
 
 thr = [3 9 15]; % cut-off in number of voxels between punctuate, focal, medium, and confluent
