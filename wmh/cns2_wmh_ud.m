@@ -67,8 +67,12 @@ try
 
 		try
 			
-			cns2_wmh_ud_preproc (cns2param,i);  % preprocessing
-			cns2_wmh_ud_postproc (cns2param,i); % postprocessing, including classification and quantification
+			cns2_wmh_ud_preproc (cns2param,i);                   % preprocessing
+			quant_tbl_subj = cns2_wmh_ud_postproc (cns2param,i); % postprocessing, including 
+																 % classification and quantification
+
+			% TO-DO : accumulate subject-level quantification table (quant_tbl_subj)
+			%         into cohort-level (quant_tbl_coh)
 
 			fprintf ('%s : %s finished UBO Detector without error.\n', curr_cmd, cns2param.lists.subjs{i,1});
 
@@ -84,6 +88,8 @@ try
 
 		diary off
 	end
+
+	% TO-DO : write out cohort-level quantification table (quant_tbl_coh)
 
 catch ME
 	fprintf (2,'\nException thrown\n');

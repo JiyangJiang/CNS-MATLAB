@@ -1,4 +1,4 @@
-% varargin{1} = subject's id
+% varargin{1} = subject's id in cns2
 function vol_tbl = cns2_wmh_ud_postproc_quantification_vol (cns2param,wmhmask_dat,flair,varargin)
 
 curr_cmd=mfilename;

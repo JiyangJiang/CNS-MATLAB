@@ -1,4 +1,4 @@
-function cns2_wmh_ud_postproc (cns2param,i)
+function quant_tbl_subj = cns2_wmh_ud_postproc (cns2param,i)
 
 curr_cmd = mfilename;
 
@@ -33,4 +33,8 @@ end
 % 1. classification
 % +++++++++++++++++++++
 [~,wmhmask_dat] = cns2_wmh_ud_postproc_classification (cns2param,flair,t1,i);
+
+% 2. quantification
+% +++++++++++++++++++++
+quant_tbl_subj = cns2_wmh_ud_postproc_quantification (cns2param,wmhmask_dat,flair,i);
 
