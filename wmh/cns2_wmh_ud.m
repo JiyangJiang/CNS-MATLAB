@@ -80,7 +80,6 @@ try
 			fprintf (2,'message: %s\n\n', ME.message);
 			
 			fprintf ('%s : %s finished UBO Detector with ERROR.\n', curr_cmd, cns2param.lists.subjs{i,1});
-
 		end
 
 		diary off
