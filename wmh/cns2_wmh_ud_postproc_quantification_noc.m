@@ -1,6 +1,5 @@
-% flair is used for 2 purposes: 1) calculate voxel size (spatial resolution)
-%                               2) find weighted centroid
 % varargin{1} = subject's id in cns2
+
 function noc_tbl = cns2_wmh_ud_postproc_quantification_noc (cns2param,wmhmask_dat,flair,varargin)
 
 curr_cmd = mfilename;

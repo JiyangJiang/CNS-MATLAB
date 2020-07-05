@@ -70,6 +70,7 @@ try
 		try
 			
 			cns2_wmh_ud_preproc (cns2param,i);                   % preprocessing
+			
 			quant_tbl_subj = cns2_wmh_ud_postproc (cns2param,i); % postprocessing, including 
 																 % classification and quantification
 
