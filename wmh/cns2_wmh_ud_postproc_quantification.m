@@ -26,6 +26,8 @@ if nargin==4
 					  noc_tbl ...
 					  dist_tbl];
 
+	quant_tbl_subj.Properties.VariableNames{'Var1'} = 'subjID';
+
 elseif nargin==3
 	
 	fprintf ('%s : start quantification.', curr_cmd);
