@@ -1,7 +1,7 @@
 function lobar_noc_tbl = cns2_wmh_ud_postproc_quantification_noc_lobar (cns2param,wmhclstrs_struct,flair)
 
 ventdst_dat = spm_read_vols(spm_vol(cns2param.templates.ventdst));
-pv_mask = ventdst_dat > cns2param.quantification.ud.pvmag;
+pv_mask = ventdst_dat < cns2param.quantification.ud.pvmag;
 lobar_atlas_dat = spm_read_vols(spm_vol(cns2param.templates.lobar));
 
 thr = cns2param.quantification.ud.sizthr;

@@ -16,7 +16,7 @@ wbwmh_vol = sum(nonzeros(wmhmask_dat)) * voxsiz;
 
 % separation between PVWMH and DWMH
 ventdst_dat = spm_read_vols(spm_vol(cns2param.templates.ventdst));
-pv_mask = ventdst_dat > cns2param.quantification.ud.pvmag;
+pv_mask = ventdst_dat < cns2param.quantification.ud.pvmag;
 pvwmh_dat = wmhmask_dat .* pv_mask;
 dwmh_dat = wmhmask_dat - pvwmh_dat; % NOTE that dwmh vol calculated this way may be
 									% larger than summing all ROIs together as some
