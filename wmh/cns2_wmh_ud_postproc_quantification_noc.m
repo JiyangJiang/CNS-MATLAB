@@ -1,3 +1,5 @@
+% flair is used for 2 purposes: 1) calculate voxel size (spatial resolution)
+%                               2) find weighted centroid
 % varargin{1} = subject's id in cns2
 function noc_tbl = cns2_wmh_ud_postproc_quantification_noc (cns2param,wmhmask_dat,flair,varargin)
 
@@ -7,7 +9,7 @@ if cns2param.exe.verbose && nargin==4
 	fprintf ('%s : quantifying noc for %s.\n', curr_cmd, varargin{1});
 end
 
-thr = [3 9 15]; % cut-off in number of voxels between punctuate, focal, medium, and confluent
+thr = cns2param.quantification.ud.sizthr;
 
 wmhclstrs_struct = bwconncomp (wmhmask_dat, 26); % divide into 26-conn clusters
 
@@ -22,20 +24,22 @@ wbwmh_noc_m = 0;
 wbwmh_noc_c = 0;
 
 
+% quantify whole brain noc of different sizes
+% ===========================================
 for i = 1:wbwmh_noc
-	
-	% noc with/without considering size
-	% =================================
 
 	% coordinates
-	x = wmhclstrs_props.WeightedCentroid(i,1);
-	y = wmhclstrs_props.WeightedCentroid(i,2);
-	z = wmhclstrs_props.WeightedCentroid(i,3);
+	% NOTE that the 1st and 2nd dimension need to
+	%      be flipped after visual inspection, to
+	%      correspond to the correct position on
+	%      nifti images.
+	x = round(wmhclstrs_props.WeightedCentroid(i,2));
+	y = round(wmhclstrs_props.WeightedCentroid(i,1));
+	z = round(wmhclstrs_props.WeightedCentroid(i,3));
 
 	% size in num of voxels
 	siz = wmhclstrs_props.Volume(i);
 
-	% quantify whole brain noc of different sizes
 	if siz <= thr(1)
 		wbwmh_noc_p = wbwmh_noc_p + 1;
   	elseif siz > thr(1) && siz <= thr(2)
@@ -46,14 +50,18 @@ for i = 1:wbwmh_noc
 		wbwmh_noc_c = wbwmh_noc_c + 1;
 	end
 
-	% quantify lobar noc
-	lobar_noc_tbl = cns2_wmh_ud_postproc_quantification_noc_lobar (cns2param,x,y,z,siz,thr);
-
-	% quantify arterial noc
-	arterial_noc_tbl = cns2_wmh_ud_postproc_quantification_noc_arterial (cns2param,x,y,z,siz,thr);
-
 end
 
+% quantify lobar noc
+% ===================
+lobar_noc_tbl = cns2_wmh_ud_postproc_quantification_noc_lobar (cns2param,wmhclstrs_struct,flair);
+
+% quantify arterial noc
+% =====================
+arterial_noc_tbl = cns2_wmh_ud_postproc_quantification_noc_arterial (cns2param,wmhclstrs_struct,flair);
+
+% output table
+% =============
 noc_tbl =  [table(wbwmh_noc, wbwmh_noc_p, wbwmh_noc_f, wbwmh_noc_m, wbwmh_noc_c) ...
 			lobar_noc_tbl ...
 			arterial_noc_tbl];

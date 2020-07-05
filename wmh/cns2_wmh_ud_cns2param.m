@@ -12,7 +12,8 @@ function cns2param = cns2_wmh_ud_cns2param (study_dir, ...
 										    k4knn, ...
 										    probthr, ...
 										    extSpace, ...
-										    pvmag);
+										    pvmag, ...
+										    sizthr);
 
 curr_cmd = mfilename;
 
@@ -126,4 +127,5 @@ cns2param.classification.ud.ext_space       = extSpace;
 
 % quantification
 % ++++++++++++++++++++++++++++++++++++++++++
-cns2param.quantification.ud.pvmag = pvmag;
+cns2param.quantification.ud.pvmag  = pvmag;  % distance from lateral ventricle - used to define PVWMH and DWMH.
+cns2param.quantification.ud.sizthr = sizthr; % cut-off in number of voxels between punctuate, focal, medium, and confluent

@@ -1,4 +1,7 @@
 % varargin{1} = index used in cns2
+%
+% flair is used for 2 purposes: 1) calculate voxel size (spatial resolution)
+%                               2) find weighted centroid
 function quant_tbl_subj = cns2_wmh_ud_postproc_quantification (cns2param,wmhmask_dat,flair,varargin)
 
 curr_cmd=mfilename;
@@ -15,7 +18,7 @@ if nargin==4
 	noc_tbl = cns2_wmh_ud_postproc_quantification_noc (cns2param,wmhmask_dat,flair,subjid);
 
 	% combine measures into one table
-	quant_tbl_subj = [table (subjid), ...
+	quant_tbl_subj = [table({subjid}), ...
 					  vol_tbl, ...
 					  noc_tbl];
 

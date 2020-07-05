@@ -1,13 +1,13 @@
-study_dir = '/Users/z3402744/Work';
-% study_dir = 'C:\Users\jiang\Downloads\test';
+% study_dir = '/Users/z3402744/Work';
+study_dir = 'C:\Users\jiang\OneDrive\Documents\GitHub\CNS2\example_data';
 % study_dir = 'D:\GitHub\CNS2\example_data';
 
-cns2_dir = '/Users/z3402744/GitHub/CNS2';
-% cns2_dir = 'C:\Users\jiang\OneDrive\Documents\GitHub\CNS2';
+% cns2_dir = '/Users/z3402744/GitHub/CNS2';
+cns2_dir = 'C:\Users\jiang\OneDrive\Documents\GitHub\CNS2';
 % cns2_dir = 'D:\GitHub\CNS2';
 
-spm_dir = '/Applications/spm12';
-% spm_dir = 'C:\Users\jiang\Downloads\test\spm12';
+% spm_dir = '/Applications/spm12';
+spm_dir = 'C:\Users\jiang\Downloads\test\spm12';
 % spm_dir = 'C:\Program Files\spm12';
 
 
@@ -27,6 +27,7 @@ probthr = 0.7;
 extSpace = 'dartel';
 
 pvmag = 12;
+sizthr = [3 9 15];
 
 
 addpath (genpath (cns2_dir));
@@ -56,7 +57,8 @@ try
 									    k4knn, ...
 									    probthr, ...
 									    extSpace, ...
-									    pvmag);
+									    pvmag, ...
+									    sizthr);
 
 	cns2_wmh_ud_initDirFile (cns2param);
 
