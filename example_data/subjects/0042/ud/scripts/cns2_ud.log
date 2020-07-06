@@ -133,3 +133,72 @@ The closest match is: cns2_wmh_ud_postproc_classification_1stlvclstrs in /Users/
 
 
 cns2_wmh_ud : 0042 finished UBO Detector with ERROR.
+cns2_wmh_ud
+cns2_wmh_ud_initDirFile : start initializing directories/files.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_preproc : start preprocessing 0042.
+cns2_spmbatch_coregistration : registering flair.nii to t1.nii.
+
+
+------------------------------------------------------------------------
+06-Jul-2020 20:30:18 - Running job #1
+------------------------------------------------------------------------
+06-Jul-2020 20:30:18 - Running 'Coregister: Estimate & Reslice'
+
+SPM12: spm_coreg (v7320)                           20:30:18 - 06/07/2020
+========================================================================
+Completed                               :          20:30:24 - 06/07/2020
+
+SPM12: spm_reslice (v7141)                         20:30:24 - 06/07/2020
+========================================================================
+Completed                               :          20:30:27 - 06/07/2020
+06-Jul-2020 20:30:27 - Done    'Coregister: Estimate & Reslice'
+06-Jul-2020 20:30:27 - Done
+
+cns2_spmbatch_segmentation : segmenting t1.nii.
+
+
+------------------------------------------------------------------------
+06-Jul-2020 20:30:31 - Running job #1
+------------------------------------------------------------------------
+06-Jul-2020 20:30:31 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7670)                     20:30:31 - 06/07/2020
+========================================================================
+Segment <a href="matlab:spm_image('display','/Users/z3402744/GitHub/CNS2/example_data/subjects/0042/ud/preproc/t1.nii,1');">/Users/z3402744/GitHub/CNS2/example_data/subjects/0042/ud/preproc/t1.nii,1</a>
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc8', '/Applications/spm12/spm_preproc8.m', 754)" style="font-weight:bold">spm_preproc8</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc8.m',754,0)">line 754</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run>run_job', '/Applications/spm12/spm_preproc_run.m', 156)" style="font-weight:bold">spm_preproc_run>run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',156,0)">line 156</a>)
+        res = spm_preproc8(obj);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run', '/Applications/spm12/spm_preproc_run.m', 41)" style="font-weight:bold">spm_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',41,0)">line 41</a>)
+        varargout{1} = run_job(job);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_cfg_preproc8>spm_local_preproc_run', '/Applications/spm12/config/spm_cfg_preproc8.m', 474)" style="font-weight:bold">spm_cfg_preproc8>spm_local_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/config/spm_cfg_preproc8.m',474,0)">line 474</a>)
+varargout{1} = spm_preproc_run(job);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_run_cm', '/Applications/spm12/matlabbatch/private/cfg_run_cm.m', 29)" style="font-weight:bold">cfg_run_cm</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/private/cfg_run_cm.m',29,0)">line 29</a>)
+    cm.jout = feval(cm.prog, job);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util>local_runcj', '/Applications/spm12/matlabbatch/cfg_util.m', 1717)" style="font-weight:bold">cfg_util>local_runcj</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',1717,0)">line 1717</a>)
+                cm = cfg_run_cm(cm, subsref(mlbch, cfg2jobsubs(job.cjrun, cjid2subsrun{k})));
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util', '/Applications/spm12/matlabbatch/cfg_util.m', 972)" style="font-weight:bold">cfg_util</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',972,0)">line 972</a>)
+        [jobs(cjob), err] = local_runcj(jobs(cjob), cjob, pflag, cflag);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman>fill_run_job', '/Applications/spm12/spm_jobman.m', 469)" style="font-weight:bold">spm_jobman>fill_run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',469,0)">line 469</a>)
+    cfg_util('run', cjob);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman', '/Applications/spm12/spm_jobman.m', 247)" style="font-weight:bold">spm_jobman</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',247,0)">line 247</a>)
+        sts = fill_run_job('run', cjob, varargin{3:end});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_spmbatch_segmentation', '/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m', 86)" style="font-weight:bold">cns2_spmbatch_segmentation</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m',86,0)">line 86</a>)
+    output = spm_jobman ('run',matlabbatch);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m', 17)" style="font-weight:bold">cns2_wmh_ud_preproc</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m',17,0)">line 17</a>)
+[cGM,cWM,cCSF,rcGM,rcWM,rcCSF] = cns2_spmbatch_segmentation (cns2param, t1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m', 76)" style="font-weight:bold">cns2_wmh_ud</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m',76,0)">line 76</a>)
+			cns2_wmh_ud_preproc (cns2param,i);                   % preprocessing
+} 
