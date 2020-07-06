@@ -1,1 +1,0 @@
-function cns2param = cns2_scripts_host (cns2param)
