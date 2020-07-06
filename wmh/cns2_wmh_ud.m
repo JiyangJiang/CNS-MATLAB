@@ -72,6 +72,7 @@ try
 
 	% parfor (i = 1 : cns2param.n_subjs, cns2param.exe.n_cpus)
 	for i = 1 : cns2param.n_subjs
+		
 		diary (fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'ud', 'scripts', 'cns2_ud.log'))
 
 		try
@@ -93,6 +94,8 @@ try
 			quant_tbl_coh (i,2:end) = table (NaN);
 			
 			fprintf ('%s : %s finished UBO Detector with ERROR.\n', curr_cmd, cns2param.lists.subjs{i,1});
+
+			diary off
 
 			continue; % jump to next iteration (for i)
 
