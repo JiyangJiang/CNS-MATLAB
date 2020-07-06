@@ -1,0 +1,135 @@
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_preproc : start preprocessing 0042.
+cns2_spmbatch_coregistration : registering flair.nii to t1.nii.
+
+
+------------------------------------------------------------------------
+06-Jul-2020 18:54:59 - Running job #1
+------------------------------------------------------------------------
+06-Jul-2020 18:54:59 - Running 'Coregister: Estimate & Reslice'
+
+SPM12: spm_coreg (v7320)                           18:54:59 - 06/07/2020
+========================================================================
+Completed                               :          18:55:05 - 06/07/2020
+
+SPM12: spm_reslice (v7141)                         18:55:05 - 06/07/2020
+========================================================================
+Completed                               :          18:55:07 - 06/07/2020
+06-Jul-2020 18:55:07 - Done    'Coregister: Estimate & Reslice'
+06-Jul-2020 18:55:07 - Done
+
+cns2_spmbatch_segmentation : segmenting t1.nii.
+
+
+------------------------------------------------------------------------
+06-Jul-2020 18:55:11 - Running job #1
+------------------------------------------------------------------------
+06-Jul-2020 18:55:11 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7670)                     18:55:11 - 06/07/2020
+========================================================================
+Segment <a href="matlab:spm_image('display','/Users/z3402744/GitHub/CNS2/example_data/subjects/0042/ud/preproc/t1.nii,1');">/Users/z3402744/GitHub/CNS2/example_data/subjects/0042/ud/preproc/t1.nii,1</a>
+Completed                               :          18:57:21 - 06/07/2020
+06-Jul-2020 18:57:21 - Done    'Segment'
+06-Jul-2020 18:57:21 - Done
+
+cns2_spmbatch_runDARTELe : running DARTEL with existing templates.
+
+
+------------------------------------------------------------------------
+06-Jul-2020 18:57:24 - Running job #1
+------------------------------------------------------------------------
+06-Jul-2020 18:57:24 - Running 'Run Dartel (existing Templates)'
+*** rc1t1 ***
+1 	521737	0	521737	369.236
+2 	345901	29080.9	374982	185.904
+3 	308460	33164	341624	88.9417
+4 	296052	16499.5	312552	143.876
+5 	274512	28867.1	303379	43.5112
+6 	273248	28861.8	302110	23.9532
+7 	272346	14426.7	286773	105.897
+8 	256099	24501.7	280601	32.409
+9 	255101	24986.6	280087	17.9474
+10 	254062	12722.6	266785	84.7184
+11 	238552	22549.1	261101	29.2128
+12 	237208	23313.7	260522	17.235
+13 	237127	12045	249172	69.5715
+14 	223048	20705.9	243754	28.0708
+15 	221143	21843.3	242987	17.1823
+16 	220718	22745.1	243463	20.208
+17 	220174	22940.3	243114	14.334
+18 	219742	23271.5	243013	13.5518
+06-Jul-2020 18:59:33 - Done    'Run Dartel (existing Templates)'
+06-Jul-2020 18:59:33 - Done
+
+cns2_spmbatch_nativeToDARTEL : warping t1 to DARTEL with u_rc1t1.
+
+
+------------------------------------------------------------------------
+06-Jul-2020 18:59:36 - Running job #1
+------------------------------------------------------------------------
+06-Jul-2020 18:59:36 - Running 'Create Warped'
+u_rc1t1: t1	1,1,1
+06-Jul-2020 18:59:38 - Done    'Create Warped'
+06-Jul-2020 18:59:38 - Done
+
+cns2_spmbatch_nativeToDARTEL : warping rflair to DARTEL with u_rc1t1.
+
+
+------------------------------------------------------------------------
+06-Jul-2020 18:59:41 - Running job #1
+------------------------------------------------------------------------
+06-Jul-2020 18:59:41 - Running 'Create Warped'
+u_rc1t1: rflair	1,1,1
+06-Jul-2020 18:59:43 - Done    'Create Warped'
+06-Jul-2020 18:59:43 - Done
+
+cns2_spmbatch_nativeToDARTEL : warping c1t1 to DARTEL with u_rc1t1.
+
+
+------------------------------------------------------------------------
+06-Jul-2020 18:59:46 - Running job #1
+------------------------------------------------------------------------
+06-Jul-2020 18:59:46 - Running 'Create Warped'
+u_rc1t1: c1t1	1,1,1
+06-Jul-2020 18:59:47 - Done    'Create Warped'
+06-Jul-2020 18:59:47 - Done
+
+cns2_spmbatch_nativeToDARTEL : warping c2t1 to DARTEL with u_rc1t1.
+
+
+------------------------------------------------------------------------
+06-Jul-2020 18:59:51 - Running job #1
+------------------------------------------------------------------------
+06-Jul-2020 18:59:51 - Running 'Create Warped'
+u_rc1t1: c2t1	1,1,1
+06-Jul-2020 18:59:52 - Done    'Create Warped'
+06-Jul-2020 18:59:52 - Done
+
+cns2_spmbatch_nativeToDARTEL : warping c3t1 to DARTEL with u_rc1t1.
+
+
+------------------------------------------------------------------------
+06-Jul-2020 18:59:55 - Running job #1
+------------------------------------------------------------------------
+06-Jul-2020 18:59:56 - Running 'Create Warped'
+u_rc1t1: c3t1	1,1,1
+06-Jul-2020 18:59:57 - Done    'Create Warped'
+06-Jul-2020 18:59:57 - Done
+
+cns2_scripts_mask : masking /Users/z3402744/GitHub/CNS2/example_data/subjects/0042/ud/preproc/wt1.nii with /Users/z3402744/GitHub/CNS2/templates/DARTEL_brain_mask/70to80/DARTEL_brain_mask.nii, and outputing as /Users/z3402744/GitHub/CNS2/example_data/subjects/0042/ud/preproc/wt1_brn.nii
+cns2_scripts_writeNii : writing nifti wt1_brn.nii.
+cns2_scripts_mask : masking /Users/z3402744/GitHub/CNS2/example_data/subjects/0042/ud/preproc/wrflair.nii with /Users/z3402744/GitHub/CNS2/templates/DARTEL_brain_mask/70to80/DARTEL_brain_mask.nii, and outputing as /Users/z3402744/GitHub/CNS2/example_data/subjects/0042/ud/preproc/wrflair_brn.nii
+cns2_scripts_writeNii : writing nifti wrflair_brn.nii.
+cns2_wmh_ud_postproc : start postprocessing for 0042.
+cns2_wmh_ud_postproc_classification : start classification for 0042.
+
+Exception thrown
+++++++++++++++++++++++
+identifier: MATLAB:dispatcher:InexactCaseMatch
+message: Cannot find an exact (case-sensitive) match for 'cns2_wmh_ud_postproc_classification_1stLvClstrs'
+
+The closest match is: cns2_wmh_ud_postproc_classification_1stlvclstrs in /Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_postproc_classification_1stlvclstrs.m
+
+
+cns2_wmh_ud : 0042 finished UBO Detector with ERROR.
