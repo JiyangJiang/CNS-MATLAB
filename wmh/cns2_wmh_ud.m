@@ -1,14 +1,14 @@
 % study_dir = '/Users/z3402744/Work';
-study_dir = 'C:\Users\jiang\OneDrive\Documents\GitHub\CNS2\example_data';
-% study_dir = 'D:\GitHub\CNS2\example_data';
+% study_dir = 'C:\Users\jiang\OneDrive\Documents\GitHub\CNS2\example_data';
+study_dir = 'D:\GitHub\CNS2\example_data';
 
 % cns2_dir = '/Users/z3402744/GitHub/CNS2';
-cns2_dir = 'C:\Users\jiang\OneDrive\Documents\GitHub\CNS2';
-% cns2_dir = 'D:\GitHub\CNS2';
+% cns2_dir = 'C:\Users\jiang\OneDrive\Documents\GitHub\CNS2';
+cns2_dir = 'D:\GitHub\CNS2';
 
 % spm_dir = '/Applications/spm12';
-spm_dir = 'C:\Users\jiang\Downloads\test\spm12';
-% spm_dir = 'C:\Program Files\spm12';
+% spm_dir = 'C:\Users\jiang\Downloads\test\spm12';
+spm_dir = 'C:\Program Files\spm12';
 
 
 n_cpus = 2;
@@ -43,6 +43,7 @@ curr_cmd=mfilename;
 % +++++++++++++
 
 try
+	% set parameter cns2param
 	cns2param = cns2_wmh_ud_cns2param  (study_dir, ...
 									    cns2_dir, ...
 									    spm_dir, ...
@@ -60,8 +61,11 @@ try
 									    pvmag, ...
 									    sizthr);
 
+	% initialising/organising directories/files
 	cns2_wmh_ud_initDirFile (cns2param);
 
+	% initialise cohort-level quantification table
+	quant_tbl_coh = cns2_wmh_ud_initCohQuantTbl (cns2param);
 
 	% parfor (i = 1 : cns2param.n_subjs, cns2param.exe.n_cpus)
 	for i = 1 : cns2param.n_subjs
@@ -74,25 +78,37 @@ try
 			quant_tbl_subj = cns2_wmh_ud_postproc (cns2param,i); % postprocessing, including 
 																 % classification and quantification
 
-			% TO-DO : accumulate subject-level quantification table (quant_tbl_subj)
-			%         into cohort-level (quant_tbl_coh)
-
-			fprintf ('%s : %s finished UBO Detector without error.\n', curr_cmd, cns2param.lists.subjs{i,1});
-
 		catch ME
 			
 			fprintf (2,'\nException thrown\n');
 			fprintf (2,'++++++++++++++++++++++\n');
 			fprintf (2,'identifier: %s\n', ME.identifier);
 			fprintf (2,'message: %s\n\n', ME.message);
+
+			% assign NaN values if errors.
+			quant_tbl_coh (i,1)     = table (cns2param.lists.subjs(i,1));
+			quant_tbl_coh (i,2:end) = table (NaN);
 			
 			fprintf ('%s : %s finished UBO Detector with ERROR.\n', curr_cmd, cns2param.lists.subjs{i,1});
+
+			continue; % jump to next iteration (for i)
+
 		end
+
+		quant_tbl_coh (i,:) = quant_tbl_subj; % accumulate into cohort-level results
+
+		fprintf ('%s : %s finished UBO Detector without error.\n', curr_cmd, cns2param.lists.subjs{i,1});
 
 		diary off
 	end
 
-	% TO-DO : write out cohort-level quantification table (quant_tbl_coh)
+	% save cohort results
+	writetable (quant_tbl_coh, ...
+				fullfile (cns2param.dirs.subjs,'cns2_wmh_ud.csv')); % write out cohort-level quantification table
+	
+	if ~cns2param.exe.save_dskspc
+		save (fullfile (cns2param.dirs.subjs,'cns2_wmh_ud.mat'), 'quant_tbl_coh'); % save matlab .mat file
+	end
 
 catch ME
 	fprintf (2,'\nException thrown\n');

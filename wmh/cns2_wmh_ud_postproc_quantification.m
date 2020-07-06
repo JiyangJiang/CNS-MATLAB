@@ -18,13 +18,17 @@ if nargin==4
 	noc_tbl = cns2_wmh_ud_postproc_quantification_noc (cns2param,wmhmask_dat,flair,subjid);
 
 	% quantify distance
-	dist_tbl = cns2_wmh_ud_postproc_quantification_clstrdist (cns2param,wmhmask_dat,flair,subjid);
+	dist_tbl = cns2_wmh_ud_postproc_quantification_clstrDist (cns2param,wmhmask_dat,flair,subjid);
+
+	% quantify cluster size distribution
+	clstrSiz_tbl = cns2_wmh_ud_postproc_quantification_clstrSiz (cns2param,wmhmask_dat,subjid);
 
 	% combine measures into one table
 	quant_tbl_subj = [table({subjid}) ...
 					  vol_tbl ...
 					  noc_tbl ...
-					  dist_tbl];
+					  dist_tbl ...
+					  clstrSiz_tbl];
 
 	quant_tbl_subj.Properties.VariableNames{'Var1'} = 'subjID';
 
@@ -39,11 +43,15 @@ elseif nargin==3
 	noc_tbl = cns2_wmh_ud_postproc_quantification_noc (cns2param,wmhmask_dat,flair);
 
 	% quantify distance
-	dist_tbl = cns2_wmh_ud_postproc_quantification_clstrdist (cns2param,wmhmask_dat,flair);
+	dist_tbl = cns2_wmh_ud_postproc_quantification_clstrDist (cns2param,wmhmask_dat,flair);
+
+	% quantify cluster size distribution
+	clstrSiz_tbl = cns2_wmh_ud_postproc_quantification_clstrSiz (cns2param,wmhmask_dat);
 
 	% combine measures into one table
-	quant_tbl_subj = [vol_tbl, ...
-				 	  noc_tbl, ...
-				 	  dist_tbl];
+	quant_tbl_subj = [vol_tbl ...
+				 	  noc_tbl ...
+				 	  dist_tbl ...
+				 	  clstrSiz_tbl];
 end
 

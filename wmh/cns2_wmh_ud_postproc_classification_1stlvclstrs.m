@@ -1,4 +1,4 @@
-function [lv1clstrs_dat, cns2param] = cns2_wmh_ud_postproc_classification_1stlvclstrs (cns2param, in_nii, out_nii, varargin)
+function [lv1clstrs_dat, cns2param] = cns2_wmh_ud_postproc_classification_1stLvClstrs (cns2param, in_nii, out_nii, varargin)
 curr_cmd = mfilename;
 
 if nargin == 4

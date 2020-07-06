@@ -1,12 +1,12 @@
 % distance between each pair of clusters
 % varargin{1} = subject's id in cns2
 
-function dist_tbl = cns2_wmh_ud_postproc_quantification_clstrdist (cns2param,wmhmask_dat,flair,varargin)
+function dist_tbl = cns2_wmh_ud_postproc_quantification_clstrDist (cns2param,wmhmask_dat,flair,varargin)
 
 curr_cmd = mfilename;
 
 if cns2param.exe.verbose && nargin==4
-	fprintf ('%s : quantifying avg distance between WMH clusters for %s.\n', curr_cmd, varargin{1});
+	fprintf ('%s : quantifying distance between WMH clusters for %s.\n', curr_cmd, varargin{1});
 end
 
 wmhclstrs_struct = bwconncomp (wmhmask_dat, 26); % divide into 26-conn clusters
@@ -22,7 +22,7 @@ elseif wmhclstrs_struct.NumObjects == 2
 	dist_tbl = table(mean(clstr_dist), NaN, NaN);
 else
 	clstr_dist = pdist (wmhclstrs_props.WeightedCentroid, 'euclidean');
-	dist_tbl = table (mean(clstr_dist), std(clstr_dist)), var(clstr_dist));
+	dist_tbl = table (mean(clstr_dist), std(clstr_dist), var(clstr_dist));
 end
 
 dist_tbl.Properties.VariableNames = {'avg_clstr_dist'
