@@ -22,14 +22,14 @@
 
 function srcImgOnDARTEL = cns2_spmbatch_nativeToDARTEL (cns2param, srcImg, flowMap, varargin)
 
-    [flowMapFolder,flowMapFilename,flowMapExt] = fileparts (flowMap);
-    [srcImgFolder,srcImgFilename,srcImgExt] = fileparts (srcImg);
-    
     if cns2param.exe.verbose
         curr_cmd = mfilename;
         fprintf ('%s : warping %s to DARTEL with %s.\n', curr_cmd, srcImgFilename, flowMapFilename);
     end
 
+    [flowMapFolder,flowMapFilename,flowMapExt] = fileparts (flowMap);
+    [srcImgFolder,srcImgFilename,srcImgExt] = fileparts (srcImg);
+    
     if nargin == 4
         switch varargin{1}
             case 'Trilinear'
