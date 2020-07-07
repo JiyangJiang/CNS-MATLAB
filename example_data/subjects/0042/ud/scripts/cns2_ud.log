@@ -799,3 +799,371 @@ clear;clc
 cns2_wmh_ud
 cns2_wmh_ud_initDirFile : start initializing directories/files.
 cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_preproc : start preprocessing 0042.
+cns2_spmbatch_coregistration : registering flair.nii to t1.nii.
+
+
+------------------------------------------------------------------------
+07-Jul-2020 13:25:18 - Running job #1
+------------------------------------------------------------------------
+07-Jul-2020 13:25:18 - Running 'Coregister: Estimate & Reslice'
+
+SPM12: spm_coreg (v7320)                           13:25:18 - 07/07/2020
+========================================================================
+Completed                               :          13:25:27 - 07/07/2020
+
+SPM12: spm_reslice (v7141)                         13:25:27 - 07/07/2020
+========================================================================
+Completed                               :          13:25:30 - 07/07/2020
+07-Jul-2020 13:25:30 - Done    'Coregister: Estimate & Reslice'
+07-Jul-2020 13:25:30 - Done
+
+cns2_spmbatch_segmentation : segmenting t1.nii.
+
+
+------------------------------------------------------------------------
+07-Jul-2020 13:25:33 - Running job #1
+------------------------------------------------------------------------
+07-Jul-2020 13:25:33 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7670)                     13:25:33 - 07/07/2020
+========================================================================
+Segment <a href="matlab:spm_image('display','D:\GitHub\CNS2\example_data\subjects\0042\ud\preproc\t1.nii,1');">D:\GitHub\CNS2\example_data\subjects\0042\ud\preproc\t1.nii,1</a>
+Completed                               :          13:28:11 - 07/07/2020
+07-Jul-2020 13:28:11 - Done    'Segment'
+07-Jul-2020 13:28:11 - Done
+
+cns2_spmbatch_runDARTELe : running DARTEL with existing templates.
+
+
+------------------------------------------------------------------------
+07-Jul-2020 13:28:14 - Running job #1
+------------------------------------------------------------------------
+07-Jul-2020 13:28:14 - Running 'Run Dartel (existing Templates)'
+*** rc1t1 ***
+Continuing registration from pre-existing parameters (D:\GitHub\CNS2\example_data\subjects\0042\ud\preproc\u_rc1t1.nii)
+1 	256271	371987	628257	1423.97
+2 	295216	32979.2	328195	85.7819
+3 	295990	30981.9	326972	20.4426
+4 	291737	15194.9	306932	137.968
+5 	273388	27290.8	300679	40.1276
+6 	272772	27653.1	300425	21.3559
+7 	272161	14040.7	286202	105.54
+8 	256233	23989.5	280223	32.1145
+9 	255205	24605.9	279811	17.3868
+10 	254227	12575.5	266803	84.3574
+11 	238817	22311.9	261129	29.2477
+12 	237416	23134.9	260551	17.515
+13 	237355	11967.3	249322	69.4321
+14 	223299	20572.5	243872	27.7084
+15 	221334	21744.6	243078	17.3408
+16 	220872	22673.2	243545	20.4547
+17 	220297	22890.2	243188	14.9444
+18 	219869	23217.4	243086	13.5448
+07-Jul-2020 13:30:40 - Done    'Run Dartel (existing Templates)'
+07-Jul-2020 13:30:40 - Done
+
+cns2_spmbatch_nativeToDARTEL : warping t1 to DARTEL with u_rc1t1.
+
+
+------------------------------------------------------------------------
+07-Jul-2020 13:30:42 - Running job #1
+------------------------------------------------------------------------
+07-Jul-2020 13:30:42 - Running 'Create Warped'
+u_rc1t1: t1	1,1,1
+07-Jul-2020 13:30:44 - Done    'Create Warped'
+07-Jul-2020 13:30:44 - Done
+
+cns2_spmbatch_nativeToDARTEL : warping rflair to DARTEL with u_rc1t1.
+
+
+------------------------------------------------------------------------
+07-Jul-2020 13:30:46 - Running job #1
+------------------------------------------------------------------------
+07-Jul-2020 13:30:46 - Running 'Create Warped'
+u_rc1t1: rflair	1,1,1
+07-Jul-2020 13:30:48 - Done    'Create Warped'
+07-Jul-2020 13:30:48 - Done
+
+cns2_spmbatch_nativeToDARTEL : warping c1t1 to DARTEL with u_rc1t1.
+
+
+------------------------------------------------------------------------
+07-Jul-2020 13:30:50 - Running job #1
+------------------------------------------------------------------------
+07-Jul-2020 13:30:50 - Running 'Create Warped'
+u_rc1t1: c1t1	1,1,1
+07-Jul-2020 13:30:52 - Done    'Create Warped'
+07-Jul-2020 13:30:52 - Done
+
+cns2_spmbatch_nativeToDARTEL : warping c2t1 to DARTEL with u_rc1t1.
+
+
+------------------------------------------------------------------------
+07-Jul-2020 13:30:54 - Running job #1
+------------------------------------------------------------------------
+07-Jul-2020 13:30:54 - Running 'Create Warped'
+u_rc1t1: c2t1	1,1,1
+07-Jul-2020 13:30:56 - Done    'Create Warped'
+07-Jul-2020 13:30:56 - Done
+
+cns2_spmbatch_nativeToDARTEL : warping c3t1 to DARTEL with u_rc1t1.
+
+
+------------------------------------------------------------------------
+07-Jul-2020 13:30:58 - Running job #1
+------------------------------------------------------------------------
+07-Jul-2020 13:30:58 - Running 'Create Warped'
+u_rc1t1: c3t1	1,1,1
+07-Jul-2020 13:31:00 - Done    'Create Warped'
+07-Jul-2020 13:31:00 - Done
+
+cns2_scripts_mask : masking D:\GitHub\CNS2\example_data\subjects\0042\ud\preproc\wt1.nii with D:\GitHub\CNS2\templates\DARTEL_brain_mask\70to80\DARTEL_brain_mask.nii, and outputing as D:\GitHub\CNS2\example_data\subjects\0042\ud\preproc\wt1_brn.nii
+cns2_scripts_writeNii : writing nifti wt1_brn.nii.
+cns2_scripts_mask : masking D:\GitHub\CNS2\example_data\subjects\0042\ud\preproc\wrflair.nii with D:\GitHub\CNS2\templates\DARTEL_brain_mask\70to80\DARTEL_brain_mask.nii, and outputing as D:\GitHub\CNS2\example_data\subjects\0042\ud\preproc\wrflair_brn.nii
+cns2_scripts_writeNii : writing nifti wrflair_brn.nii.
+cns2_wmh_ud_postproc : start postprocessing for 0042.
+cns2_wmh_ud_postproc_classification : start classification for 0042.
+cns2_wmh_ud_postproc_classification_1stLvClstrs : generating 0042's 1st-level clusters.
+cns2_wmh_ud_postproc_classification_1stLvClstrs : writing 0042's 1st-level clusters.
+cns2_scripts_writeNii : writing nifti lv1clstrs.nii.
+cns2_wmh_ud_postproc_classification_extFeatures : extracting features for 0042.
+cns2_wmh_ud_postproc_classification_extFeatures : 1/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=1/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 2/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=2/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 3/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=3/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 4/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=4/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 5/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=5/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 6/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=6/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 7/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=7/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 8/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=8/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 9/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=9/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 10/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=10/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 11/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=11/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 12/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=12/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 13/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=13/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 14/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=14/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 15/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=15/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 16/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=16/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 17/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=17/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 18/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=18/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 19/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=19/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 20/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=20/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 21/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=21/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 22/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=22/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 23/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=23/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 24/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=24/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 25/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=25/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 26/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=26/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 27/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=27/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 28/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=28/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 29/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=29/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 30/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=30/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 31/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=31/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 32/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=32/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 33/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=33/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 34/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=34/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 35/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=35/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 36/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=36/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 37/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=37/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 38/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=38/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 39/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=39/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 40/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=40/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 41/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=41/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 42/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=42/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 43/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=43/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 44/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=44/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 45/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=45/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 46/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=46/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 47/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=47/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 48/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=48/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 49/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=49/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 50/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=50/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 51/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=51/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 52/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=52/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 53/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=53/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 54/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=54/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 55/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=55/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 56/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=56/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 57/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=57/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 58/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=58/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 59/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=59/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 60/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=60/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 61/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=61/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 62/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=62/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 63/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=63/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 64/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=64/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 65/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=65/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 66/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=66/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 67/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=67/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 68/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=68/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 69/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=69/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 70/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=70/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 71/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=71/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 72/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=72/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 73/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=73/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 74/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=74/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 75/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=75/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 76/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=76/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 77/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=77/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 78/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=78/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 79/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=79/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 80/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=80/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 81/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=81/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 82/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=82/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 83/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=83/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 84/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=84/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 85/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=85/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 86/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=86/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 87/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=87/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 88/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=88/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 89/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=89/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 90/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=90/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 91/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=91/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 92/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=92/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 93/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=93/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 94/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=94/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 95/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=95/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 96/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=96/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 97/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=97/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 98/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=98/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 99/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=99/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 100/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=100/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 101/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=101/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 102/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=102/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 103/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=103/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 104/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=104/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 105/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=105/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 106/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=106/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 107/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=107/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 108/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=108/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 109/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=109/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 110/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=110/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 111/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=111/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 112/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=112/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 113/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=113/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 114/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=114/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 115/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=115/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 116/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=116/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 117/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=117/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 118/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=118/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 119/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=119/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 120/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=120/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 121/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=121/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 122/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=122/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 123/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=123/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 124/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=124/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 125/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=125/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 126/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=126/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 127/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=127/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 128/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=128/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 129/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=129/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 130/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=130/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 131/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=131/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 132/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=132/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 133/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=133/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 134/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=134/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 135/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=135/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 136/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=136/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 137/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=137/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 138/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=138/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 139/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=139/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 140/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=140/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 141/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=141/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 142/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=142/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 143/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=143/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 144/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=144/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 145/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=145/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 146/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=146/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 147/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=147/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 148/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=148/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 149/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=149/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 150/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=150/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 151/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=151/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 152/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=152/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 153/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=153/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 154/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=154/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 155/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=155/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 156/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=156/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 157/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=157/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 158/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=158/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 159/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=159/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 160/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=160/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 161/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=161/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 162/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=162/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 163/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=163/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 164/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=164/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 165/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=165/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 166/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=166/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 167/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=167/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 168/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=168/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 169/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=169/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 170/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=170/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 171/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=171/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 172/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=172/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 173/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=173/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 174/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=174/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 175/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=175/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 176/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=176/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 177/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=177/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 178/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=178/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 179/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=179/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 180/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=180/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 181/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=181/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 182/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=182/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 183/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=183/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 184/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=184/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 185/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=185/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 186/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=186/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 187/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=187/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 188/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=188/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 189/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=189/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 190/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=190/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 191/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=191/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 192/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=192/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 193/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=193/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 194/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=194/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 195/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=195/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 196/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=196/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 197/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=197/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 198/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=198/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 199/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=199/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 200/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=200/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 201/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=201/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 202/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=202/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 203/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=203/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 204/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=204/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 205/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=205/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 206/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=206/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 207/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=207/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 208/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=208/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 209/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=209/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 210/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=210/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 211/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=211/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 212/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=212/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 213/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=213/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 214/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=214/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 215/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=215/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 216/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=216/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 217/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=217/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 218/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=218/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 219/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=219/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 220/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=220/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 221/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=221/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 222/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=222/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 223/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=223/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 224/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=224/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 225/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=225/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 226/226 1st-level clusters, 1/1 2nd-level clusters, linear_idx=226/226 (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : 0.26981 minutes elapsed to extract features (ID=0042).
+cns2_wmh_ud_postproc_classification_extFeatures : saving feature table for 0042.
+cns2_wmh_ud_postproc_classification_predict : predicting wmh for 0042.
+cns2_wmh_ud_postproc_classification_predict : saving feature+decision table for 0042.
+cns2_scripts_writeNii : writing nifti wmhprob.nii.
+cns2_scripts_writeNii : writing nifti wmhmask.nii.
+cns2_wmh_ud_postproc_quantification : start quantification for 0042.
+cns2_wmh_ud_postproc_quantification_vol : quantifying volume for 0042.
+cns2_wmh_ud_postproc_quantification_noc : quantifying noc for 0042.
+cns2_wmh_ud_postproc_quantification_clstrDist : quantifying distance between WMH clusters for 0042.
+cns2_wmh_ud_postproc_quantification_clstrSiz : quantifying variance in WMH cluster sizes for 0042.
+cns2_wmh_ud : 0042 finished UBO Detector without error.
