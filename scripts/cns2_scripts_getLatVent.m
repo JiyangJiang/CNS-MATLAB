@@ -13,7 +13,10 @@
 % img = any modality MRI
 % T1 = T1-weighted image of the same individual
 % outputFolder = output path
-% spm12path = spm12 directory
+%
+% OUTPUT
+% ------
+% varargout{1} = ventricular mask
 % 
 %
 % OTHER INFO
@@ -24,7 +27,7 @@
 % Written by Dr. Jiyang Jiang. December 2017.
 %
 
-function ventricle_native = cns2_scripts_getLatVent (cns2param, img, T1, outputFolder)
+function varargout = cns2_scripts_getLatVent (cns2param, img, T1, outputFolder)
 
 if cns2param.exe.verbose
     curr_cmd = mfilename;
@@ -87,24 +90,38 @@ cns2_scripts_writeNii  (cns2param, ...
                         fullfile(outputFolder, 'ventricular_mask.nii'));
 
 % T1 to native space
-cns2_scripts_revReg (cns2param, img, T1, fullfile(outputFolder, 'ventricular_mask.nii'));
+ventricle_native = cns2_scripts_revReg (cns2param, img, T1, fullfile(outputFolder, 'ventricular_mask.nii'));
+
+% binarise
+ventricle_native_dat = spm_read_vols(spm_vol(ventricle_native));
+ventricle_native_dat(isnan(ventricle_native_dat)) = 0;
+ventricle_native_dat(ventricle_native_dat<0)      = 0;
+ventricle_native_dat(ventricle_native_dat>0)      = 1;
+cns2_scripts_writeNii (cns2param, spm_vol(ventricle_native), ventricle_native_dat, fullfile(outputFolder,'latvent.nii'));
 
 % clean up
-% ----======== NOT FINISHED YET =========--------
 if ~cns2param.exe.save_dskspc
-
-system (['mv ' cGM ' ' ...
-                cWM ' ' ...
-                cCSF ' ' ...
-                mat ' ' ...
-                T1folder '/r*.nii ' ...
-                T1folder '/w*.nii ' ...
-                flowMap ' ' ...
-                T1folder '/T1spaceanddim_*.nii ' ...
-                outputFolder]);
+    movefile (cGM,                                             outputFolder);
+    movefile (cWM,                                             outputFolder);
+    movefile (cCSF,                                            outputFolder);
+    movefile (mat,                                             outputFolder);
+    movefile (flowMap,                                         outputFolder);
+    movefile (fullfile(T1folder,'r*.nii'),                     outputFolder);
+    movefile (fullfile(T1folder,'w*.nii'),                     outputFolder);
+    movefile (fullfile(T1folder,'t1SpcDim_*.nii'),             outputFolder);
+    movefile (fullfile(outputFolder, 'ventricular_mask.nii'),  outputFolder);
+    movefile (fullfile(outputFolder, 'rventricular_mask.nii'), outputFolder);
 else
-    delete (cGM,cWM,cCSF,mat,fullfile(T1folder,'r*.nii'))
+    delete (cGM,...
+            cWM,...
+            cCSF,...
+            mat,...
+            flowMap,...
+            fullfile(T1folder,'r*.nii'),...
+            fullfile(T1folder,'w*.nii'),...
+            fullfile(T1folder,'t1SpcDim_*.nii'),...
+            fullfile(outputFolder, 'ventricular_mask.nii'),...
+            fullfile(outputFolder, 'rventricular_mask.nii'));
+end
 
-ventricle_native = [outputFolder '/rventricular_mask.nii'];
-
-system (['. ${FSLDIR}/etc/fslconf/fsl.sh;gzip -f ' ventricle_native ';${FSLDIR}/bin/fslmaths ' ventricle_native '.gz -nan -thr 0 -bin ' ventricle_native '.gz;gunzip -f ' ventricle_native '.gz']);
+varargout{1} = fullfile(outputFolder,'latvent.nii');

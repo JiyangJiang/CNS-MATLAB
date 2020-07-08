@@ -2,7 +2,7 @@
 
 % other = ref space image that will be mapped to src space by reversing src-to-ref transformation.
 
-% varargout{1} = 'Tri' for trilinear interpolation
+% varargin{1} = 'Tri' for trilinear interpolation. Default is nearest neighbour.
 
 
 function varargout = cns2_scripts_revReg (cns2param, src, ref, other, varargin)
@@ -51,4 +51,4 @@ function varargout = cns2_scripts_revReg (cns2param, src, ref, other, varargin)
 
 	spm_reslice(files, resliceFlags);
 
-	varargout{1} = fullfile(other_dir ['r' other_filename other_ext]);
+	varargout{1} = fullfile(other_dir, ['r' other_filename other_ext]);
