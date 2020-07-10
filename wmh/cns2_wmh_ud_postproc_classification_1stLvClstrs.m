@@ -9,8 +9,8 @@ if cns2param.exe.verbose && nargin==4
 	fprintf ('%s : generating %s''s 1st-level clusters.\n', curr_cmd, cns2param.lists.subjs{idx,1});
 end
 
-hdr = spm_vol (in_nii);
-dat = spm_read_vols (hdr);
+vol = spm_vol (in_nii);
+dat = spm_read_vols (vol);
 
 % zero nan
 dat(isnan(dat)) = 0;
@@ -60,7 +60,7 @@ if  ~cns2param.exe.save_dskspc
 		fprintf ('%s : writing 1st-level clusters.\n', curr_cmd);
 	end
 	cns2_scripts_writeNii (cns2param, ...
-						   hdr, ...
+						   vol, ...
 						   lv1clstrs_dat, ...
 						   out_nii);
 end

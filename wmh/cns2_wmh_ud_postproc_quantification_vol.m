@@ -9,8 +9,8 @@ if cns2param.exe.verbose && nargin==4
 end
 
 % voxel size
-hdr=spm_vol(flair);
-voxsiz = abs(det(hdr.mat));
+vol=spm_vol(flair);
+voxsiz = abs(det(vol.mat));
 
 % whole brain WMH vol
 wbwmh_vol = sum(nonzeros(wmhmask_dat)) * voxsiz;

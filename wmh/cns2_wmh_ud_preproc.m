@@ -1,5 +1,5 @@
-
-function cns2_wmh_ud_preproc (cns2param,i)
+% varargout{1} = cns2param after updates
+function varargout = cns2_wmh_ud_preproc (cns2param,i)
 
 curr_cmd = mfilename;
 
@@ -47,7 +47,8 @@ case 'dartel'
 case 'native'
 	% preprocessing if extracting in native space
 	% - reverse flowmap
-	% - reverse templates to native
-	% - reverse brain mask to native
+	% - reverse templates to native (cns2_spmbatch_DARTELtoNative + cns2_spmbatch_revReg.m)
+	% - reverse brain mask to native (cns2_spmbatch_DARTELtoNative + cns2_spmbatch_revReg.m)
 	% - mask native flair and t1
+	% - update relevant variables in cns2param, e.g. templates.
 end

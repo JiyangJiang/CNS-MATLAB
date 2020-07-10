@@ -1,5 +1,5 @@
 % varargin{1} = '4d'
-function cns2_scripts_writeNii (cns2param, hdr, dat, out, varargin)
+function cns2_scripts_writeNii (cns2param, vol, dat, out, varargin)
 	
 	curr_cmd = mfilename;
 		
@@ -17,19 +17,19 @@ function cns2_scripts_writeNii (cns2param, hdr, dat, out, varargin)
 		end
 		for i = 1:size (dat,4)
 			split_vols{i,1} = fullfile (outdir, [fname '_' num2str(i) ext]);
-			writeNii (hdr, dat(:,:,:,i), split_vols{i,1});
+			writeNii (vol, dat(:,:,:,i), split_vols{i,1});
 		end
 		spm_file_merge (split_vols,out);
 	% write 3D nii
 	elseif nargin == 4
-		writeNii (hdr, dat, out);
+		writeNii (vol, dat, out);
 	end
 
 end
 
 
-function writeNii (hdr, dat, out)
-	hdr.fname = out;
-	hdr.private.dat.fname = out;
-	spm_write_vol (hdr,dat);
+function writeNii (vol, dat, out)
+	vol.fname = out;
+	vol.private.dat.fname = out;
+	spm_write_vol (vol,dat);
 end
