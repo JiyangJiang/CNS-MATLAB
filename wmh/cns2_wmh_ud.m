@@ -70,14 +70,28 @@ try
 	% initialise cohort-level quantification table
 	quant_tbl_coh = cns2_wmh_ud_initCohQuantTbl (cns2param);
 
+	% ==================================================================================
+	% TO-DO : 
+	%	 1) call cns2_scripts_crtDARTELtemp which then calls cns2_spmbatch_runDARTElc
+	%	 2) update cns2param.templates.temp1_6
+	% ==================================================================================
+	if strcmp(cns2param.templates.options{1},'creating') % creating templates
+	end
+
 	% parfor (i = 1 : cns2param.n_subjs, cns2param.exe.n_cpus)
 	for i = 1 : cns2param.n_subjs
 		
 		diary (fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'ud', 'scripts', 'cns2_ud.log'))
 
 		try
-			
-			cns2_wmh_ud_preproc (cns2param,i);                   % preprocessing
+			switch cns2param.templates.options{1}
+			    case 'existing'
+					cns2_wmh_ud_preproc (cns2param,i);           % preprocessing (existing templates)
+				case 'creating'
+					cns2_wmh_ud_preproc (cns2param,i,flowmaps);  % preprocessing (creating templates - 
+																 % flowmaps are generated during creating
+																 % templates).
+			end
 			
 			quant_tbl_subj = cns2_wmh_ud_postproc (cns2param,i); % postprocessing, including 
 																 % classification and quantification
