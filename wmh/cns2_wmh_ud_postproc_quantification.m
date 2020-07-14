@@ -34,7 +34,7 @@ if nargin==4
 
 elseif nargin==3
 	
-	fprintf ('%s : start quantification.', curr_cmd);
+	fprintf ('%s : start quantification.\n', curr_cmd);
 
 	% quantify volume
 	vol_tbl = cns2_wmh_ud_postproc_quantification_vol (cns2param,wmhmask_dat,flair);

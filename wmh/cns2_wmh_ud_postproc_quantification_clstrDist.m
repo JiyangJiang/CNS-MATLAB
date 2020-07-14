@@ -1,12 +1,16 @@
 % distance between each pair of clusters
-% varargin{1} = subject's id in cns2
 
-function dist_tbl = cns2_wmh_ud_postproc_quantification_clstrDist (cns2param,wmhmask_dat,flair,varargin)
+% varargin{1} = cns2param
+% varargin{2} = subject's id in cns2
 
-curr_cmd = mfilename;
+function dist_tbl = cns2_wmh_ud_postproc_quantification_clstrDist (wmhmask_dat,flair,varargin)
 
-if cns2param.exe.verbose && nargin==4
-	fprintf ('%s : quantifying distance between WMH clusters for %s.\n', curr_cmd, varargin{1});
+if nargin==4
+	cns2param = varargin{1};
+	if cns2param.exe.verbose
+		curr_cmd = mfilename;
+		fprintf ('%s : quantifying distance between WMH clusters for %s.\n', curr_cmd, varargin{2});
+	end
 end
 
 wmhclstrs_struct = bwconncomp (wmhmask_dat, 26); % divide into 26-conn clusters

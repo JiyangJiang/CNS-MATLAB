@@ -1,10 +1,13 @@
-% varargin{1} = subject's id in cns2
-function clstrSiz_tbl = cns2_wmh_ud_postproc_quantification_clstrSiz (cns2param,wmhmask_dat,varargin)
+% varargin{1} = cns2param
+% varargin{2} = subject's id in cns2
+function clstrSiz_tbl = cns2_wmh_ud_postproc_quantification_clstrSiz (wmhmask_dat,varargin)
 
-curr_cmd = mfilename;
-
-if cns2param.exe.verbose && nargin==3
-	fprintf ('%s : quantifying variance in WMH cluster sizes for %s.\n', curr_cmd, varargin{1});
+if nargin==3
+	cns2param = varargin{1};
+	if cns2param.exe.verbose
+		curr_cmd = mfilename;
+		fprintf ('%s : quantifying variance in WMH cluster sizes for %s.\n', curr_cmd, varargin{2});
+	end
 end
 
 wmhclstrs_struct = bwconncomp (wmhmask_dat, 26); % divide into 26-conn clusters
