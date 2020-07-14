@@ -36,5 +36,5 @@ end
 
 % 2. quantification
 % +++++++++++++++++++++
-quant_tbl_subj = cns2_wmh_ud_postproc_quantification (cns2param,wmhmask_dat,flair,i);
+quant_tbl_subj = cns2_wmh_ud_postproc_quantification (wmhmask_dat,flair,cns2param,i);
 
