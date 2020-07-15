@@ -1,8 +1,32 @@
-% varargin{1} = cns2param
-% varargin{2} = index used in cns2
+
+% SENARIO 1
+%
+% 	Standard call for CNS2 UBO Detector. In this case, 4 arguments are required:
+% 	a) 'wmhmask_dat' through calling spm_read_vols and spm_vol, b) path to 'flair',
+% 	c) varargin{1} = cns2param, and d) varargin{2} = index used in cns2. The script 
+% 	will quantify measures for the index in defined in cns2param.
+%
+%
+% SENARIO 2
+%
+% 	WMH masks are extracted by other software, e.g. BIANCA, and this script is called
+% 	only for extracting global WMH measures, including whole brain WMH volumes, total
+% 	number of WMH clusters, average WMH cluster distance, and variance in size between
+% 	WMH clusters. In this case, only 'wmhmask_dat' through calling spm_read_vols and
+% 	spm_vol, and path to 'flair' are required as arguments.
+%
+%
+% SENARIO 3
+%
+% 	WMH masks are extracted by other software, e.g. BIANCA, and this scripts is called
+% 	to extract the full array of measures as standard UBO Detector. In this case,
+%   ---=== TBC ===---
+% 	
 %
 % flair is used for 2 purposes: 1) calculate voxel size (spatial resolution)
 %                               2) find weighted centroid
+
+
 function quant_tbl_subj = cns2_wmh_ud_postproc_quantification (wmhmask_dat,flair,varargin)
 
 curr_cmd=mfilename;
@@ -49,7 +73,7 @@ elseif nargin==2
 	fprintf ('%s : start quantification.\n', curr_cmd);
 
 	% quantify volume
-	vol_tbl = cns2_wmh_ud_postproc_quantification_vol (wmhmask_dat);
+	vol_tbl = cns2_wmh_ud_postproc_quantification_vol (wmhmask_dat,flair);
 
 	% quantify number of clusters
 	noc_tbl = cns2_wmh_ud_postproc_quantification_noc (wmhmask_dat,flair);

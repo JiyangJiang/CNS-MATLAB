@@ -76,7 +76,7 @@ if nargin==4
 
 
 % ++++++++++++++++++++++++++++++++++++++++
-% only global wmh vol
+% only global wmh noc
 % can be used on results from any software
 % ++++++++++++++++++++++++++++++++++++++++
 elseif nargin==2
@@ -93,9 +93,8 @@ elseif nargin==2
 
 
 % +++++++++++++++++++++++++++++++++++++++++++
-% global + pvwmh + dwmh
+% noc in regions, and categorised in sizes.
 % can be used on results from any software
-% as long as t1 is passed as the 3rd argument
 % +++++++++++++++++++++++++++++++++++++++++++
 elseif nargin==3
 end

@@ -1,22 +1,21 @@
 % Standard CNS2 UD call:
 %
-% 	varargin{1} = flair
-% 	varargin{2} = cns2param
-% 	varargin{3} = subject's id in cns2
+% 	varargin{1} = cns2param
+% 	varargin{2} = subject's id in cns2
 %
-% ALTERNATIVELY, if wmh results from any software, and pvwmh and dwmh
-%                are required.
+% ALTERNATIVELY, if wmh results from any software, and full array of 
+%                measures are required. (To be developed)
 %
-% 	varargin{1} = flair
-% 	varargin{2} = t1
+% 	varargin{1} = t1
 %
 %
 % ALTERNATIVELY, if wmh results from any software, and only global
 %                volume is required.
 %
-% 	no need to pass varargin
+% 	only 'wmhmask_dat' and 'flair' is required.
+%   no need to pass varargin
 
-function vol_tbl = cns2_wmh_ud_postproc_quantification_vol (wmhmask_dat,varargin)
+function vol_tbl = cns2_wmh_ud_postproc_quantification_vol (wmhmask_dat,flair,varargin)
 
 curr_cmd=mfilename;
 
@@ -28,9 +27,8 @@ voxsiz = abs(det(vol.mat));
 % standard call from cns2 ud
 % ++++++++++++++++++++++++++
 if nargin==4
-	flair     = varargin{1};
-	cns2param = varargin{2};
-	subjid    = varargin{3};
+	cns2param = varargin{1};
+	subjid    = varargin{2};
 
 	if cns2param.exe.verbose 
 		fprintf ('%s : quantifying volume for %s.\n', curr_cmd, subjid);
@@ -151,7 +149,7 @@ if nargin==4
 % only global wmh vol
 % can be used on results from any software
 % ++++++++++++++++++++++++++++++++++++++++
-elseif nargin==1
+elseif nargin==2
 
 	% whole brain WMH vol
 	wbwmh_vol = sum(nonzeros(wmhmask_dat)) * voxsiz;
@@ -163,8 +161,7 @@ elseif nargin==1
 % as long as t1 is passed as the 3rd argument
 % +++++++++++++++++++++++++++++++++++++++++++
 elseif nargin==3
-	flair = varargin{1};
-	t1    = varargin{2};
+	t1    = varargin{1};
 end
 
 
