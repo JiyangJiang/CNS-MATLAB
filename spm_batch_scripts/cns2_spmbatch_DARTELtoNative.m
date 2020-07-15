@@ -46,3 +46,5 @@ function NativeImg = cns2_spmbatch_DARTELtoNative (DARTELimg, flowMap, varargin)
     output = spm_jobman ('run',matlabbatch);
     
     NativeImg = fullfile (flowMapFolder, ['w' dartelImgFilename '_' flowMapFilename '.nii']);
+    movefile (NativeImg,fullfile(flowMapFolder,dartelImgFilename,'_native.nii'));
+    NativeImg = fullfile (flowMapFolder, dartelImgFilename, '_native.nii');
