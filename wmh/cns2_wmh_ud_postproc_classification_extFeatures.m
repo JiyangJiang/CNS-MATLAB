@@ -17,8 +17,8 @@ flair_dat = spm_read_vols (spm_vol (flair));
 t1_dat    (isnan(t1_dat))    =0;
 flair_dat (isnan(flair_dat)) =0;
 
-gmavg_dat = spm_read_vols (spm_vol (cns2param.templates.gmavg));
-wmavg_dat = spm_read_vols (spm_vol (cns2param.templates.wmavg));
+gmmsk_dat = spm_read_vols (spm_vol (cns2param.templates.gmmsk));
+wmmsk_dat = spm_read_vols (spm_vol (cns2param.templates.wmmsk));
 
 gmprob_dat  = spm_read_vols (spm_vol (cns2param.templates.gmprob));
 wmprob_dat  = spm_read_vols (spm_vol (cns2param.templates.wmprob));
@@ -27,10 +27,10 @@ csfprob_dat = spm_read_vols (spm_vol (cns2param.templates.csfprob));
 ventdst_dat = spm_read_vols (spm_vol (cns2param.templates.ventdst));
 
 % mean intensities
-meanInt_GMonT1    = mean(nonzeros(t1_dat    .* gmavg_dat));
-meanInt_WMonT1    = mean(nonzeros(t1_dat    .* wmavg_dat));
-meanInt_GMonFLAIR = mean(nonzeros(flair_dat .* gmavg_dat));
-meanInt_WMonFLAIR = mean(nonzeros(flair_dat .* wmavg_dat));
+meanInt_GMonT1    = mean(nonzeros(t1_dat    .* gmmsk_dat));
+meanInt_WMonT1    = mean(nonzeros(t1_dat    .* wmmsk_dat));
+meanInt_GMonFLAIR = mean(nonzeros(flair_dat .* gmmsk_dat));
+meanInt_WMonFLAIR = mean(nonzeros(flair_dat .* wmmsk_dat));
 
 % initialise feature table
 Nclstrs = sum([lv2clstrs_struct(:).NumObjects]);

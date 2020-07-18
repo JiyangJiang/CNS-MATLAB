@@ -1167,3 +1167,11 @@ cns2_wmh_ud_postproc_quantification_noc : quantifying noc for 0042.
 cns2_wmh_ud_postproc_quantification_clstrDist : quantifying distance between WMH clusters for 0042.
 cns2_wmh_ud_postproc_quantification_clstrSiz : quantifying variance in WMH cluster sizes for 0042.
 cns2_wmh_ud : 0042 finished UBO Detector without error.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+
+Exception thrown
+++++++++++++++++++++++
+identifier: MATLAB:UndefinedFunction
+message: Unrecognized function or variable 'flowmaps'.
+
+cns2_wmh_ud : 0042 finished UBO Detector with ERROR.

@@ -878,3 +878,11 @@ Running job #1
 
 
 cns2_wmh_ud : 0000 finished UBO Detector with ERROR.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+
+Exception thrown
+++++++++++++++++++++++
+identifier: MATLAB:UndefinedFunction
+message: Unrecognized function or variable 'flowmaps'.
+
+cns2_wmh_ud : 0000 finished UBO Detector with ERROR.

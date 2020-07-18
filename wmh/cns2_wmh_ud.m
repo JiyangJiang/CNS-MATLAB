@@ -1,14 +1,14 @@
-% study_dir = '/Users/z3402744/GitHub/CNS2/example_data';
+study_dir = '/Users/z3402744/GitHub/CNS2/example_data';
 % study_dir = 'C:\Users\jiang\OneDrive\Documents\GitHub\CNS2\example_data';
-study_dir = 'D:\GitHub\CNS2\example_data';
+% study_dir = 'D:\GitHub\CNS2\example_data';
 
-% cns2_dir = '/Users/z3402744/GitHub/CNS2';
+cns2_dir = '/Users/z3402744/GitHub/CNS2';
 % cns2_dir = 'C:\Users\jiang\OneDrive\Documents\GitHub\CNS2';
-cns2_dir = 'D:\GitHub\CNS2';
+% cns2_dir = 'D:\GitHub\CNS2';
 
-% spm_dir = '/Applications/spm12';
+spm_dir = '/Applications/spm12';
 % spm_dir = 'C:\Users\jiang\Downloads\test\spm12';
-spm_dir = 'C:\Program Files\spm12';
+% spm_dir = 'C:\Program Files\spm12';
 
 
 n_cpus = 2;
@@ -16,7 +16,7 @@ save_dskspc = false;
 save_more_dskspc = false;
 verbose = true;
 
-temp_opt = {'existing'; '70to80'};
+temp_opt = {'creating'; '70to80'};
 
 % lv1clstMethod = 'kmeans';
 lv1clstMethod = 'superpixel';
@@ -24,7 +24,7 @@ k4kmeans = 6;
 k4knn    = 5;
 n4superpixel = 5000;
 probthr = 0.7;
-extSpace = 'dartel';
+extSpace = 'native';
 
 pvmag = 12;
 sizthr = [3 9 15];
@@ -44,14 +44,14 @@ curr_cmd=mfilename;
 
 try
 	% general cns2param
-	cns2param = cns2_cns2param  (study_dir, ...
-							     cns2_dir, ...
-							     spm_dir, ...
-							     n_cpus, ...
-							     save_dskspc, ...
-							     save_more_dskspc, ...
-							     verbose, ...
-							     temp_opt);
+	cns2param = cns2_scripts_cns2param  (study_dir, ...
+							             cns2_dir, ...
+							             spm_dir, ...
+							             n_cpus, ...
+							             save_dskspc, ...
+							             save_more_dskspc, ...
+							             verbose, ...
+							             temp_opt);
 
 	% ubo detector-specific cns2param
 	cns2param = cns2_wmh_ud_cns2param  (cns2param, ...
@@ -70,12 +70,9 @@ try
 	% initialise cohort-level quantification table
 	quant_tbl_coh = cns2_wmh_ud_initCohQuantTbl (cns2param);
 
-	% ==================================================================================
-	% TO-DO : 
-	%	 1) call cns2_scripts_crtDARTELtemp which then calls cns2_spmbatch_runDARTElc
-	%	 2) update cns2param.templates.temp1_6
-	% ==================================================================================
+	% creating template
 	if strcmp(cns2param.templates.options{1},'creating') % creating templates
+		[flowmaps,cns2param] = cns2_wmh_ud_crtDartelTemp (cns2param);
 	end
 
 	% parfor (i = 1 : cns2param.n_subjs, cns2param.exe.n_cpus)
