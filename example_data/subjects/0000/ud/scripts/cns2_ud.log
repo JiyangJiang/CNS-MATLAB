@@ -886,3 +886,799 @@ identifier: MATLAB:UndefinedFunction
 message: Unrecognized function or variable 'flowmaps'.
 
 cns2_wmh_ud : 0000 finished UBO Detector with ERROR.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_spmbatch_segmentation : segmenting t1.nii.
+
+
+------------------------------------------------------------------------
+21-Jul-2020 19:16:55 - Running job #1
+------------------------------------------------------------------------
+21-Jul-2020 19:16:55 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7670)                     19:16:55 - 21/07/2020
+========================================================================
+Segment /Users/z3402744/GitHub/CNS2/example_data/subjects/0000/ud/preproc/t1.nii,1
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+21-Jul-2020 19:17:20 - Failed  'Segment'
+Error using sqrtm (line 35)
+Expected input to be finite.
+In file "/Applications/MATLAB_R2020a.app/toolbox/matlab/matfun/sqrtm.m" (???), function "sqrtm" at line 35.
+In file "/Applications/spm12/spm_preproc8.m" (v7593), function "spm_preproc8" at line 671.
+In file "/Applications/spm12/spm_preproc_run.m" (v7670), function "run_job" at line 156.
+In file "/Applications/spm12/spm_preproc_run.m" (v7670), function "spm_preproc_run" at line 41.
+In file "/Applications/spm12/config/spm_cfg_preproc8.m" (v7629), function "spm_local_preproc_run" at line 474.
+
+The following modules did not run:
+Failed: Segment
+
+
+Exception thrown
+++++++++++++++++++++++
+identifier: matlabbatch:run:jobfailederr
+message: Job execution failed. The full log of this run can be found in MATLAB command window, starting with the lines (look for the line showing the exact #job as displayed in this error message)
+------------------ 
+Running job #1
+------------------
+
+
+cns2_wmh_ud_crtDartelTemp : 0000' T1 failed segmentation therefore was excluded from creating cohort-specific templates.
+
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_spmbatch_segmentation : segmenting t1.nii.
+
+
+------------------------------------------------------------------------
+21-Jul-2020 19:40:55 - Running job #1
+------------------------------------------------------------------------
+21-Jul-2020 19:40:55 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7670)                     19:40:55 - 21/07/2020
+========================================================================
+Segment /Users/z3402744/GitHub/CNS2/example_data/subjects/0000/ud/preproc/t1.nii,1
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+21-Jul-2020 19:41:18 - Failed  'Segment'
+Error using sqrtm (line 35)
+Expected input to be finite.
+In file "/Applications/MATLAB_R2020a.app/toolbox/matlab/matfun/sqrtm.m" (???), function "sqrtm" at line 35.
+In file "/Applications/spm12/spm_preproc8.m" (v7593), function "spm_preproc8" at line 671.
+In file "/Applications/spm12/spm_preproc_run.m" (v7670), function "run_job" at line 156.
+In file "/Applications/spm12/spm_preproc_run.m" (v7670), function "spm_preproc_run" at line 41.
+In file "/Applications/spm12/config/spm_cfg_preproc8.m" (v7629), function "spm_local_preproc_run" at line 474.
+
+The following modules did not run:
+Failed: Segment
+
+
+Exception thrown
+++++++++++++++++++++++
+identifier: matlabbatch:run:jobfailederr
+message: Job execution failed. The full log of this run can be found in MATLAB command window, starting with the lines (look for the line showing the exact #job as displayed in this error message)
+------------------ 
+Running job #1
+------------------
+
+
+cns2_wmh_ud_crtDartelTemp : 0000' T1 failed segmentation therefore was excluded from creating cohort-specific templates.
+
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_spmbatch_segmentation : segmenting t1.nii.
+
+
+------------------------------------------------------------------------
+21-Jul-2020 20:06:10 - Running job #1
+------------------------------------------------------------------------
+21-Jul-2020 20:06:10 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7670)                     20:06:10 - 21/07/2020
+========================================================================
+Segment /Users/z3402744/GitHub/CNS2/example_data/subjects/0000/ud/preproc/t1.nii,1
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+21-Jul-2020 20:06:33 - Failed  'Segment'
+Error using sqrtm (line 35)
+Expected input to be finite.
+In file "/Applications/MATLAB_R2020a.app/toolbox/matlab/matfun/sqrtm.m" (???), function "sqrtm" at line 35.
+In file "/Applications/spm12/spm_preproc8.m" (v7593), function "spm_preproc8" at line 671.
+In file "/Applications/spm12/spm_preproc_run.m" (v7670), function "run_job" at line 156.
+In file "/Applications/spm12/spm_preproc_run.m" (v7670), function "spm_preproc_run" at line 41.
+In file "/Applications/spm12/config/spm_cfg_preproc8.m" (v7629), function "spm_local_preproc_run" at line 474.
+
+The following modules did not run:
+Failed: Segment
+
+
+Exception thrown
+++++++++++++++++++++++
+identifier: matlabbatch:run:jobfailederr
+message: Job execution failed. The full log of this run can be found in MATLAB command window, starting with the lines (look for the line showing the exact #job as displayed in this error message)
+------------------ 
+Running job #1
+------------------
+
+
+cns2_wmh_ud_crtDartelTemp : 0000' T1 failed segmentation therefore was excluded from creating cohort-specific templates.
+
+cns2_spmbatch_nativeToDARTEL : warping c1t1 to DARTEL with u_rc1t1_Template.
+
+
+------------------------------------------------------------------------
+21-Jul-2020 20:24:57 - Running job #1
+------------------------------------------------------------------------
+21-Jul-2020 20:24:57 - Running 'Create Warped'
+u_rc1t1_Template: c1t1	1,1,1
+21-Jul-2020 20:24:59 - Done    'Create Warped'
+21-Jul-2020 20:24:59 - Done
+
+cns2_spmbatch_nativeToDARTEL : warping c2t1 to DARTEL with u_rc1t1_Template.
+
+
+------------------------------------------------------------------------
+21-Jul-2020 20:25:02 - Running job #1
+------------------------------------------------------------------------
+21-Jul-2020 20:25:02 - Running 'Create Warped'
+u_rc1t1_Template: c2t1	1,1,1
+21-Jul-2020 20:25:04 - Done    'Create Warped'
+21-Jul-2020 20:25:04 - Done
+
+cns2_spmbatch_nativeToDARTEL : warping c3t1 to DARTEL with u_rc1t1_Template.
+
+
+------------------------------------------------------------------------
+21-Jul-2020 20:25:07 - Running job #1
+------------------------------------------------------------------------
+21-Jul-2020 20:25:07 - Running 'Create Warped'
+u_rc1t1_Template: c3t1	1,1,1
+21-Jul-2020 20:25:09 - Done    'Create Warped'
+21-Jul-2020 20:25:09 - Done
+
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_spmbatch_segmentation : segmenting t1.nii.
+
+
+------------------------------------------------------------------------
+21-Jul-2020 20:33:26 - Running job #1
+------------------------------------------------------------------------
+21-Jul-2020 20:33:26 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7670)                     20:33:26 - 21/07/2020
+========================================================================
+Segment /Users/z3402744/GitHub/CNS2/example_data/subjects/0000/ud/preproc/t1.nii,1
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+21-Jul-2020 20:33:49 - Failed  'Segment'
+Error using sqrtm (line 35)
+Expected input to be finite.
+In file "/Applications/MATLAB_R2020a.app/toolbox/matlab/matfun/sqrtm.m" (???), function "sqrtm" at line 35.
+In file "/Applications/spm12/spm_preproc8.m" (v7593), function "spm_preproc8" at line 671.
+In file "/Applications/spm12/spm_preproc_run.m" (v7670), function "run_job" at line 156.
+In file "/Applications/spm12/spm_preproc_run.m" (v7670), function "spm_preproc_run" at line 41.
+In file "/Applications/spm12/config/spm_cfg_preproc8.m" (v7629), function "spm_local_preproc_run" at line 474.
+
+The following modules did not run:
+Failed: Segment
+
+
+Exception thrown
+++++++++++++++++++++++
+identifier: matlabbatch:run:jobfailederr
+message: Job execution failed. The full log of this run can be found in MATLAB command window, starting with the lines (look for the line showing the exact #job as displayed in this error message)
+------------------ 
+Running job #1
+------------------
+
+
+cns2_wmh_ud_crtDartelTemp : 0000' T1 failed segmentation therefore was excluded from creating cohort-specific templates.
+
+cns2_spmbatch_nativeToDARTEL : warping c1t1 to DARTEL with u_rc1t1_Template.
+
+
+------------------------------------------------------------------------
+21-Jul-2020 20:52:13 - Running job #1
+------------------------------------------------------------------------
+21-Jul-2020 20:52:13 - Running 'Create Warped'
+u_rc1t1_Template: c1t1	1,1,1
+21-Jul-2020 20:52:14 - Done    'Create Warped'
+21-Jul-2020 20:52:14 - Done
+
+cns2_spmbatch_nativeToDARTEL : warping c2t1 to DARTEL with u_rc1t1_Template.
+
+
+------------------------------------------------------------------------
+21-Jul-2020 20:52:18 - Running job #1
+------------------------------------------------------------------------
+21-Jul-2020 20:52:18 - Running 'Create Warped'
+u_rc1t1_Template: c2t1	1,1,1
+21-Jul-2020 20:52:19 - Done    'Create Warped'
+21-Jul-2020 20:52:19 - Done
+
+cns2_spmbatch_nativeToDARTEL : warping c3t1 to DARTEL with u_rc1t1_Template.
+
+
+------------------------------------------------------------------------
+21-Jul-2020 20:52:23 - Running job #1
+------------------------------------------------------------------------
+21-Jul-2020 20:52:23 - Running 'Create Warped'
+u_rc1t1_Template: c3t1	1,1,1
+21-Jul-2020 20:52:24 - Done    'Create Warped'
+21-Jul-2020 20:52:24 - Done
+
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_preproc : start preprocessing 0000.
+
+Exception thrown
+++++++++++++++++++++++
+identifier: MATLAB:UndefinedFunction
+message: Unrecognized function or variable 'cns2param'.
+
+cns2_wmh_ud : 0000 finished UBO Detector with ERROR.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_preproc : start preprocessing 0000.
+
+Exception thrown
+++++++++++++++++++++++
+identifier: MATLAB:UndefinedFunction
+message: Unrecognized function or variable 'cns2param'.
+
+cns2_wmh_ud : 0000 finished UBO Detector with ERROR.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_preproc : start preprocessing 0000.
+cns2_spmbatch_segmentation : segmenting t1.nii.
+
+
+------------------------------------------------------------------------
+21-Jul-2020 21:58:17 - Running job #1
+------------------------------------------------------------------------
+21-Jul-2020 21:58:17 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7670)                     21:58:17 - 21/07/2020
+========================================================================
+Segment <a href="matlab:spm_image('display','/Users/z3402744/GitHub/CNS2/example_data/subjects/0000/ud/preproc/t1.nii,1');">/Users/z3402744/GitHub/CNS2/example_data/subjects/0000/ud/preproc/t1.nii,1</a>
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_sample_priors8', '/Applications/spm12/spm_sample_priors8.m', 53)" style="font-weight:bold">spm_sample_priors8</a> (<a href="matlab: opentoline('/Applications/spm12/spm_sample_priors8.m',53,0)">line 53</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_maff8>affreg', '/Applications/spm12/spm_maff8.m', 242)" style="font-weight:bold">spm_maff8>affreg</a> (<a href="matlab: opentoline('/Applications/spm12/spm_maff8.m',242,0)">line 242</a>)
+            [b, db1, db2, db3] = spm_sample_priors8(tpm,y1,y2,y3);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_maff8', '/Applications/spm12/spm_maff8.m', 27)" style="font-weight:bold">spm_maff8</a> (<a href="matlab: opentoline('/Applications/spm12/spm_maff8.m',27,0)">line 27</a>)
+[M,ll,h]      = affreg(buf, MG, x, ff, varargin{4:end});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run>run_job', '/Applications/spm12/spm_preproc_run.m', 132)" style="font-weight:bold">spm_preproc_run>run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',132,0)">line 132</a>)
+                Affine =
+                spm_maff8(obj.image(1),job.warp.samp,(obj.fwhm+1)*16,tpm,Affine,job.warp.affreg); %
+                Closer to rigid
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run', '/Applications/spm12/spm_preproc_run.m', 41)" style="font-weight:bold">spm_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',41,0)">line 41</a>)
+        varargout{1} = run_job(job);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_cfg_preproc8>spm_local_preproc_run', '/Applications/spm12/config/spm_cfg_preproc8.m', 474)" style="font-weight:bold">spm_cfg_preproc8>spm_local_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/config/spm_cfg_preproc8.m',474,0)">line 474</a>)
+varargout{1} = spm_preproc_run(job);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_run_cm', '/Applications/spm12/matlabbatch/private/cfg_run_cm.m', 29)" style="font-weight:bold">cfg_run_cm</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/private/cfg_run_cm.m',29,0)">line 29</a>)
+    cm.jout = feval(cm.prog, job);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util>local_runcj', '/Applications/spm12/matlabbatch/cfg_util.m', 1717)" style="font-weight:bold">cfg_util>local_runcj</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',1717,0)">line 1717</a>)
+                cm = cfg_run_cm(cm, subsref(mlbch, cfg2jobsubs(job.cjrun, cjid2subsrun{k})));
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util', '/Applications/spm12/matlabbatch/cfg_util.m', 972)" style="font-weight:bold">cfg_util</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',972,0)">line 972</a>)
+        [jobs(cjob), err] = local_runcj(jobs(cjob), cjob, pflag, cflag);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman>fill_run_job', '/Applications/spm12/spm_jobman.m', 469)" style="font-weight:bold">spm_jobman>fill_run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',469,0)">line 469</a>)
+    cfg_util('run', cjob);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman', '/Applications/spm12/spm_jobman.m', 247)" style="font-weight:bold">spm_jobman</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',247,0)">line 247</a>)
+        sts = fill_run_job('run', cjob, varargin{3:end});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_spmbatch_segmentation', '/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m', 86)" style="font-weight:bold">cns2_spmbatch_segmentation</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m',86,0)">line 86</a>)
+    output = spm_jobman ('run',matlabbatch);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc_native', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m', 33)" style="font-weight:bold">cns2_wmh_ud_preproc_native</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m',33,0)">line 33</a>)
+		[cGM,cWM,cCSF,rcGM,rcWM,rcCSF] = cns2_spmbatch_segmentation (cns2param, t1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m', 31)" style="font-weight:bold">cns2_wmh_ud_preproc</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m',31,0)">line 31</a>)
+				cns2_wmh_ud_preproc_native ('cns2_ud',cns2param,i);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m', 86)" style="font-weight:bold">cns2_wmh_ud</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m',86,0)">line 86</a>)
+			    	cns2_wmh_ud_preproc (cns2param,i);           % preprocessing (existing
+                                templates)
+} 
+clear;clc
+cns2_wmh_ud
+cns2_wmh_ud_initDirFile : start initializing directories/files.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_preproc : start preprocessing 0000.
+cns2_spmbatch_segmentation : segmenting t1.nii.
+
+
+------------------------------------------------------------------------
+21-Jul-2020 22:03:00 - Running job #1
+------------------------------------------------------------------------
+21-Jul-2020 22:03:00 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7670)                     22:03:00 - 21/07/2020
+========================================================================
+Segment /Users/z3402744/GitHub/CNS2/example_data/subjects/0000/ud/preproc/t1.nii,1
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In cns2_wmh_ud_preproc_native (line 33)
+  In cns2_wmh_ud_preproc (line 31)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In cns2_wmh_ud_preproc_native (line 33)
+  In cns2_wmh_ud_preproc (line 31)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In cns2_wmh_ud_preproc_native (line 33)
+  In cns2_wmh_ud_preproc (line 31)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In cns2_wmh_ud_preproc_native (line 33)
+  In cns2_wmh_ud_preproc (line 31)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In cns2_wmh_ud_preproc_native (line 33)
+  In cns2_wmh_ud_preproc (line 31)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In cns2_wmh_ud_preproc_native (line 33)
+  In cns2_wmh_ud_preproc (line 31)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+21-Jul-2020 22:03:27 - Failed  'Segment'
+Error using sqrtm (line 35)
+Expected input to be finite.
+In file "/Applications/MATLAB_R2020a.app/toolbox/matlab/matfun/sqrtm.m" (???), function "sqrtm" at line 35.
+In file "/Applications/spm12/spm_preproc8.m" (v7593), function "spm_preproc8" at line 671.
+In file "/Applications/spm12/spm_preproc_run.m" (v7670), function "run_job" at line 156.
+In file "/Applications/spm12/spm_preproc_run.m" (v7670), function "spm_preproc_run" at line 41.
+In file "/Applications/spm12/config/spm_cfg_preproc8.m" (v7629), function "spm_local_preproc_run" at line 474.
+
+The following modules did not run:
+Failed: Segment
+
+
+Exception thrown
+++++++++++++++++++++++
+identifier: matlabbatch:run:jobfailederr
+message: Job execution failed. The full log of this run can be found in MATLAB command window, starting with the lines (look for the line showing the exact #job as displayed in this error message)
+------------------ 
+Running job #1
+------------------
+
+
+cns2_wmh_ud : 0000 finished UBO Detector with ERROR.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.

@@ -5,8 +5,6 @@ function cns2_wmh_ud_preproc_dartel (cns2param,i,varargin)
 
 curr_cmd = mfilename;
 
-fprintf ('%s : start preprocessing %s.\n', curr_cmd, cns2param.lists.subjs{i,1});
-
 if nargin==3 && strcmp(cns2param.templates.options{1},'creating')
 	flowmaps = varargin{1}; % creating templates will also generate flowmaps
 							% which are passed as a cell array in the 3rd

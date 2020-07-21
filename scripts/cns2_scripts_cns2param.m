@@ -46,6 +46,12 @@ for i = 1 : size(t1_dir,1)
 	end
 end
 
+% IDs failed segmentation
+% =========================================================================
+% NOTE that only those failed segmentation during creating DARTEL templates
+% are recorded.
+cns2param.lists.crtTempFailSeg = {};
+
 
 % Host infomation (e.g. os, cpu cores, etc.)
 % Ref : http://undocumentedmatlab.com/articles/undocumented-feature-function

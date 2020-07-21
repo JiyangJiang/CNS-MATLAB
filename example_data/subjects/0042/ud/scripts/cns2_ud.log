@@ -1175,3 +1175,135 @@ identifier: MATLAB:UndefinedFunction
 message: Unrecognized function or variable 'flowmaps'.
 
 cns2_wmh_ud : 0042 finished UBO Detector with ERROR.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_spmbatch_segmentation : segmenting t1.nii.
+
+
+------------------------------------------------------------------------
+21-Jul-2020 19:16:55 - Running job #1
+------------------------------------------------------------------------
+21-Jul-2020 19:16:55 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7670)                     19:16:55 - 21/07/2020
+========================================================================
+Segment /Users/z3402744/GitHub/CNS2/example_data/subjects/0042/ud/preproc/t1.nii,1
+Completed                               :          19:19:26 - 21/07/2020
+21-Jul-2020 19:19:26 - Done    'Segment'
+21-Jul-2020 19:19:26 - Done
+
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_spmbatch_segmentation : segmenting t1.nii.
+
+
+------------------------------------------------------------------------
+21-Jul-2020 19:40:56 - Running job #1
+------------------------------------------------------------------------
+21-Jul-2020 19:40:56 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7670)                     19:40:56 - 21/07/2020
+========================================================================
+Segment /Users/z3402744/GitHub/CNS2/example_data/subjects/0042/ud/preproc/t1.nii,1
+Completed                               :          19:43:28 - 21/07/2020
+21-Jul-2020 19:43:28 - Done    'Segment'
+21-Jul-2020 19:43:28 - Done
+
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_spmbatch_segmentation : segmenting t1.nii.
+
+
+------------------------------------------------------------------------
+21-Jul-2020 20:06:10 - Running job #1
+------------------------------------------------------------------------
+21-Jul-2020 20:06:10 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7670)                     20:06:10 - 21/07/2020
+========================================================================
+Segment /Users/z3402744/GitHub/CNS2/example_data/subjects/0042/ud/preproc/t1.nii,1
+Completed                               :          20:08:40 - 21/07/2020
+21-Jul-2020 20:08:40 - Done    'Segment'
+21-Jul-2020 20:08:40 - Done
+
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_spmbatch_segmentation : segmenting t1.nii.
+
+
+------------------------------------------------------------------------
+21-Jul-2020 20:33:26 - Running job #1
+------------------------------------------------------------------------
+21-Jul-2020 20:33:26 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7670)                     20:33:26 - 21/07/2020
+========================================================================
+Segment /Users/z3402744/GitHub/CNS2/example_data/subjects/0042/ud/preproc/t1.nii,1
+Completed                               :          20:35:57 - 21/07/2020
+21-Jul-2020 20:35:57 - Done    'Segment'
+21-Jul-2020 20:35:57 - Done
+
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_preproc : start preprocessing 0042.
+
+Exception thrown
+++++++++++++++++++++++
+identifier: MATLAB:UndefinedFunction
+message: Unrecognized function or variable 'cns2param'.
+
+cns2_wmh_ud : 0042 finished UBO Detector with ERROR.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_preproc : start preprocessing 0042.
+
+Exception thrown
+++++++++++++++++++++++
+identifier: MATLAB:UndefinedFunction
+message: Unrecognized function or variable 'cns2param'.
+
+cns2_wmh_ud : 0042 finished UBO Detector with ERROR.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_preproc : start preprocessing 0042.
+cns2_spmbatch_segmentation : segmenting t1.nii.
+
+
+------------------------------------------------------------------------
+21-Jul-2020 22:03:00 - Running job #1
+------------------------------------------------------------------------
+21-Jul-2020 22:03:00 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7670)                     22:03:00 - 21/07/2020
+========================================================================
+Segment /Users/z3402744/GitHub/CNS2/example_data/subjects/0042/ud/preproc/t1.nii,1
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.

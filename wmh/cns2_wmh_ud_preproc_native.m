@@ -16,9 +16,6 @@ function cns2param = cns2_wmh_ud_preproc_native (flag,varargin)
 
 curr_cmd = mfilename;
 
-fprintf ('%s : start preprocessing %s.\n', curr_cmd, cns2param.lists.subjs{i,1});
-
-
 switch flag
 
 case 'cns2_ud'
