@@ -1682,3 +1682,677 @@ cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
 cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
 cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
 cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+herecns2_wmh_ud_preproc : start preprocessing 0000.
+cns2_spmbatch_segmentation : segmenting t1.nii.
+
+
+------------------------------------------------------------------------
+22-Jul-2020 17:52:04 - Running job #1
+------------------------------------------------------------------------
+22-Jul-2020 17:52:04 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7670)                     17:52:04 - 22/07/2020
+========================================================================
+Segment /Users/z3402744/GitHub/CNS2/example_data/subjects/0000/ud/preproc/t1.nii,1
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In cns2_wmh_ud_preproc_native (line 33)
+  In cns2_wmh_ud_preproc (line 31)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In cns2_wmh_ud_preproc_native (line 33)
+  In cns2_wmh_ud_preproc (line 31)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In cns2_wmh_ud_preproc_native (line 33)
+  In cns2_wmh_ud_preproc (line 31)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In cns2_wmh_ud_preproc_native (line 33)
+  In cns2_wmh_ud_preproc (line 31)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In cns2_wmh_ud_preproc_native (line 33)
+  In cns2_wmh_ud_preproc (line 31)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In cns2_wmh_ud_preproc_native (line 33)
+  In cns2_wmh_ud_preproc (line 31)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+22-Jul-2020 17:52:36 - Failed  'Segment'
+Error using sqrtm (line 35)
+Expected input to be finite.
+In file "/Applications/MATLAB_R2020a.app/toolbox/matlab/matfun/sqrtm.m" (???), function "sqrtm" at line 35.
+In file "/Applications/spm12/spm_preproc8.m" (v7593), function "spm_preproc8" at line 671.
+In file "/Applications/spm12/spm_preproc_run.m" (v7670), function "run_job" at line 156.
+In file "/Applications/spm12/spm_preproc_run.m" (v7670), function "spm_preproc_run" at line 41.
+In file "/Applications/spm12/config/spm_cfg_preproc8.m" (v7629), function "spm_local_preproc_run" at line 474.
+
+The following modules did not run:
+Failed: Segment
+
+
+Exception thrown
+++++++++++++++++++++++
+identifier: matlabbatch:run:jobfailederr
+message: Job execution failed. The full log of this run can be found in MATLAB command window, starting with the lines (look for the line showing the exact #job as displayed in this error message)
+------------------ 
+Running job #1
+------------------
+
+
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_preproc : start preprocessing 0000.
+cns2_spmbatch_segmentation : segmenting t1.nii.
+
+
+------------------------------------------------------------------------
+22-Jul-2020 18:01:32 - Running job #1
+------------------------------------------------------------------------
+22-Jul-2020 18:01:32 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7670)                     18:01:32 - 22/07/2020
+========================================================================
+Segment /Users/z3402744/GitHub/CNS2/example_data/subjects/0000/ud/preproc/t1.nii,1
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In cns2_wmh_ud_preproc_native (line 33)
+  In cns2_wmh_ud_preproc (line 31)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In cns2_wmh_ud_preproc_native (line 33)
+  In cns2_wmh_ud_preproc (line 31)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In cns2_wmh_ud_preproc_native (line 33)
+  In cns2_wmh_ud_preproc (line 31)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In cns2_wmh_ud_preproc_native (line 33)
+  In cns2_wmh_ud_preproc (line 31)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In cns2_wmh_ud_preproc_native (line 33)
+  In cns2_wmh_ud_preproc (line 31)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In cns2_wmh_ud_preproc_native (line 33)
+  In cns2_wmh_ud_preproc (line 31)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+22-Jul-2020 18:01:56 - Failed  'Segment'
+Error using sqrtm (line 35)
+Expected input to be finite.
+In file "/Applications/MATLAB_R2020a.app/toolbox/matlab/matfun/sqrtm.m" (???), function "sqrtm" at line 35.
+In file "/Applications/spm12/spm_preproc8.m" (v7593), function "spm_preproc8" at line 671.
+In file "/Applications/spm12/spm_preproc_run.m" (v7670), function "run_job" at line 156.
+In file "/Applications/spm12/spm_preproc_run.m" (v7670), function "spm_preproc_run" at line 41.
+In file "/Applications/spm12/config/spm_cfg_preproc8.m" (v7629), function "spm_local_preproc_run" at line 474.
+
+The following modules did not run:
+Failed: Segment
+
+
+Exception thrown
+++++++++++++++++++++++
+identifier: matlabbatch:run:jobfailederr
+message: Job execution failed. The full log of this run can be found in MATLAB command window, starting with the lines (look for the line showing the exact #job as displayed in this error message)
+------------------ 
+Running job #1
+------------------
+
+
+cns2_wmh_ud : 0000 finished UBO Detector with ERROR.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_preproc : start preprocessing 0000.
+cns2_spmbatch_segmentation : segmenting t1.nii.
+
+
+------------------------------------------------------------------------
+22-Jul-2020 18:03:22 - Running job #1
+------------------------------------------------------------------------
+22-Jul-2020 18:03:22 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7670)                     18:03:22 - 22/07/2020
+========================================================================
+Segment <a href="matlab:spm_image('display','/Users/z3402744/GitHub/CNS2/example_data/subjects/0000/ud/preproc/t1.nii,1');">/Users/z3402744/GitHub/CNS2/example_data/subjects/0000/ud/preproc/t1.nii,1</a>
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc8', '/Applications/spm12/spm_preproc8.m', 529)" style="font-weight:bold">spm_preproc8</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc8.m',529,0)">line 529</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run>run_job', '/Applications/spm12/spm_preproc_run.m', 156)" style="font-weight:bold">spm_preproc_run>run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',156,0)">line 156</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run', '/Applications/spm12/spm_preproc_run.m', 41)" style="font-weight:bold">spm_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',41,0)">line 41</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_cfg_preproc8>spm_local_preproc_run', '/Applications/spm12/config/spm_cfg_preproc8.m', 474)" style="font-weight:bold">spm_cfg_preproc8>spm_local_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/config/spm_cfg_preproc8.m',474,0)">line 474</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_run_cm', '/Applications/spm12/matlabbatch/private/cfg_run_cm.m', 29)" style="font-weight:bold">cfg_run_cm</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/private/cfg_run_cm.m',29,0)">line 29</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util>local_runcj', '/Applications/spm12/matlabbatch/cfg_util.m', 1717)" style="font-weight:bold">cfg_util>local_runcj</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',1717,0)">line 1717</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util', '/Applications/spm12/matlabbatch/cfg_util.m', 972)" style="font-weight:bold">cfg_util</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',972,0)">line 972</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman>fill_run_job', '/Applications/spm12/spm_jobman.m', 469)" style="font-weight:bold">spm_jobman>fill_run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',469,0)">line 469</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman', '/Applications/spm12/spm_jobman.m', 247)" style="font-weight:bold">spm_jobman</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',247,0)">line 247</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_spmbatch_segmentation', '/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m', 86)" style="font-weight:bold">cns2_spmbatch_segmentation</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc_native', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m', 33)" style="font-weight:bold">cns2_wmh_ud_preproc_native</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m',33,0)">line 33</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m', 31)" style="font-weight:bold">cns2_wmh_ud_preproc</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m',31,0)">line 31</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m', 94)" style="font-weight:bold">cns2_wmh_ud</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m',94,0)">line 94</a>)
+] 
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc8', '/Applications/spm12/spm_preproc8.m', 529)" style="font-weight:bold">spm_preproc8</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc8.m',529,0)">line 529</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run>run_job', '/Applications/spm12/spm_preproc_run.m', 156)" style="font-weight:bold">spm_preproc_run>run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',156,0)">line 156</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run', '/Applications/spm12/spm_preproc_run.m', 41)" style="font-weight:bold">spm_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',41,0)">line 41</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_cfg_preproc8>spm_local_preproc_run', '/Applications/spm12/config/spm_cfg_preproc8.m', 474)" style="font-weight:bold">spm_cfg_preproc8>spm_local_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/config/spm_cfg_preproc8.m',474,0)">line 474</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_run_cm', '/Applications/spm12/matlabbatch/private/cfg_run_cm.m', 29)" style="font-weight:bold">cfg_run_cm</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/private/cfg_run_cm.m',29,0)">line 29</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util>local_runcj', '/Applications/spm12/matlabbatch/cfg_util.m', 1717)" style="font-weight:bold">cfg_util>local_runcj</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',1717,0)">line 1717</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util', '/Applications/spm12/matlabbatch/cfg_util.m', 972)" style="font-weight:bold">cfg_util</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',972,0)">line 972</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman>fill_run_job', '/Applications/spm12/spm_jobman.m', 469)" style="font-weight:bold">spm_jobman>fill_run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',469,0)">line 469</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman', '/Applications/spm12/spm_jobman.m', 247)" style="font-weight:bold">spm_jobman</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',247,0)">line 247</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_spmbatch_segmentation', '/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m', 86)" style="font-weight:bold">cns2_spmbatch_segmentation</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc_native', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m', 33)" style="font-weight:bold">cns2_wmh_ud_preproc_native</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m',33,0)">line 33</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m', 31)" style="font-weight:bold">cns2_wmh_ud_preproc</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m',31,0)">line 31</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m', 94)" style="font-weight:bold">cns2_wmh_ud</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m',94,0)">line 94</a>)
+] 
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc8', '/Applications/spm12/spm_preproc8.m', 529)" style="font-weight:bold">spm_preproc8</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc8.m',529,0)">line 529</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run>run_job', '/Applications/spm12/spm_preproc_run.m', 156)" style="font-weight:bold">spm_preproc_run>run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',156,0)">line 156</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run', '/Applications/spm12/spm_preproc_run.m', 41)" style="font-weight:bold">spm_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',41,0)">line 41</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_cfg_preproc8>spm_local_preproc_run', '/Applications/spm12/config/spm_cfg_preproc8.m', 474)" style="font-weight:bold">spm_cfg_preproc8>spm_local_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/config/spm_cfg_preproc8.m',474,0)">line 474</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_run_cm', '/Applications/spm12/matlabbatch/private/cfg_run_cm.m', 29)" style="font-weight:bold">cfg_run_cm</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/private/cfg_run_cm.m',29,0)">line 29</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util>local_runcj', '/Applications/spm12/matlabbatch/cfg_util.m', 1717)" style="font-weight:bold">cfg_util>local_runcj</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',1717,0)">line 1717</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util', '/Applications/spm12/matlabbatch/cfg_util.m', 972)" style="font-weight:bold">cfg_util</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',972,0)">line 972</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman>fill_run_job', '/Applications/spm12/spm_jobman.m', 469)" style="font-weight:bold">spm_jobman>fill_run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',469,0)">line 469</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman', '/Applications/spm12/spm_jobman.m', 247)" style="font-weight:bold">spm_jobman</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',247,0)">line 247</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_spmbatch_segmentation', '/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m', 86)" style="font-weight:bold">cns2_spmbatch_segmentation</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc_native', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m', 33)" style="font-weight:bold">cns2_wmh_ud_preproc_native</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m',33,0)">line 33</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m', 31)" style="font-weight:bold">cns2_wmh_ud_preproc</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m',31,0)">line 31</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m', 94)" style="font-weight:bold">cns2_wmh_ud</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m',94,0)">line 94</a>)
+] 
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc8', '/Applications/spm12/spm_preproc8.m', 529)" style="font-weight:bold">spm_preproc8</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc8.m',529,0)">line 529</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run>run_job', '/Applications/spm12/spm_preproc_run.m', 156)" style="font-weight:bold">spm_preproc_run>run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',156,0)">line 156</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run', '/Applications/spm12/spm_preproc_run.m', 41)" style="font-weight:bold">spm_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',41,0)">line 41</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_cfg_preproc8>spm_local_preproc_run', '/Applications/spm12/config/spm_cfg_preproc8.m', 474)" style="font-weight:bold">spm_cfg_preproc8>spm_local_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/config/spm_cfg_preproc8.m',474,0)">line 474</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_run_cm', '/Applications/spm12/matlabbatch/private/cfg_run_cm.m', 29)" style="font-weight:bold">cfg_run_cm</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/private/cfg_run_cm.m',29,0)">line 29</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util>local_runcj', '/Applications/spm12/matlabbatch/cfg_util.m', 1717)" style="font-weight:bold">cfg_util>local_runcj</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',1717,0)">line 1717</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util', '/Applications/spm12/matlabbatch/cfg_util.m', 972)" style="font-weight:bold">cfg_util</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',972,0)">line 972</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman>fill_run_job', '/Applications/spm12/spm_jobman.m', 469)" style="font-weight:bold">spm_jobman>fill_run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',469,0)">line 469</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman', '/Applications/spm12/spm_jobman.m', 247)" style="font-weight:bold">spm_jobman</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',247,0)">line 247</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_spmbatch_segmentation', '/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m', 86)" style="font-weight:bold">cns2_spmbatch_segmentation</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc_native', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m', 33)" style="font-weight:bold">cns2_wmh_ud_preproc_native</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m',33,0)">line 33</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m', 31)" style="font-weight:bold">cns2_wmh_ud_preproc</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m',31,0)">line 31</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m', 94)" style="font-weight:bold">cns2_wmh_ud</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m',94,0)">line 94</a>)
+] 
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc8', '/Applications/spm12/spm_preproc8.m', 529)" style="font-weight:bold">spm_preproc8</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc8.m',529,0)">line 529</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run>run_job', '/Applications/spm12/spm_preproc_run.m', 156)" style="font-weight:bold">spm_preproc_run>run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',156,0)">line 156</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run', '/Applications/spm12/spm_preproc_run.m', 41)" style="font-weight:bold">spm_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',41,0)">line 41</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_cfg_preproc8>spm_local_preproc_run', '/Applications/spm12/config/spm_cfg_preproc8.m', 474)" style="font-weight:bold">spm_cfg_preproc8>spm_local_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/config/spm_cfg_preproc8.m',474,0)">line 474</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_run_cm', '/Applications/spm12/matlabbatch/private/cfg_run_cm.m', 29)" style="font-weight:bold">cfg_run_cm</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/private/cfg_run_cm.m',29,0)">line 29</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util>local_runcj', '/Applications/spm12/matlabbatch/cfg_util.m', 1717)" style="font-weight:bold">cfg_util>local_runcj</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',1717,0)">line 1717</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util', '/Applications/spm12/matlabbatch/cfg_util.m', 972)" style="font-weight:bold">cfg_util</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',972,0)">line 972</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman>fill_run_job', '/Applications/spm12/spm_jobman.m', 469)" style="font-weight:bold">spm_jobman>fill_run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',469,0)">line 469</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman', '/Applications/spm12/spm_jobman.m', 247)" style="font-weight:bold">spm_jobman</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',247,0)">line 247</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_spmbatch_segmentation', '/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m', 86)" style="font-weight:bold">cns2_spmbatch_segmentation</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc_native', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m', 33)" style="font-weight:bold">cns2_wmh_ud_preproc_native</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m',33,0)">line 33</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m', 31)" style="font-weight:bold">cns2_wmh_ud_preproc</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m',31,0)">line 31</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m', 94)" style="font-weight:bold">cns2_wmh_ud</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m',94,0)">line 94</a>)
+] 
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc8', '/Applications/spm12/spm_preproc8.m', 529)" style="font-weight:bold">spm_preproc8</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc8.m',529,0)">line 529</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run>run_job', '/Applications/spm12/spm_preproc_run.m', 156)" style="font-weight:bold">spm_preproc_run>run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',156,0)">line 156</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run', '/Applications/spm12/spm_preproc_run.m', 41)" style="font-weight:bold">spm_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',41,0)">line 41</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_cfg_preproc8>spm_local_preproc_run', '/Applications/spm12/config/spm_cfg_preproc8.m', 474)" style="font-weight:bold">spm_cfg_preproc8>spm_local_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/config/spm_cfg_preproc8.m',474,0)">line 474</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_run_cm', '/Applications/spm12/matlabbatch/private/cfg_run_cm.m', 29)" style="font-weight:bold">cfg_run_cm</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/private/cfg_run_cm.m',29,0)">line 29</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util>local_runcj', '/Applications/spm12/matlabbatch/cfg_util.m', 1717)" style="font-weight:bold">cfg_util>local_runcj</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',1717,0)">line 1717</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util', '/Applications/spm12/matlabbatch/cfg_util.m', 972)" style="font-weight:bold">cfg_util</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',972,0)">line 972</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman>fill_run_job', '/Applications/spm12/spm_jobman.m', 469)" style="font-weight:bold">spm_jobman>fill_run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',469,0)">line 469</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman', '/Applications/spm12/spm_jobman.m', 247)" style="font-weight:bold">spm_jobman</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',247,0)">line 247</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_spmbatch_segmentation', '/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m', 86)" style="font-weight:bold">cns2_spmbatch_segmentation</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc_native', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m', 33)" style="font-weight:bold">cns2_wmh_ud_preproc_native</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m',33,0)">line 33</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m', 31)" style="font-weight:bold">cns2_wmh_ud_preproc</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m',31,0)">line 31</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m', 94)" style="font-weight:bold">cns2_wmh_ud</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m',94,0)">line 94</a>)
+] 
+22-Jul-2020 18:03:47 - Failed  'Segment'
+Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sqrtm', '/Applications/MATLAB_R2020a.app/toolbox/matlab/matfun/sqrtm.m', 35)" style="font-weight:bold">sqrtm</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2020a.app/toolbox/matlab/matfun/sqrtm.m',35,0)">line 35</a>)
+Expected input to be finite.
+In file "/Applications/MATLAB_R2020a.app/toolbox/matlab/matfun/sqrtm.m" (???), function "sqrtm" at <a href="matlab:opentoline('/Applications/MATLAB_R2020a.app/toolbox/matlab/matfun/sqrtm.m', 35, 0)">line 35</a>.
+In file "/Applications/spm12/spm_preproc8.m" (v7593), function "spm_preproc8" at <a href="matlab:opentoline('/Applications/spm12/spm_preproc8.m', 671, 0)">line 671</a>.
+In file "/Applications/spm12/spm_preproc_run.m" (v7670), function "run_job" at <a href="matlab:opentoline('/Applications/spm12/spm_preproc_run.m', 156, 0)">line 156</a>.
+In file "/Applications/spm12/spm_preproc_run.m" (v7670), function "spm_preproc_run" at <a href="matlab:opentoline('/Applications/spm12/spm_preproc_run.m', 41, 0)">line 41</a>.
+In file "/Applications/spm12/config/spm_cfg_preproc8.m" (v7629), function "spm_local_preproc_run" at <a href="matlab:opentoline('/Applications/spm12/config/spm_cfg_preproc8.m', 474, 0)">line 474</a>.
+
+The following modules did not run:
+Failed: Segment
+
+
+Exception thrown
+++++++++++++++++++++++
+identifier: matlabbatch:run:jobfailederr
+message: Job execution failed. The full log of this run can be found in MATLAB command window, starting with the lines (look for the line showing the exact #job as displayed in this error message)
+------------------ 
+Running job #1
+------------------
+
+
+
+tt =
+
+  <a href="matlab:helpPopup table" style="font-weight:bold">table</a>
+
+      <strong>Var1</strong>  
+    <strong>________</strong>
+
+    {'0000'}
+
+cns2_wmh_ud : 0000 finished UBO Detector with ERROR.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_preproc : start preprocessing 0000.
+cns2_spmbatch_segmentation : segmenting t1.nii.
+
+
+------------------------------------------------------------------------
+22-Jul-2020 18:04:43 - Running job #1
+------------------------------------------------------------------------
+22-Jul-2020 18:04:43 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7670)                     18:04:43 - 22/07/2020
+========================================================================
+Segment <a href="matlab:spm_image('display','/Users/z3402744/GitHub/CNS2/example_data/subjects/0000/ud/preproc/t1.nii,1');">/Users/z3402744/GitHub/CNS2/example_data/subjects/0000/ud/preproc/t1.nii,1</a>
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc8', '/Applications/spm12/spm_preproc8.m', 529)" style="font-weight:bold">spm_preproc8</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc8.m',529,0)">line 529</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run>run_job', '/Applications/spm12/spm_preproc_run.m', 156)" style="font-weight:bold">spm_preproc_run>run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',156,0)">line 156</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run', '/Applications/spm12/spm_preproc_run.m', 41)" style="font-weight:bold">spm_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',41,0)">line 41</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_cfg_preproc8>spm_local_preproc_run', '/Applications/spm12/config/spm_cfg_preproc8.m', 474)" style="font-weight:bold">spm_cfg_preproc8>spm_local_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/config/spm_cfg_preproc8.m',474,0)">line 474</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_run_cm', '/Applications/spm12/matlabbatch/private/cfg_run_cm.m', 29)" style="font-weight:bold">cfg_run_cm</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/private/cfg_run_cm.m',29,0)">line 29</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util>local_runcj', '/Applications/spm12/matlabbatch/cfg_util.m', 1717)" style="font-weight:bold">cfg_util>local_runcj</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',1717,0)">line 1717</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util', '/Applications/spm12/matlabbatch/cfg_util.m', 972)" style="font-weight:bold">cfg_util</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',972,0)">line 972</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman>fill_run_job', '/Applications/spm12/spm_jobman.m', 469)" style="font-weight:bold">spm_jobman>fill_run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',469,0)">line 469</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman', '/Applications/spm12/spm_jobman.m', 247)" style="font-weight:bold">spm_jobman</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',247,0)">line 247</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_spmbatch_segmentation', '/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m', 86)" style="font-weight:bold">cns2_spmbatch_segmentation</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc_native', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m', 33)" style="font-weight:bold">cns2_wmh_ud_preproc_native</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m',33,0)">line 33</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m', 31)" style="font-weight:bold">cns2_wmh_ud_preproc</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m',31,0)">line 31</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m', 94)" style="font-weight:bold">cns2_wmh_ud</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m',94,0)">line 94</a>)
+] 
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc8', '/Applications/spm12/spm_preproc8.m', 529)" style="font-weight:bold">spm_preproc8</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc8.m',529,0)">line 529</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run>run_job', '/Applications/spm12/spm_preproc_run.m', 156)" style="font-weight:bold">spm_preproc_run>run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',156,0)">line 156</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run', '/Applications/spm12/spm_preproc_run.m', 41)" style="font-weight:bold">spm_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',41,0)">line 41</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_cfg_preproc8>spm_local_preproc_run', '/Applications/spm12/config/spm_cfg_preproc8.m', 474)" style="font-weight:bold">spm_cfg_preproc8>spm_local_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/config/spm_cfg_preproc8.m',474,0)">line 474</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_run_cm', '/Applications/spm12/matlabbatch/private/cfg_run_cm.m', 29)" style="font-weight:bold">cfg_run_cm</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/private/cfg_run_cm.m',29,0)">line 29</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util>local_runcj', '/Applications/spm12/matlabbatch/cfg_util.m', 1717)" style="font-weight:bold">cfg_util>local_runcj</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',1717,0)">line 1717</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util', '/Applications/spm12/matlabbatch/cfg_util.m', 972)" style="font-weight:bold">cfg_util</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',972,0)">line 972</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman>fill_run_job', '/Applications/spm12/spm_jobman.m', 469)" style="font-weight:bold">spm_jobman>fill_run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',469,0)">line 469</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman', '/Applications/spm12/spm_jobman.m', 247)" style="font-weight:bold">spm_jobman</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',247,0)">line 247</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_spmbatch_segmentation', '/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m', 86)" style="font-weight:bold">cns2_spmbatch_segmentation</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc_native', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m', 33)" style="font-weight:bold">cns2_wmh_ud_preproc_native</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m',33,0)">line 33</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m', 31)" style="font-weight:bold">cns2_wmh_ud_preproc</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m',31,0)">line 31</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m', 94)" style="font-weight:bold">cns2_wmh_ud</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m',94,0)">line 94</a>)
+] 
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc8', '/Applications/spm12/spm_preproc8.m', 529)" style="font-weight:bold">spm_preproc8</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc8.m',529,0)">line 529</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run>run_job', '/Applications/spm12/spm_preproc_run.m', 156)" style="font-weight:bold">spm_preproc_run>run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',156,0)">line 156</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run', '/Applications/spm12/spm_preproc_run.m', 41)" style="font-weight:bold">spm_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',41,0)">line 41</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_cfg_preproc8>spm_local_preproc_run', '/Applications/spm12/config/spm_cfg_preproc8.m', 474)" style="font-weight:bold">spm_cfg_preproc8>spm_local_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/config/spm_cfg_preproc8.m',474,0)">line 474</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_run_cm', '/Applications/spm12/matlabbatch/private/cfg_run_cm.m', 29)" style="font-weight:bold">cfg_run_cm</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/private/cfg_run_cm.m',29,0)">line 29</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util>local_runcj', '/Applications/spm12/matlabbatch/cfg_util.m', 1717)" style="font-weight:bold">cfg_util>local_runcj</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',1717,0)">line 1717</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util', '/Applications/spm12/matlabbatch/cfg_util.m', 972)" style="font-weight:bold">cfg_util</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',972,0)">line 972</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman>fill_run_job', '/Applications/spm12/spm_jobman.m', 469)" style="font-weight:bold">spm_jobman>fill_run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',469,0)">line 469</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman', '/Applications/spm12/spm_jobman.m', 247)" style="font-weight:bold">spm_jobman</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',247,0)">line 247</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_spmbatch_segmentation', '/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m', 86)" style="font-weight:bold">cns2_spmbatch_segmentation</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc_native', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m', 33)" style="font-weight:bold">cns2_wmh_ud_preproc_native</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m',33,0)">line 33</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m', 31)" style="font-weight:bold">cns2_wmh_ud_preproc</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m',31,0)">line 31</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m', 94)" style="font-weight:bold">cns2_wmh_ud</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m',94,0)">line 94</a>)
+] 
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc8', '/Applications/spm12/spm_preproc8.m', 529)" style="font-weight:bold">spm_preproc8</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc8.m',529,0)">line 529</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run>run_job', '/Applications/spm12/spm_preproc_run.m', 156)" style="font-weight:bold">spm_preproc_run>run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',156,0)">line 156</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run', '/Applications/spm12/spm_preproc_run.m', 41)" style="font-weight:bold">spm_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',41,0)">line 41</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_cfg_preproc8>spm_local_preproc_run', '/Applications/spm12/config/spm_cfg_preproc8.m', 474)" style="font-weight:bold">spm_cfg_preproc8>spm_local_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/config/spm_cfg_preproc8.m',474,0)">line 474</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_run_cm', '/Applications/spm12/matlabbatch/private/cfg_run_cm.m', 29)" style="font-weight:bold">cfg_run_cm</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/private/cfg_run_cm.m',29,0)">line 29</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util>local_runcj', '/Applications/spm12/matlabbatch/cfg_util.m', 1717)" style="font-weight:bold">cfg_util>local_runcj</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',1717,0)">line 1717</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util', '/Applications/spm12/matlabbatch/cfg_util.m', 972)" style="font-weight:bold">cfg_util</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',972,0)">line 972</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman>fill_run_job', '/Applications/spm12/spm_jobman.m', 469)" style="font-weight:bold">spm_jobman>fill_run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',469,0)">line 469</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman', '/Applications/spm12/spm_jobman.m', 247)" style="font-weight:bold">spm_jobman</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',247,0)">line 247</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_spmbatch_segmentation', '/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m', 86)" style="font-weight:bold">cns2_spmbatch_segmentation</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc_native', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m', 33)" style="font-weight:bold">cns2_wmh_ud_preproc_native</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m',33,0)">line 33</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m', 31)" style="font-weight:bold">cns2_wmh_ud_preproc</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m',31,0)">line 31</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m', 94)" style="font-weight:bold">cns2_wmh_ud</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m',94,0)">line 94</a>)
+] 
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc8', '/Applications/spm12/spm_preproc8.m', 529)" style="font-weight:bold">spm_preproc8</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc8.m',529,0)">line 529</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run>run_job', '/Applications/spm12/spm_preproc_run.m', 156)" style="font-weight:bold">spm_preproc_run>run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',156,0)">line 156</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run', '/Applications/spm12/spm_preproc_run.m', 41)" style="font-weight:bold">spm_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',41,0)">line 41</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_cfg_preproc8>spm_local_preproc_run', '/Applications/spm12/config/spm_cfg_preproc8.m', 474)" style="font-weight:bold">spm_cfg_preproc8>spm_local_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/config/spm_cfg_preproc8.m',474,0)">line 474</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_run_cm', '/Applications/spm12/matlabbatch/private/cfg_run_cm.m', 29)" style="font-weight:bold">cfg_run_cm</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/private/cfg_run_cm.m',29,0)">line 29</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util>local_runcj', '/Applications/spm12/matlabbatch/cfg_util.m', 1717)" style="font-weight:bold">cfg_util>local_runcj</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',1717,0)">line 1717</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util', '/Applications/spm12/matlabbatch/cfg_util.m', 972)" style="font-weight:bold">cfg_util</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',972,0)">line 972</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman>fill_run_job', '/Applications/spm12/spm_jobman.m', 469)" style="font-weight:bold">spm_jobman>fill_run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',469,0)">line 469</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman', '/Applications/spm12/spm_jobman.m', 247)" style="font-weight:bold">spm_jobman</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',247,0)">line 247</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_spmbatch_segmentation', '/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m', 86)" style="font-weight:bold">cns2_spmbatch_segmentation</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc_native', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m', 33)" style="font-weight:bold">cns2_wmh_ud_preproc_native</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m',33,0)">line 33</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m', 31)" style="font-weight:bold">cns2_wmh_ud_preproc</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m',31,0)">line 31</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m', 94)" style="font-weight:bold">cns2_wmh_ud</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m',94,0)">line 94</a>)
+] 
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc8', '/Applications/spm12/spm_preproc8.m', 529)" style="font-weight:bold">spm_preproc8</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc8.m',529,0)">line 529</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run>run_job', '/Applications/spm12/spm_preproc_run.m', 156)" style="font-weight:bold">spm_preproc_run>run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',156,0)">line 156</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run', '/Applications/spm12/spm_preproc_run.m', 41)" style="font-weight:bold">spm_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',41,0)">line 41</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_cfg_preproc8>spm_local_preproc_run', '/Applications/spm12/config/spm_cfg_preproc8.m', 474)" style="font-weight:bold">spm_cfg_preproc8>spm_local_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/config/spm_cfg_preproc8.m',474,0)">line 474</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_run_cm', '/Applications/spm12/matlabbatch/private/cfg_run_cm.m', 29)" style="font-weight:bold">cfg_run_cm</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/private/cfg_run_cm.m',29,0)">line 29</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util>local_runcj', '/Applications/spm12/matlabbatch/cfg_util.m', 1717)" style="font-weight:bold">cfg_util>local_runcj</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',1717,0)">line 1717</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util', '/Applications/spm12/matlabbatch/cfg_util.m', 972)" style="font-weight:bold">cfg_util</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',972,0)">line 972</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman>fill_run_job', '/Applications/spm12/spm_jobman.m', 469)" style="font-weight:bold">spm_jobman>fill_run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',469,0)">line 469</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman', '/Applications/spm12/spm_jobman.m', 247)" style="font-weight:bold">spm_jobman</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',247,0)">line 247</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_spmbatch_segmentation', '/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m', 86)" style="font-weight:bold">cns2_spmbatch_segmentation</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc_native', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m', 33)" style="font-weight:bold">cns2_wmh_ud_preproc_native</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m',33,0)">line 33</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m', 31)" style="font-weight:bold">cns2_wmh_ud_preproc</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m',31,0)">line 31</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m', 94)" style="font-weight:bold">cns2_wmh_ud</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m',94,0)">line 94</a>)
+] 
+22-Jul-2020 18:05:07 - Failed  'Segment'
+Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sqrtm', '/Applications/MATLAB_R2020a.app/toolbox/matlab/matfun/sqrtm.m', 35)" style="font-weight:bold">sqrtm</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2020a.app/toolbox/matlab/matfun/sqrtm.m',35,0)">line 35</a>)
+Expected input to be finite.
+In file "/Applications/MATLAB_R2020a.app/toolbox/matlab/matfun/sqrtm.m" (???), function "sqrtm" at <a href="matlab:opentoline('/Applications/MATLAB_R2020a.app/toolbox/matlab/matfun/sqrtm.m', 35, 0)">line 35</a>.
+In file "/Applications/spm12/spm_preproc8.m" (v7593), function "spm_preproc8" at <a href="matlab:opentoline('/Applications/spm12/spm_preproc8.m', 671, 0)">line 671</a>.
+In file "/Applications/spm12/spm_preproc_run.m" (v7670), function "run_job" at <a href="matlab:opentoline('/Applications/spm12/spm_preproc_run.m', 156, 0)">line 156</a>.
+In file "/Applications/spm12/spm_preproc_run.m" (v7670), function "spm_preproc_run" at <a href="matlab:opentoline('/Applications/spm12/spm_preproc_run.m', 41, 0)">line 41</a>.
+In file "/Applications/spm12/config/spm_cfg_preproc8.m" (v7629), function "spm_local_preproc_run" at <a href="matlab:opentoline('/Applications/spm12/config/spm_cfg_preproc8.m', 474, 0)">line 474</a>.
+
+The following modules did not run:
+Failed: Segment
+
+
+Exception thrown
+++++++++++++++++++++++
+identifier: matlabbatch:run:jobfailederr
+message: Job execution failed. The full log of this run can be found in MATLAB command window, starting with the lines (look for the line showing the exact #job as displayed in this error message)
+------------------ 
+Running job #1
+------------------
+
+
+
+tt =
+
+  <a href="matlab:helpPopup table" style="font-weight:bold">table</a>
+
+      <strong>Var1</strong>  
+    <strong>________</strong>
+
+    {'0000'}
+
+cns2_wmh_ud : 0000 finished UBO Detector with ERROR.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_preproc : start preprocessing 0000.
+cns2_spmbatch_segmentation : segmenting t1.nii.
+
+
+------------------------------------------------------------------------
+22-Jul-2020 18:07:08 - Running job #1
+------------------------------------------------------------------------
+22-Jul-2020 18:07:08 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7670)                     18:07:08 - 22/07/2020
+========================================================================
+Segment <a href="matlab:spm_image('display','/Users/z3402744/GitHub/CNS2/example_data/subjects/0000/ud/preproc/t1.nii,1');">/Users/z3402744/GitHub/CNS2/example_data/subjects/0000/ud/preproc/t1.nii,1</a>
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc8', '/Applications/spm12/spm_preproc8.m', 529)" style="font-weight:bold">spm_preproc8</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc8.m',529,0)">line 529</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run>run_job', '/Applications/spm12/spm_preproc_run.m', 156)" style="font-weight:bold">spm_preproc_run>run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',156,0)">line 156</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run', '/Applications/spm12/spm_preproc_run.m', 41)" style="font-weight:bold">spm_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',41,0)">line 41</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_cfg_preproc8>spm_local_preproc_run', '/Applications/spm12/config/spm_cfg_preproc8.m', 474)" style="font-weight:bold">spm_cfg_preproc8>spm_local_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/config/spm_cfg_preproc8.m',474,0)">line 474</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_run_cm', '/Applications/spm12/matlabbatch/private/cfg_run_cm.m', 29)" style="font-weight:bold">cfg_run_cm</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/private/cfg_run_cm.m',29,0)">line 29</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util>local_runcj', '/Applications/spm12/matlabbatch/cfg_util.m', 1717)" style="font-weight:bold">cfg_util>local_runcj</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',1717,0)">line 1717</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util', '/Applications/spm12/matlabbatch/cfg_util.m', 972)" style="font-weight:bold">cfg_util</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',972,0)">line 972</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman>fill_run_job', '/Applications/spm12/spm_jobman.m', 469)" style="font-weight:bold">spm_jobman>fill_run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',469,0)">line 469</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman', '/Applications/spm12/spm_jobman.m', 247)" style="font-weight:bold">spm_jobman</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',247,0)">line 247</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_spmbatch_segmentation', '/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m', 86)" style="font-weight:bold">cns2_spmbatch_segmentation</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc_native', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m', 33)" style="font-weight:bold">cns2_wmh_ud_preproc_native</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m',33,0)">line 33</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m', 31)" style="font-weight:bold">cns2_wmh_ud_preproc</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m',31,0)">line 31</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m', 94)" style="font-weight:bold">cns2_wmh_ud</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m',94,0)">line 94</a>)
+] 
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc8', '/Applications/spm12/spm_preproc8.m', 529)" style="font-weight:bold">spm_preproc8</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc8.m',529,0)">line 529</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run>run_job', '/Applications/spm12/spm_preproc_run.m', 156)" style="font-weight:bold">spm_preproc_run>run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',156,0)">line 156</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run', '/Applications/spm12/spm_preproc_run.m', 41)" style="font-weight:bold">spm_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',41,0)">line 41</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_cfg_preproc8>spm_local_preproc_run', '/Applications/spm12/config/spm_cfg_preproc8.m', 474)" style="font-weight:bold">spm_cfg_preproc8>spm_local_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/config/spm_cfg_preproc8.m',474,0)">line 474</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_run_cm', '/Applications/spm12/matlabbatch/private/cfg_run_cm.m', 29)" style="font-weight:bold">cfg_run_cm</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/private/cfg_run_cm.m',29,0)">line 29</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util>local_runcj', '/Applications/spm12/matlabbatch/cfg_util.m', 1717)" style="font-weight:bold">cfg_util>local_runcj</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',1717,0)">line 1717</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util', '/Applications/spm12/matlabbatch/cfg_util.m', 972)" style="font-weight:bold">cfg_util</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',972,0)">line 972</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman>fill_run_job', '/Applications/spm12/spm_jobman.m', 469)" style="font-weight:bold">spm_jobman>fill_run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',469,0)">line 469</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman', '/Applications/spm12/spm_jobman.m', 247)" style="font-weight:bold">spm_jobman</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',247,0)">line 247</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_spmbatch_segmentation', '/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m', 86)" style="font-weight:bold">cns2_spmbatch_segmentation</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc_native', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m', 33)" style="font-weight:bold">cns2_wmh_ud_preproc_native</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m',33,0)">line 33</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m', 31)" style="font-weight:bold">cns2_wmh_ud_preproc</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m',31,0)">line 31</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m', 94)" style="font-weight:bold">cns2_wmh_ud</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m',94,0)">line 94</a>)
+] 
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc8', '/Applications/spm12/spm_preproc8.m', 529)" style="font-weight:bold">spm_preproc8</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc8.m',529,0)">line 529</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run>run_job', '/Applications/spm12/spm_preproc_run.m', 156)" style="font-weight:bold">spm_preproc_run>run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',156,0)">line 156</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run', '/Applications/spm12/spm_preproc_run.m', 41)" style="font-weight:bold">spm_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',41,0)">line 41</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_cfg_preproc8>spm_local_preproc_run', '/Applications/spm12/config/spm_cfg_preproc8.m', 474)" style="font-weight:bold">spm_cfg_preproc8>spm_local_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/config/spm_cfg_preproc8.m',474,0)">line 474</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_run_cm', '/Applications/spm12/matlabbatch/private/cfg_run_cm.m', 29)" style="font-weight:bold">cfg_run_cm</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/private/cfg_run_cm.m',29,0)">line 29</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util>local_runcj', '/Applications/spm12/matlabbatch/cfg_util.m', 1717)" style="font-weight:bold">cfg_util>local_runcj</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',1717,0)">line 1717</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util', '/Applications/spm12/matlabbatch/cfg_util.m', 972)" style="font-weight:bold">cfg_util</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',972,0)">line 972</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman>fill_run_job', '/Applications/spm12/spm_jobman.m', 469)" style="font-weight:bold">spm_jobman>fill_run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',469,0)">line 469</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman', '/Applications/spm12/spm_jobman.m', 247)" style="font-weight:bold">spm_jobman</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',247,0)">line 247</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_spmbatch_segmentation', '/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m', 86)" style="font-weight:bold">cns2_spmbatch_segmentation</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc_native', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m', 33)" style="font-weight:bold">cns2_wmh_ud_preproc_native</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m',33,0)">line 33</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m', 31)" style="font-weight:bold">cns2_wmh_ud_preproc</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m',31,0)">line 31</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m', 94)" style="font-weight:bold">cns2_wmh_ud</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m',94,0)">line 94</a>)
+] 
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc8', '/Applications/spm12/spm_preproc8.m', 529)" style="font-weight:bold">spm_preproc8</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc8.m',529,0)">line 529</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run>run_job', '/Applications/spm12/spm_preproc_run.m', 156)" style="font-weight:bold">spm_preproc_run>run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',156,0)">line 156</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run', '/Applications/spm12/spm_preproc_run.m', 41)" style="font-weight:bold">spm_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',41,0)">line 41</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_cfg_preproc8>spm_local_preproc_run', '/Applications/spm12/config/spm_cfg_preproc8.m', 474)" style="font-weight:bold">spm_cfg_preproc8>spm_local_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/config/spm_cfg_preproc8.m',474,0)">line 474</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_run_cm', '/Applications/spm12/matlabbatch/private/cfg_run_cm.m', 29)" style="font-weight:bold">cfg_run_cm</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/private/cfg_run_cm.m',29,0)">line 29</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util>local_runcj', '/Applications/spm12/matlabbatch/cfg_util.m', 1717)" style="font-weight:bold">cfg_util>local_runcj</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',1717,0)">line 1717</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util', '/Applications/spm12/matlabbatch/cfg_util.m', 972)" style="font-weight:bold">cfg_util</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',972,0)">line 972</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman>fill_run_job', '/Applications/spm12/spm_jobman.m', 469)" style="font-weight:bold">spm_jobman>fill_run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',469,0)">line 469</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman', '/Applications/spm12/spm_jobman.m', 247)" style="font-weight:bold">spm_jobman</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',247,0)">line 247</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_spmbatch_segmentation', '/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m', 86)" style="font-weight:bold">cns2_spmbatch_segmentation</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc_native', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m', 33)" style="font-weight:bold">cns2_wmh_ud_preproc_native</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m',33,0)">line 33</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m', 31)" style="font-weight:bold">cns2_wmh_ud_preproc</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m',31,0)">line 31</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m', 94)" style="font-weight:bold">cns2_wmh_ud</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m',94,0)">line 94</a>)
+] 
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc8', '/Applications/spm12/spm_preproc8.m', 529)" style="font-weight:bold">spm_preproc8</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc8.m',529,0)">line 529</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run>run_job', '/Applications/spm12/spm_preproc_run.m', 156)" style="font-weight:bold">spm_preproc_run>run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',156,0)">line 156</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run', '/Applications/spm12/spm_preproc_run.m', 41)" style="font-weight:bold">spm_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',41,0)">line 41</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_cfg_preproc8>spm_local_preproc_run', '/Applications/spm12/config/spm_cfg_preproc8.m', 474)" style="font-weight:bold">spm_cfg_preproc8>spm_local_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/config/spm_cfg_preproc8.m',474,0)">line 474</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_run_cm', '/Applications/spm12/matlabbatch/private/cfg_run_cm.m', 29)" style="font-weight:bold">cfg_run_cm</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/private/cfg_run_cm.m',29,0)">line 29</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util>local_runcj', '/Applications/spm12/matlabbatch/cfg_util.m', 1717)" style="font-weight:bold">cfg_util>local_runcj</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',1717,0)">line 1717</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util', '/Applications/spm12/matlabbatch/cfg_util.m', 972)" style="font-weight:bold">cfg_util</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',972,0)">line 972</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman>fill_run_job', '/Applications/spm12/spm_jobman.m', 469)" style="font-weight:bold">spm_jobman>fill_run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',469,0)">line 469</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman', '/Applications/spm12/spm_jobman.m', 247)" style="font-weight:bold">spm_jobman</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',247,0)">line 247</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_spmbatch_segmentation', '/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m', 86)" style="font-weight:bold">cns2_spmbatch_segmentation</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc_native', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m', 33)" style="font-weight:bold">cns2_wmh_ud_preproc_native</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m',33,0)">line 33</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m', 31)" style="font-weight:bold">cns2_wmh_ud_preproc</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m',31,0)">line 31</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m', 94)" style="font-weight:bold">cns2_wmh_ud</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m',94,0)">line 94</a>)
+] 
+[Warning: Matrix is singular to working precision.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc8', '/Applications/spm12/spm_preproc8.m', 529)" style="font-weight:bold">spm_preproc8</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc8.m',529,0)">line 529</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run>run_job', '/Applications/spm12/spm_preproc_run.m', 156)" style="font-weight:bold">spm_preproc_run>run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',156,0)">line 156</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_preproc_run', '/Applications/spm12/spm_preproc_run.m', 41)" style="font-weight:bold">spm_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/spm_preproc_run.m',41,0)">line 41</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_cfg_preproc8>spm_local_preproc_run', '/Applications/spm12/config/spm_cfg_preproc8.m', 474)" style="font-weight:bold">spm_cfg_preproc8>spm_local_preproc_run</a> (<a href="matlab: opentoline('/Applications/spm12/config/spm_cfg_preproc8.m',474,0)">line 474</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_run_cm', '/Applications/spm12/matlabbatch/private/cfg_run_cm.m', 29)" style="font-weight:bold">cfg_run_cm</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/private/cfg_run_cm.m',29,0)">line 29</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util>local_runcj', '/Applications/spm12/matlabbatch/cfg_util.m', 1717)" style="font-weight:bold">cfg_util>local_runcj</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',1717,0)">line 1717</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_util', '/Applications/spm12/matlabbatch/cfg_util.m', 972)" style="font-weight:bold">cfg_util</a> (<a href="matlab: opentoline('/Applications/spm12/matlabbatch/cfg_util.m',972,0)">line 972</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman>fill_run_job', '/Applications/spm12/spm_jobman.m', 469)" style="font-weight:bold">spm_jobman>fill_run_job</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',469,0)">line 469</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_jobman', '/Applications/spm12/spm_jobman.m', 247)" style="font-weight:bold">spm_jobman</a> (<a href="matlab: opentoline('/Applications/spm12/spm_jobman.m',247,0)">line 247</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_spmbatch_segmentation', '/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m', 86)" style="font-weight:bold">cns2_spmbatch_segmentation</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/spm_batch_scripts/cns2_spmbatch_segmentation.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc_native', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m', 33)" style="font-weight:bold">cns2_wmh_ud_preproc_native</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc_native.m',33,0)">line 33</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud_preproc', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m', 31)" style="font-weight:bold">cns2_wmh_ud_preproc</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud_preproc.m',31,0)">line 31</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cns2_wmh_ud', '/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m', 94)" style="font-weight:bold">cns2_wmh_ud</a> (<a href="matlab: opentoline('/Users/z3402744/GitHub/CNS2/wmh/cns2_wmh_ud.m',94,0)">line 94</a>)
+] 
+22-Jul-2020 18:07:33 - Failed  'Segment'
+Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sqrtm', '/Applications/MATLAB_R2020a.app/toolbox/matlab/matfun/sqrtm.m', 35)" style="font-weight:bold">sqrtm</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2020a.app/toolbox/matlab/matfun/sqrtm.m',35,0)">line 35</a>)
+Expected input to be finite.
+In file "/Applications/MATLAB_R2020a.app/toolbox/matlab/matfun/sqrtm.m" (???), function "sqrtm" at <a href="matlab:opentoline('/Applications/MATLAB_R2020a.app/toolbox/matlab/matfun/sqrtm.m', 35, 0)">line 35</a>.
+In file "/Applications/spm12/spm_preproc8.m" (v7593), function "spm_preproc8" at <a href="matlab:opentoline('/Applications/spm12/spm_preproc8.m', 671, 0)">line 671</a>.
+In file "/Applications/spm12/spm_preproc_run.m" (v7670), function "run_job" at <a href="matlab:opentoline('/Applications/spm12/spm_preproc_run.m', 156, 0)">line 156</a>.
+In file "/Applications/spm12/spm_preproc_run.m" (v7670), function "spm_preproc_run" at <a href="matlab:opentoline('/Applications/spm12/spm_preproc_run.m', 41, 0)">line 41</a>.
+In file "/Applications/spm12/config/spm_cfg_preproc8.m" (v7629), function "spm_local_preproc_run" at <a href="matlab:opentoline('/Applications/spm12/config/spm_cfg_preproc8.m', 474, 0)">line 474</a>.
+
+The following modules did not run:
+Failed: Segment
+
+
+Exception thrown
+++++++++++++++++++++++
+identifier: matlabbatch:run:jobfailederr
+message: Job execution failed. The full log of this run can be found in MATLAB command window, starting with the lines (look for the line showing the exact #job as displayed in this error message)
+------------------ 
+Running job #1
+------------------
+
+
+
+tt =
+
+  1×194 <a href="matlab:helpPopup table" style="font-weight:bold">table</a>
+
+      <strong>Var1</strong>      <strong>Var2</strong>    <strong>Var3</strong>    <strong>Var4</strong>    <strong>Var5</strong>    <strong>Var6</strong>    <strong>Var7</strong>    <strong>Var8</strong>    <strong>Var9</strong>    <strong>Var10</strong>    <strong>Var11</strong>    <strong>Var12</strong>    <strong>Var13</strong>    <strong>Var14</strong>    <strong>Var15</strong>    <strong>Var16</strong>    <strong>Var17</strong>    <strong>Var18</strong>    <strong>Var19</strong>    <strong>Var20</strong>    <strong>Var21</strong>    <strong>Var22</strong>    <strong>Var23</strong>    <strong>Var24</strong>    <strong>Var25</strong>    <strong>Var26</strong>    <strong>Var27</strong>    <strong>Var28</strong>    <strong>Var29</strong>    <strong>Var30</strong>    <strong>Var31</strong>    <strong>Var32</strong>    <strong>Var33</strong>    <strong>Var34</strong>    <strong>Var35</strong>    <strong>Var36</strong>    <strong>Var37</strong>    <strong>Var38</strong>    <strong>Var39</strong>    <strong>Var40</strong>    <strong>Var41</strong>    <strong>Var42</strong>    <strong>Var43</strong>    <strong>Var44</strong>    <strong>Var45</strong>    <strong>Var46</strong>    <strong>Var47</strong>    <strong>Var48</strong>    <strong>Var49</strong>    <strong>Var50</strong>    <strong>Var51</strong>    <strong>Var52</strong>    <strong>Var53</strong>    <strong>Var54</strong>    <strong>Var55</strong>    <strong>Var56</strong>    <strong>Var57</strong>    <strong>Var58</strong>    <strong>Var59</strong>    <strong>Var60</strong>    <strong>Var61</strong>    <strong>Var62</strong>    <strong>Var63</strong>    <strong>Var64</strong>    <strong>Var65</strong>    <strong>Var66</strong>    <strong>Var67</strong>    <strong>Var68</strong>    <strong>Var69</strong>    <strong>Var70</strong>    <strong>Var71</strong>    <strong>Var72</strong>    <strong>Var73</strong>    <strong>Var74</strong>    <strong>Var75</strong>    <strong>Var76</strong>    <strong>Var77</strong>    <strong>Var78</strong>    <strong>Var79</strong>    <strong>Var80</strong>    <strong>Var81</strong>    <strong>Var82</strong>    <strong>Var83</strong>    <strong>Var84</strong>    <strong>Var85</strong>    <strong>Var86</strong>    <strong>Var87</strong>    <strong>Var88</strong>    <strong>Var89</strong>    <strong>Var90</strong>    <strong>Var91</strong>    <strong>Var92</strong>    <strong>Var93</strong>    <strong>Var94</strong>    <strong>Var95</strong>    <strong>Var96</strong>    <strong>Var97</strong>    <strong>Var98</strong>    <strong>Var99</strong>    <strong>Var100</strong>    <strong>Var101</strong>    <strong>Var102</strong>    <strong>Var103</strong>    <strong>Var104</strong>    <strong>Var105</strong>    <strong>Var106</strong>    <strong>Var107</strong>    <strong>Var108</strong>    <strong>Var109</strong>    <strong>Var110</strong>    <strong>Var111</strong>    <strong>Var112</strong>    <strong>Var113</strong>    <strong>Var114</strong>    <strong>Var115</strong>    <strong>Var116</strong>    <strong>Var117</strong>    <strong>Var118</strong>    <strong>Var119</strong>    <strong>Var120</strong>    <strong>Var121</strong>    <strong>Var122</strong>    <strong>Var123</strong>    <strong>Var124</strong>    <strong>Var125</strong>    <strong>Var126</strong>    <strong>Var127</strong>    <strong>Var128</strong>    <strong>Var129</strong>    <strong>Var130</strong>    <strong>Var131</strong>    <strong>Var132</strong>    <strong>Var133</strong>    <strong>Var134</strong>    <strong>Var135</strong>    <strong>Var136</strong>    <strong>Var137</strong>    <strong>Var138</strong>    <strong>Var139</strong>    <strong>Var140</strong>    <strong>Var141</strong>    <strong>Var142</strong>    <strong>Var143</strong>    <strong>Var144</strong>    <strong>Var145</strong>    <strong>Var146</strong>    <strong>Var147</strong>    <strong>Var148</strong>    <strong>Var149</strong>    <strong>Var150</strong>    <strong>Var151</strong>    <strong>Var152</strong>    <strong>Var153</strong>    <strong>Var154</strong>    <strong>Var155</strong>    <strong>Var156</strong>    <strong>Var157</strong>    <strong>Var158</strong>    <strong>Var159</strong>    <strong>Var160</strong>    <strong>Var161</strong>    <strong>Var162</strong>    <strong>Var163</strong>    <strong>Var164</strong>    <strong>Var165</strong>    <strong>Var166</strong>    <strong>Var167</strong>    <strong>Var168</strong>    <strong>Var169</strong>    <strong>Var170</strong>    <strong>Var171</strong>    <strong>Var172</strong>    <strong>Var173</strong>    <strong>Var174</strong>    <strong>Var175</strong>    <strong>Var176</strong>    <strong>Var177</strong>    <strong>Var178</strong>    <strong>Var179</strong>    <strong>Var180</strong>    <strong>Var181</strong>    <strong>Var182</strong>    <strong>Var183</strong>    <strong>Var184</strong>    <strong>Var185</strong>    <strong>Var186</strong>    <strong>Var187</strong>    <strong>Var188</strong>    <strong>Var189</strong>    <strong>Var190</strong>    <strong>Var191</strong>    <strong>Var192</strong>    <strong>Var193</strong>    <strong>Var194</strong>
+    <strong>________</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>_____</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>    <strong>______</strong>
+
+    {'0000'}    NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN  
+
+cns2_wmh_ud : 0000 finished UBO Detector with ERROR.

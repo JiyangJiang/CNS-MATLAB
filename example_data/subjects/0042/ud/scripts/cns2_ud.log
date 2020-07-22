@@ -1307,3 +1307,35 @@ cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
 cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
 cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
 cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+herecns2_wmh_ud_preproc : start preprocessing 0042.
+cns2_spmbatch_segmentation : segmenting t1.nii.
+
+
+------------------------------------------------------------------------
+22-Jul-2020 17:52:04 - Running job #1
+------------------------------------------------------------------------
+22-Jul-2020 17:52:04 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7670)                     17:52:04 - 22/07/2020
+========================================================================
+Segment /Users/z3402744/GitHub/CNS2/example_data/subjects/0042/ud/preproc/t1.nii,1
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_preproc : start preprocessing 0042.
+cns2_spmbatch_segmentation : segmenting t1.nii.
+
+
+------------------------------------------------------------------------
+22-Jul-2020 18:01:32 - Running job #1
+------------------------------------------------------------------------
+22-Jul-2020 18:01:32 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7670)                     18:01:32 - 22/07/2020
+========================================================================
+Segment /Users/z3402744/GitHub/CNS2/example_data/subjects/0042/ud/preproc/t1.nii,1
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.

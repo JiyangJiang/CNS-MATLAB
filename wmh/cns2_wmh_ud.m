@@ -75,20 +75,23 @@ function cns2_wmh_ud
 		% creating template
 		if strcmp(cns2param.templates.options{1},'creating') % creating templates
 			[flowmaps,cns2param] = cns2_wmh_ud_crtDartelTemp (cns2param);
+		else
+			flowmaps = {}; % This had to be set. Otherwise, an error of unknown
+						   % 'flowmaps' will happen, although 'existing' is set.
 		end
 
 		% for parfor
 		subjs_list = cns2param.lists.subjs;
 
-		parfor (i = 1 : cns2param.n_subjs, cns2param.exe.n_cpus)
-		% for i = 1 : cns2param.n_subjs
+		% parfor (i = 1 : cns2param.n_subjs, cns2param.exe.n_cpus)
+		for i = 1 : cns2param.n_subjs
 			
 			diary (fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'ud', 'scripts', 'cns2_ud.log'))
 
 			try
 				switch cns2param.templates.options{1}
 				    case 'existing'
-				    	cns2_wmh_ud_preproc (cns2param,i);           % preprocessing (existing templates)
+				    	cns2_wmh_ud_preproc (cns2param,i);           	 % preprocessing (existing templates)
 					case 'creating'
 						if ~ismember (cns2param.lists.subjs{i,1},cns2param.lists.crtTempFailSeg)
 							cns2_wmh_ud_preproc (cns2param,i,flowmaps);  % preprocessing (creating templates - 
@@ -150,6 +153,6 @@ function cns2_wmh_ud
 end
 
 function nan_entry_tbl = nan_entry (cns2param,i)
-	nan_entry_tbl (i,1)     = table (cns2param.lists.subjs(i,1));
-	nan_entry_tbl (i,2:end) = table (NaN);
+	nan_entry_tbl (1,1)     = table (cns2param.lists.subjs(i,1));
+	nan_entry_tbl (1,2:194) = table (NaN);
 end
