@@ -2334,3 +2334,5 @@ In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('spm_
 In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cfg_mlbatch_appcfg', '/Applications/spm12/config/cfg_mlbatch_appcfg.m', 9)" style="font-weight:bold">cfg_mlbatch_appcfg</a> (<a href="matlab: opentoline('/Applications/spm12/config/cfg_mlbatch_appcfg.m',9,0)">line 9</a>)
 cfg = spm_cfg;
 } 
+IdleTimeout has been reached.
+Parallel pool using the 'local' profile is shutting down.

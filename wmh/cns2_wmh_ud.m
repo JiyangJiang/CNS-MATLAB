@@ -83,8 +83,8 @@ function cns2_wmh_ud
 		% for parfor
 		subjs_list = cns2param.lists.subjs;
 
-		% parfor (i = 1 : cns2param.n_subjs, cns2param.exe.n_cpus)
-		for i = 1 : cns2param.n_subjs
+		parfor (i = 1 : cns2param.n_subjs, cns2param.exe.n_cpus)
+		% for i = 1 : cns2param.n_subjs
 			
 			diary (fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'ud', 'scripts', 'cns2_ud.log'))
 
