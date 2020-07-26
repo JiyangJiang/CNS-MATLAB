@@ -2,7 +2,10 @@ function arterial_noc_tbl = cns2_wmh_ud_postproc_quantification_noc_arterial (cn
 
 arterial_atlas_dat = spm_read_vols(spm_vol(cns2param.templates.arterial));
 
-thr = cns2param.quantification.ud.sizthr;
+% convert size cut-off in mm^3 to num of vox
+ni = niftiinfo (flair);
+voxSiz = ni.PixelDimensions(1) * ni.PixelDimensions(2) * ni.PixelDimensions(3);
+thr = round (cns2param.quantification.ud.sizthr / voxSiz);
 
 wmhclstrs_props = regionprops3 (wmhclstrs_struct,...
 								spm_read_vols(spm_vol(flair)),...

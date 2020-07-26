@@ -2374,3 +2374,32 @@ pdist(pix2map(a))
 {'pix2map' requires <a href="matlab:matlab.internal.language.introspective.showAddon('MG', 'pix2map');">Mapping Toolbox</a>.
 } 
 matlab.internal.language.introspective.showAddon('MG', 'pix2map');
+cns2_wmh_ud_initDirFile : initializing dir/files for 0022.
+cns2_wmh_ud_preproc : start preprocessing 0022.
+cns2_spmbatch_segmentation : segmenting t1.nii.
+
+
+------------------------------------------------------------------------
+26-Jul-2020 15:41:09 - Running job #1
+------------------------------------------------------------------------
+26-Jul-2020 15:41:09 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7670)                     15:41:09 - 26/07/2020
+========================================================================
+Segment C:\Users\jiang\OneDrive\Documents\GitHub\CNS2\example_data\subjects\0022\ud\preproc\t1.nii,1
+Completed                               :          15:46:49 - 26/07/2020
+26-Jul-2020 15:46:49 - Done    'Segment'
+26-Jul-2020 15:46:49 - Done
+
+cns2_spmbatch_runDARTELe : running DARTEL with existing templates.
+
+
+------------------------------------------------------------------------
+26-Jul-2020 15:46:56 - Running job #1
+------------------------------------------------------------------------
+26-Jul-2020 15:46:57 - Running 'Run Dartel (existing Templates)'
+*** rc1t1 ***
+Continuing registration from pre-existing parameters (C:\Users\jiang\OneDrive\Documents\GitHub\CNS2\example_data\subjects\0022\ud\preproc\u_rc1t1.nii)
+1 	334633	531954	866587	1768.95
+2 	389214	23772.5	412986	127.883
+3 	388583	21857.1	410440	33.2558

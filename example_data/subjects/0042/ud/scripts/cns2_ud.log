@@ -1339,3 +1339,57 @@ Segment /Users/z3402744/GitHub/CNS2/example_data/subjects/0042/ud/preproc/t1.nii
 cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
 cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
 cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0042.
+cns2_wmh_ud_preproc : start preprocessing 0042.
+cns2_spmbatch_segmentation : segmenting t1.nii.
+
+
+------------------------------------------------------------------------
+26-Jul-2020 15:30:57 - Running job #1
+------------------------------------------------------------------------
+26-Jul-2020 15:30:58 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7670)                     15:30:58 - 26/07/2020
+========================================================================
+Segment C:\Users\jiang\OneDrive\Documents\GitHub\CNS2\example_data\subjects\0042\ud\preproc\t1.nii,1
+Completed                               :          15:36:39 - 26/07/2020
+26-Jul-2020 15:36:39 - Done    'Segment'
+26-Jul-2020 15:36:39 - Done
+
+cns2_spmbatch_runDARTELe : running DARTEL with existing templates.
+
+
+------------------------------------------------------------------------
+26-Jul-2020 15:36:48 - Running job #1
+------------------------------------------------------------------------
+26-Jul-2020 15:36:48 - Running 'Run Dartel (existing Templates)'
+*** rc1t1 ***
+Continuing registration from pre-existing parameters (C:\Users\jiang\OneDrive\Documents\GitHub\CNS2\example_data\subjects\0042\ud\preproc\u_rc1t1.nii)
+1 	256279	372052	628332	1423.99
+2 	295219	32994.1	328213	85.7905
+3 	295996	30988.9	326985	20.4521
+4 	291744	15197.4	306941	137.962
+5 	273391	27294.4	300686	40.1184
+6 	272774	27656.7	300431	21.3326
+7 	272165	14042.6	286208	105.545
+8 	256236	23990.8	280227	32.1049
+9 	255207	24607.2	279814	17.3818
+10 	254229	12576.5	266805	84.3547
+11 	238820	22312.9	261133	29.243
+12 	237420	23134.6	260555	17.5142
+13 	237359	11966.7	249325	69.4255
+14 	223301	20573.6	243875	27.7121
+15 	221338	21743.9	243082	17.3454
+16 	220876	22672.5	243548	20.4544
+17 	220299	22890.8	243190	14.9392
+18 	219872	23217.5	243090	13.5673
+26-Jul-2020 15:41:00 - Done    'Run Dartel (existing Templates)'
+26-Jul-2020 15:41:00 - Done
+
+
+Exception thrown
+++++++++++++++++++++++
+identifier: MATLAB:undefinedVarOrClass
+message: Unable to resolve the name cns2param.exe.verbose.
+
+cns2_wmh_ud : 0042 finished UBO Detector with ERROR.

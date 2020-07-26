@@ -2356,3 +2356,135 @@ tt =
     {'0000'}    NaN     NaN     NaN     NaN     NaN     NaN     NaN     NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN  
 
 cns2_wmh_ud : 0000 finished UBO Detector with ERROR.
+cns2_wmh_ud_initDirFile : initializing dir/files for 0000.
+cns2_wmh_ud_preproc : start preprocessing 0000.
+cns2_spmbatch_segmentation : segmenting t1.nii.
+
+
+------------------------------------------------------------------------
+26-Jul-2020 15:30:57 - Running job #1
+------------------------------------------------------------------------
+26-Jul-2020 15:30:57 - Running 'Segment'
+
+SPM12: spm_preproc_run (v7670)                     15:30:58 - 26/07/2020
+========================================================================
+Segment C:\Users\jiang\OneDrive\Documents\GitHub\CNS2\example_data\subjects\0000\ud\preproc\t1.nii,1
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In cns2_wmh_ud_preproc_native (line 33)
+  In cns2_wmh_ud_preproc (line 31)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In cns2_wmh_ud_preproc_native (line 33)
+  In cns2_wmh_ud_preproc (line 31)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In cns2_wmh_ud_preproc_native (line 33)
+  In cns2_wmh_ud_preproc (line 31)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In cns2_wmh_ud_preproc_native (line 33)
+  In cns2_wmh_ud_preproc (line 31)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In cns2_wmh_ud_preproc_native (line 33)
+  In cns2_wmh_ud_preproc (line 31)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+Warning: Matrix is singular to working precision.
+> In spm_preproc8 (line 529)
+  In spm_preproc_run>run_job (line 156)
+  In spm_preproc_run (line 41)
+  In spm_cfg_preproc8>spm_local_preproc_run (line 474)
+  In cfg_run_cm (line 29)
+  In cfg_util>local_runcj (line 1717)
+  In cfg_util (line 972)
+  In spm_jobman>fill_run_job (line 469)
+  In spm_jobman (line 247)
+  In cns2_spmbatch_segmentation (line 86)
+  In cns2_wmh_ud_preproc_native (line 33)
+  In cns2_wmh_ud_preproc (line 31)
+  In parallel_function>make_general_channel/channel_general (line 832)
+  In remoteParallelFunction (line 67)
+
+26-Jul-2020 15:32:06 - Failed  'Segment'
+Error using sqrtm (line 35)
+Expected input to be finite.
+In file "C:\Program Files\MATLAB\R2020a\toolbox\matlab\matfun\sqrtm.m" (???), function "sqrtm" at line 35.
+In file "C:\Users\jiang\Downloads\test\spm12\spm_preproc8.m" (v7593), function "spm_preproc8" at line 671.
+In file "C:\Users\jiang\Downloads\test\spm12\spm_preproc_run.m" (v7670), function "run_job" at line 156.
+In file "C:\Users\jiang\Downloads\test\spm12\spm_preproc_run.m" (v7670), function "spm_preproc_run" at line 41.
+In file "C:\Users\jiang\Downloads\test\spm12\config\spm_cfg_preproc8.m" (v7629), function "spm_local_preproc_run" at line 474.
+
+The following modules did not run:
+Failed: Segment
+
+
+Exception thrown
+++++++++++++++++++++++
+identifier: matlabbatch:run:jobfailederr
+message: Job execution failed. The full log of this run can be found in MATLAB command window, starting with the lines (look for the line showing the exact #job as displayed in this error message)
+------------------ 
+Running job #1
+------------------
+
+
+cns2_wmh_ud : 0000 finished UBO Detector with ERROR.
