@@ -19,7 +19,7 @@
 %
 
  
-function NativeImg = cns2_spmbatch_DARTELtoNative (DARTELimg, flowMap, varargin)
+function NativeImg = cns2_spmbatch_DARTELtoNative (cns2param, DARTELimg, flowMap, varargin)
 
     if cns2param.exe.verbose
         curr_cmd = mfilename;

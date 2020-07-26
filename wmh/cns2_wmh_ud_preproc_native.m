@@ -50,12 +50,12 @@ case 'cns2_ud'
 	end
 
 	% templates used in classification back to native space
-	gmmsk_t1spc   = cns2_spmbatch_DARTELtoNative (cns2param.templates.gmmsk,   flowmap      );
-	wmmsk_t1spc   = cns2_spmbatch_DARTELtoNative (cns2param.templates.wmmsk,   flowmap      );
-	gmprob_t1spc  = cns2_spmbatch_DARTELtoNative (cns2param.templates.gmprob,  flowmap      );
-	wmprob_t1spc  = cns2_spmbatch_DARTELtoNative (cns2param.templates.wmprob,  flowmap      );
-	csfprob_t1spc = cns2_spmbatch_DARTELtoNative (cns2param.templates.csfprob, flowmap      );
-	brnmsk_t1spc  = cns2_spmbatch_DARTELtoNative (cns2param.templates.brnmsk,  flowmap, 'NN');
+	gmmsk_t1spc   = cns2_spmbatch_DARTELtoNative (cns2param, cns2param.templates.gmmsk,   flowmap      );
+	wmmsk_t1spc   = cns2_spmbatch_DARTELtoNative (cns2param, cns2param.templates.wmmsk,   flowmap      );
+	gmprob_t1spc  = cns2_spmbatch_DARTELtoNative (cns2param, cns2param.templates.gmprob,  flowmap      );
+	wmprob_t1spc  = cns2_spmbatch_DARTELtoNative (cns2param, cns2param.templates.wmprob,  flowmap      );
+	csfprob_t1spc = cns2_spmbatch_DARTELtoNative (cns2param, cns2param.templates.csfprob, flowmap      );
+	brnmsk_t1spc  = cns2_spmbatch_DARTELtoNative (cns2param, cns2param.templates.brnmsk,  flowmap, 'NN');
 
 	gmmsk_flairSpc   = cns2_scripts_revReg (cns2param, flair, t1, gmmsk_t1spc,   'Tri');
 	wmmsk_flairSpc   = cns2_scripts_revReg (cns2param, flair, t1, wmmsk_t1spc,   'Tri');
@@ -117,9 +117,9 @@ end
 
 
 % Templates for quantification to native space
-ventdst_t1spc  = cns2_spmbatch_DARTELtoNative (cns2param.templates.ventdst,  flowmap      );
-lobar_t1spc    = cns2_spmbatch_DARTELtoNative (cns2param.templates.lobar,    flowmap, 'NN');
-arterial_t1spc = cns2_spmbatch_DARTELtoNative (cns2param.templates.arterial, flowmap, 'NN');
+ventdst_t1spc  = cns2_spmbatch_DARTELtoNative (cns2param, cns2param.templates.ventdst,  flowmap      );
+lobar_t1spc    = cns2_spmbatch_DARTELtoNative (cns2param, cns2param.templates.lobar,    flowmap, 'NN');
+arterial_t1spc = cns2_spmbatch_DARTELtoNative (cns2param, cns2param.templates.arterial, flowmap, 'NN');
 
 ventdst_flairSpc  = cns2_scripts_revReg (cns2param, flair, t1, ventdst_t1spc,   'Tri');
 lobar_flairSpc    = cns2_scripts_revReg (cns2param, flair, t1, lobar_t1spc           );
