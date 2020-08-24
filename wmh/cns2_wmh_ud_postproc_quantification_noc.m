@@ -5,6 +5,11 @@ function noc_tbl = cns2_wmh_ud_postproc_quantification_noc (wmhmask_dat,flair,va
 
 curr_cmd = mfilename;
 
+% default size threshold
+% used in wmh results from any software
+thr = [3 9 15]; % in num of vox
+
+
 % ++++++++++++++++++++++++++
 % standard call from cns2 ud
 % ++++++++++++++++++++++++++
@@ -27,7 +32,7 @@ if nargin==4
 									spm_read_vols(spm_vol(flair)),...
 									{'WeightedCentroid','Volume'});
 
-	wbwmh_noc   = wmhclstrs_struct.NumObjects % whole brain noc
+	wbwmh_noc   = wmhclstrs_struct.NumObjects; % whole brain noc
 	wbwmh_noc_p = 0;
 	wbwmh_noc_f = 0;
 	wbwmh_noc_m = 0;
@@ -91,8 +96,32 @@ elseif nargin==2
 									{'WeightedCentroid','Volume'});
 
 	wbwmh_noc = wmhclstrs_struct.NumObjects; % whole brain noc
+	wbwmh_noc_p = 0;
+	wbwmh_noc_f = 0;
+	wbwmh_noc_m = 0;
+	wbwmh_noc_c = 0;
 
-	noc_tbl = table(wbwmh_noc);
+	% quantify whole brain noc of different sizes
+	% ===========================================
+	for i = 1:wbwmh_noc
+
+		% size in num of voxels
+		siz = wmhclstrs_props.Volume(i);
+
+		if siz <= thr(1)
+			wbwmh_noc_p = wbwmh_noc_p + 1;
+	  	elseif siz > thr(1) && siz <= thr(2)
+	  		wbwmh_noc_f = wbwmh_noc_f + 1;
+		elseif siz > thr(2) && siz <= thr(3)
+			wbwmh_noc_m = wbwmh_noc_m + 1;
+		else
+			wbwmh_noc_c = wbwmh_noc_c + 1;
+		end
+
+	end
+
+	noc_tbl = table(wbwmh_noc, wbwmh_noc_p, wbwmh_noc_f, wbwmh_noc_m, wbwmh_noc_c);
+
 
 
 % +++++++++++++++++++++++++++++++++++++++++++

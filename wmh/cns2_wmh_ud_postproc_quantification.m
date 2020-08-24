@@ -53,7 +53,7 @@ if nargin==4
 	dist_tbl = cns2_wmh_ud_postproc_quantification_clstrDist (wmhmask_dat,flair,cns2param,subjid);
 
 	% quantify cluster size distribution
-	clstrSiz_tbl = cns2_wmh_ud_postproc_quantification_clstrSiz (wmhmask_dat,cns2param,subjid);
+	clstrSiz_tbl = cns2_wmh_ud_postproc_quantification_clstrSiz (wmhmask_dat,flair,cns2param,subjid);
 
 	% combine measures into one table
 	quant_tbl_subj = [table({subjid}) ...
@@ -82,7 +82,7 @@ elseif nargin==2
 	dist_tbl = cns2_wmh_ud_postproc_quantification_clstrDist (wmhmask_dat,flair);
 
 	% quantify cluster size distribution
-	clstrSiz_tbl = cns2_wmh_ud_postproc_quantification_clstrSiz (wmhmask_dat);
+	clstrSiz_tbl = cns2_wmh_ud_postproc_quantification_clstrSiz (wmhmask_dat,flair);
 
 	% combine measures into one table
 	quant_tbl_subj = [vol_tbl ...
