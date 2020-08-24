@@ -3,6 +3,7 @@
 % part_XX folders
 
 addpath ('/usr/share/spm12');
+addpath ('/home/jiyang/Software/CNS2/wmh')
 
 for i = 1:59
 	allwmh = dir (['/data_int/jiyang/UKB/WMH/part_' num2str(i) '/*_WMH.nii']);
