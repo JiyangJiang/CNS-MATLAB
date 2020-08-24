@@ -24,7 +24,7 @@ if nargin==4
 									spm_read_vols(spm_vol(flair)),...
 									{'WeightedCentroid','Volume'});
 
-	wbwmh_noc   = wmhclstrs_struct.NumObjects; % whole brain noc
+	wbwmh_noc   = wmhclstrs_struct.NumObjects % whole brain noc
 	wbwmh_noc_p = 0;
 	wbwmh_noc_f = 0;
 	wbwmh_noc_m = 0;
