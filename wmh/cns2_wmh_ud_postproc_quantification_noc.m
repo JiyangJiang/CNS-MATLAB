@@ -16,7 +16,10 @@ if nargin==4
 		fprintf ('%s : quantifying noc for %s.\n', curr_cmd, subjid);
 	end
 
-	thr = cns2param.quantification.ud.sizthr;
+	% convert size cut-off in mm^3 to num of vox
+	ni = niftiinfo (flair);
+	voxSiz = ni.PixelDimensions(1) * ni.PixelDimensions(2) * ni.PixelDimensions(3);
+	thr = round (cns2param.quantification.ud.sizthr / voxSiz);
 
 	wmhclstrs_struct = bwconncomp (wmhmask_dat, 26); % divide into 26-conn clusters
 

@@ -1,15 +1,15 @@
 function cns2_wmh_ud
 
-	study_dir = '/Users/z3402744/GitHub/CNS2/example_data';
-	% study_dir = 'C:\Users\jiang\OneDrive\Documents\GitHub\CNS2\example_data';
+	% study_dir = '/Users/z3402744/GitHub/CNS2/example_data';
+	study_dir = 'C:\Users\jiang\OneDrive\Documents\GitHub\CNS2\example_data';
 	% study_dir = 'D:\GitHub\CNS2\example_data';
 
-	cns2_dir = '/Users/z3402744/GitHub/CNS2';
-	% cns2_dir = 'C:\Users\jiang\OneDrive\Documents\GitHub\CNS2';
+	% cns2_dir = '/Users/z3402744/GitHub/CNS2';
+	cns2_dir = 'C:\Users\jiang\OneDrive\Documents\GitHub\CNS2';
 	% cns2_dir = 'D:\GitHub\CNS2';
 
-	spm_dir = '/Applications/spm12';
-	% spm_dir = 'C:\Users\jiang\Downloads\test\spm12';
+	% spm_dir = '/Applications/spm12';
+	spm_dir = 'C:\Users\jiang\Downloads\test\spm12';
 	% spm_dir = 'C:\Program Files\spm12';
 
 
@@ -29,8 +29,8 @@ function cns2_wmh_ud
 	extSpace = 'native';
 
 	pvmag = 12;
-	sizthr = [3 9 15];
 
+	sizthr_mm3 = [10.125 30.375 50.625]; % in mm^3
 
 	addpath (genpath (cns2_dir));
 	addpath (spm_dir);
@@ -64,7 +64,7 @@ function cns2_wmh_ud
 										    probthr, ...
 										    extSpace, ...
 										    pvmag, ...
-										    sizthr);
+										    sizthr_mm3);
 
 		% initialising/organising directories/files
 		cns2_wmh_ud_initDirFile (cns2param);
@@ -89,6 +89,7 @@ function cns2_wmh_ud
 			diary (fullfile (cns2param.dirs.subjs, cns2param.lists.subjs{i,1}, 'ud', 'scripts', 'cns2_ud.log'))
 
 			try
+
 				switch cns2param.templates.options{1}
 				    case 'existing'
 				    	cns2_wmh_ud_preproc (cns2param,i);           	 % preprocessing (existing templates)
