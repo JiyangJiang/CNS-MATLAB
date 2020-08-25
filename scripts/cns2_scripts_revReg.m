@@ -34,9 +34,9 @@ function varargout = cns2_scripts_revReg (cns2param, src, ref, other, varargin)
 																	 % reference to source, which is then inverted in spm_config_coreg
 																	 % therefore, reverse transformation is inv(inv(Mx)), which equals Mx
 
-    if nargin == 4 && strcmp (varargin{1}, 'Tri')
+    if nargin == 5 && strcmp (varargin{1}, 'Tri')
         interp = 1;
-    elseif nargin == 3
+    elseif nargin == 4
         interp = 0; % nearest neighbour (default)
     end
     
