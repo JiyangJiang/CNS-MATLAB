@@ -77,7 +77,7 @@ resliceFlags= struct('interp',1,... % B-spline
 spm_reslice (files,resliceFlags);
 
 % refine ventricular mask in T1 space
-t1SpcDim_vent_struct = dir(fullfile(T1folder, 't1SpcDim_dartel_vent.nii'));
+t1SpcDim_vent_struct = dir(fullfile(T1folder, 't1SpcDim_dartel_vent_native.nii'));
 t1SpcDim_vent        = fullfile(T1folder, t1SpcDim_vent_struct.name);
 
 csf_dat           = spm_read_vols(spm_vol(cCSF));
