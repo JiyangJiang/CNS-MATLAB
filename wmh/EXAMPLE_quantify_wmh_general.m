@@ -3,19 +3,24 @@
 % part_XX folders
 
 addpath ('/usr/share/spm12');
+addpath ('/home/jiyang/Software/CNS2/wmh')
 
 for i = 1:59
 	allwmh = dir (['/data_int/jiyang/UKB/WMH/part_' num2str(i) '/*_WMH.nii']);
 	Nwmh=size(allwmh,1);
 
 	% initialise result table
-	varTypes = cell (9,1);
+	varTypes = cell (13,1);
 	varTypes (1)   = {'cellstr'};
-	varTypes (2:9) = {'single'};
-	qtbl = table ('Size',[Nwmh 9],'VariableTypes',varTypes);
+	varTypes (2:13) = {'single'};
+	qtbl = table ('Size',[Nwmh 13],'VariableTypes',varTypes);
 	qtbl.Properties.VariableNames = {'ID'
 									 'wbwmh_vol'
 									 'wbwmh_noc'
+									 'wbwmh_noc_p'
+									 'wbwmh_noc_f'
+									 'wbwmh_noc_m'
+									 'wbwmh_noc_c'
 									 'avg_clstr_dist'
 									 'std_clstr_dist'
 									 'var_clstr_dist'

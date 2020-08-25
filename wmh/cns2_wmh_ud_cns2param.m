@@ -1,3 +1,4 @@
+% varargin{1} = sizthr - cut-off for punctuate, focal, medium, confluent
 function cns2param = cns2_wmh_ud_cns2param (cns2param, ...
 											lv1clstMethod, ...
 										    k4kmeans, ...
@@ -21,4 +22,4 @@ cns2param.classification.ud.ext_space       = extSpace;
 % quantification
 % ++++++++++++++++++++++++++++++++++++++++++
 cns2param.quantification.ud.pvmag  = pvmag;  % distance from lateral ventricle - used to define PVWMH and DWMH.
-cns2param.quantification.ud.sizthr = sizthr; % cut-off in number of voxels between punctuate, focal, medium, and confluent
+cns2param.quantification.ud.sizthr = sizthr; % cut-off in mm^3 between punctuate, focal, medium, and confluent

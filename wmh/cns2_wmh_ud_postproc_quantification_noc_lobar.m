@@ -4,7 +4,10 @@ ventdst_dat = spm_read_vols(spm_vol(cns2param.templates.ventdst));
 pv_mask = ventdst_dat < cns2param.quantification.ud.pvmag;
 lobar_atlas_dat = spm_read_vols(spm_vol(cns2param.templates.lobar));
 
-thr = cns2param.quantification.ud.sizthr;
+% convert size cut-off in mm^3 to num of vox
+ni = niftiinfo (flair);
+voxSiz = ni.PixelDimensions(1) * ni.PixelDimensions(2) * ni.PixelDimensions(3);
+thr = round (cns2param.quantification.ud.sizthr / voxSiz);
 
 wmhclstrs_props = regionprops3 (wmhclstrs_struct,...
 								spm_read_vols(spm_vol(flair)),...
