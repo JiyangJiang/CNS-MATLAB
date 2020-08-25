@@ -21,15 +21,15 @@
  
 function NativeImg = cns2_spmbatch_DARTELtoNative (cns2param, DARTELimg, flowMap, varargin)
 
-    if cns2param.exe.verbose
-        curr_cmd = mfilename;
-        fprintf ('%s : warping %s to DARTEL with %s.\n', curr_cmd, srcImgFilename, flowMapFilename);
-    end
-
     [dartelImgFolder, dartelImgFilename, dartelImgExt] = fileparts (DARTELimg);
     [flowMapFolder, flowMapFilename, flowMapExt] = fileparts (flowMap);
+
+    if cns2param.exe.verbose
+        curr_cmd = mfilename;
+        fprintf ('%s : warping %s to native space with %s.\n', curr_cmd, dartelImgFilename, flowMapFilename);
+    end
     
-    if nargin == 3 && strcmp (varargin{1}, 'NN')
+    if nargin == 4 && strcmp (varargin{1}, 'NN')
         interp = 0;
     else
         interp = 1;
